@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LawlietBlack | About</title>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    
+  </head>
+  <body ng-app="treehouseApp">
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div><!-- end nav-->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Kenneth Black</h1>
+        <p>About</p>
+      </div>
+    </div> <!-- end jumbotron-->
+
+    <div class="about">
+      <div class="container">
+        <img src="img/avatar.png" alt="" class="profile-photo">
+        <h3>About</h3>
+        <p>Hi, I'm Kenneth Black! I'm an aspiring front end web developer currently learning the tricks of the trade. When I'm not coding, I enjoy playing video games, drinking good coffee, and tinkering wih electronics. Feel free to contact me if you have any comments, advice or project suggestons.</p>
+      </div>
+    </div><!--end about-->   
+    <div class="cards" ng-controller="AboutController">
+      <div class="container">  
+        <treehouse info="profile" badges="badges" class="app"></treehouse>
+      </div>
+    </div><!--end cards-->
+    
+
+    <div class="languages">
+      <div class="container">
+        <h3>Languages and Skills</h3>
+        <div class="row">
+          <div class="col-sm-3">
+          <h4 class="treehouse">Treehouse</h4>
+            <ul>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive Layouts</li>
+              <li>AJAX</li>
+              <li>Website Optimization</li>
+              <li>Console Foundations</li>
+              <li>Node.js</li>
+              <li>Git (In Progress)</li>
+              <li>AngularJS (In Progress)</li>
+            </ul>
+          </div><!-- end column 1-->
+          <div class="col-sm-3">
+            <h4 class="codecademy">Codecademy</h4>
+            <ul>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+              <li>AngularJS</li>
+              <li>Bootstrap</li>
+              <li>Python (In Progress)</li>
+              <li>Ruby (In Progress)</li>
+            </ul>
+          </div><!-- end column 2-->
+          <div class="col-sm-3">
+            <h4 class="udemy">Udemy</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div><!-- end column 3-->
+          <div class="col-sm-3">
+            <h4 class="uo">Univ. of Oregon</h4>
+            <ul>
+              <li>Mathematica</li>
+              <li>Matlab</li>
+              <li>Python</li>
+              <li>Ruby</li>
+            </ul>
+          </div><!-- end column 4-->
+        </div><!-- end row-->
+      </div><!-- end container-->
+    </div><!-- end languages-->
+
+    <footer>
+      <a href="https://twitter.com/Kenneth_R_Black"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon" /></a>
+      <a href="http://www.codecademy.com/lawlietblack"><img src="img/codecademy.png" alt="Codecademy Logo" class="social-icon" /></a>
+      <a href="https://teamtreehouse.com/kennethblack"><img src="img/treehouse.png" alt="Treehouse Logo" class="social-icon" /></a>
+      <a href="https://www.linkedin.com/in/kennethrblack"><img src="img/linkedin.png" alt="LinkedIn Logo" class="social-icon" /></a>
+      <a href="https://www.facebook.com/kenny.black.39750"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" /></a>
+      <p>&copy; 2015 Kenneth Black.</p>
+    </footer>
+    <!--modules-->
+    <script src="js/treehouseapp.js"></script>
+    <!--controllers-->
+    <script src="js/controllers/AboutController.js"></script>
+    <!--directives-->
+    <script src="js/directives/treehouse.js"></script>
+    <!--services-->
+    <script src="js/services/profile.js"></script>
+  </body>
+</html>

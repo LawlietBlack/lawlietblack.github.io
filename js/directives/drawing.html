@@ -1,0 +1,246 @@
+<!--DRAWING APP HTML-->
+	<div class="canvas">
+		<div class="container">
+			<canvas	width="600" height="400"></canvas>
+			<div class="controls">
+				<ul>
+					<li class="red selected"></li>
+					<li class="blue"></li>
+					<li class="yellow"></li>
+				</ul>
+				<button id="revealColorSelect">New Color</button>
+				<div id="colorSelect">
+					<span id="newColor"></span>
+					<div class="sliders">
+						<p>
+							<label for="red">Red</label>
+							<input id="red" name="red" type="range" min=0 max=255 value=0>
+						</p>
+						<p>
+							<label for="green">Green</label>
+							<input id="green" name="green" type="range" min=0 max=255 value=0>
+						</p>
+						<p>
+							<label for="blue">Blue</label>
+							<input id="blue" name="blue" type="range" min=0 max=255 value=0>
+						</p>
+					</div>
+					<div>
+					<button id="addNewColor">Add Color</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--DRAWING APP JavaScript-->
+	<script>
+		//problem: user interaction causes no change to application
+		//solution: when user interacts, cause changes appropriately
+
+		var context = $('canvas')[0].getContext("2d")
+		var $canvas = $('canvas')
+		var lastEvent;
+		var mouseDown = false;
+		$color = $('.selected').css('background-color')
+		$('#newColor').css('background-color', 'black')
+		//takes the value of the sliders and changes it to an rgb color value
+		function color() {
+			return "rgb(" + $('#red').val() + ", " + $('#green').val() + ", " + $('#blue').val() + ")"
+		}
+
+		//function to change color of span to color of slider values
+		function previewColor() {
+			$('#newColor').css('background-color',color());
+		}
+
+		//changes preview color when sliders are changed
+		$('.sliders input').change(previewColor)
+
+		//color list items, when clicked... 
+		$(".controls").on('click', 'li', function(){
+			//deselect sibling elements
+			$(this).siblings().removeClass('selected');
+			//select clicked element
+			$(this).addClass('selected');
+			//cache current color
+			$color = $(this).css("background-color");
+		});
+
+		//New Color button, when clicked... 
+		$('#revealColorSelect').click(function(){
+			//toggles color select sliders
+			$('#colorSelect').toggle();
+		});
+
+		//Add Color button, when clicked...
+		$('#addNewColor').click(function(){
+			//make new li element
+			$addedColor = $('<li></li>');
+			//changes new li color to new color
+			$addedColor.css('background-color', color());
+			//Append new color to end of list
+			$('.controls ul').append($addedColor);
+			//change to new color
+			$addedColor.click();
+			//hides color select sliders
+			$('#colorSelect').hide();
+		});
+
+		//on mouse events on the canvas
+			//draw lines
+		$canvas.mousedown(function(e){
+			lastEvent = e;
+			mouseDown=true;
+		}).mousemove(function(e){
+			if(mouseDown) {
+				context.beginPath();
+				context.moveTo(lastEvent.offsetX,lastEvent.offsetY);
+				context.lineTo(e.offsetX,e.offsetY);
+				context.strokeStyle = $color
+				context.stroke();
+				lastEvent = e;
+			}
+		}).mouseup(function(){
+			mouseDown = false;
+		}).mouseleave(function(){
+			mouseDown = false;
+		})
+		//TO DO: add line thickness slider and clear button
+	</script>
+<!--DRAWING APP CSS-->
+	<style>
+		canvas {
+			background: #fff;
+			display: block;
+			margin: 50px auto 10px;
+			border-radius: 5px;
+			box-shadow: 0 4px 0 0 #222;
+			cursor: url(img/cursor.png), crosshair;
+		}
+		.canvas .controls {
+			min-height: 60px;
+			margin: 0 auto;
+			width: 600px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.canvas ul {
+			list-style:none;
+			margin: 0;
+			float: 	left;
+			padding: 10px 0 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.canvas ul li, .canvas #newColor {
+			display:block;
+			height: 54px;
+			width: 54px;
+			border-radius: 60px;
+			cursor: pointer;
+			border: 0;
+		}
+
+		.canvas ul li {
+			display: inline-block;
+			margin: 0 5px 10px;
+		}
+
+		.canvas .red {
+			background: #fc4c4f;
+		}
+
+		.canvas .blue {
+			background: #4fa3fc;
+		}
+
+		.canvas .yellow {
+			background: #ECD13F;
+		}
+
+		.canvas .selected {
+			border: 7px solid #fff;
+		}
+		.canvas button {
+			background: #68B25B;
+			box-shadow: 0 3px 0 0 #6A845F;
+			color: #fff;
+			outline: none;
+			cursor: pointer;
+			text-shadow: 0 1px #6A845F;
+			display: block;
+			font-size: 16px;
+			line-height: 40px;
+		}
+		#revealColorSelect {
+			border: none;
+			border-radius: 5px;
+			margin: 10px auto;
+			padding: 5px 20px;
+			width: 160px;
+		}
+
+		/* New Color Palette */
+		#colorSelect {
+			background: #fff;
+			border-radius: 5px;
+			clear: both;
+			margin: 20px auto 0;
+			padding: 10px;
+			width: 325px;
+			position: relative;
+				
+			display:none;
+		}
+		#colorSelect:after {
+			bottom: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(255, 255, 255, 0);
+			border-bottom-color: #fff;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+
+		#newColor {
+			width: 80px;
+			height: 80px;
+			border-radius: 3px;
+			box-shadow: none;
+			float: left;
+			border: none;
+			margin: 10px 20px 20px 10px;
+
+		}
+		.canvas .sliders p {
+			margin: 8px 0;
+			vertical-align: middle;
+		}
+		.canvas .sliders label {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			width: 35px;
+			font-size: 14px;
+			color: #6D574E;
+		}
+		.canvas .sliders input {
+			position: relative;
+			top: 2px;
+		}
+		#colorSelect button {
+			border: none;
+			border-top: 1px solid #6A845F;
+			border-radius: 0 0 5px 5px;
+			clear: both;
+			margin: 10px -10px -7px;
+			padding: 5px 10px;
+			width: 325px;
+		}
+	</style>

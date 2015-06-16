@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Civilization V Leaders</title>
+    <link href="css/fonts/shift.css" rel="stylesheet" type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" href="css/main.css" type='text/css'>
+    <link rel="stylesheet" href="css/civ.css" type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  </head>
+  <body data-ng-app="civApp">
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div><!-- end nav-->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Civilization V</h1>
+        <p>Leaders</p>
+      </div>
+    </div> <!-- end jumbotron-->
+
+    <div class="search">
+      <label for="civSearch">Search</label>
+      <input type="text" id='civSearch'>
+    </div>
+    <div class="random">
+      <label for="randomCiv">Random Civ</label><br />
+      <button id="randomCiv"></button>
+    </div>
+    <div class="civs" data-ng-controller="CivController" >
+      <div class="container" data-ng-repeat="civ in civs">
+        <div class="banner" style="background:linear-gradient( {{civ.colorlight}} , {{civ.colordark}})">
+          <img src="#" data-ng-src="img/civ/{{civ.civIcon}}" class="civ" alt="Image of {{civ.civName}}" type="image/png">
+          <h3 class="civname" style="color:{{civ.fontcolor}}" ng-cloak>{{civ.civName}}</h3>
+          <img src="#"  data-ng-src="img/civ/{{civ.leaderIcon}} " class="leader" alt="Image of {{civ.leaderName}}">
+          <h3 class="leadername" style="color:{{civ.fontcolor}}" ng-cloak>{{civ.leaderName}}</h3>
+        </div>
+        <div class="desc" style="background:linear-gradient( {{civ.colorlight}} , {{civ.colordark}})">
+          <h4 style="color:{{civ.fontcolor}}">{{civ.abilityname}}</h4>
+          <p data-ng-bind-html="civ.ability | sanitize" style="color:{{civ.fontcolor}}"></p>
+          <div class="feature">
+            <img src="#"  data-ng-src="img/civ/{{civ.unique1icon}}" class="unique" alt="Image of {{civ.unique1name}}">
+            <h4 style="color:{{civ.fontcolor}}">{{civ.unique1name}}</h4>
+            <p data-ng-bind-html="civ.unique1desc | sanitize" style="color:{{civ.fontcolor}}"></p>
+          </div>
+          <div class="feature">
+            <img src="#"  data-ng-src="img/civ/{{civ.unique2icon}}" class="unique" alt="Image of {{civ.unique2name}}">
+            <h4 style="color:{{civ.fontcolor}}">{{civ.unique2name}}</h4>
+            <p data-ng-bind-html="civ.unique2desc | sanitize" style="color:{{civ.fontcolor}}"></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- end civs -->
+
+    <footer>
+      <a href="https://twitter.com/Kenneth_R_Black"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon" /></a>
+      <a href="http://www.codecademy.com/lawlietblack"><img src="img/codecademy.png" alt="Codecademy Logo" class="social-icon" /></a>
+      <a href="https://teamtreehouse.com/kennethblack"><img src="img/treehouse.png" alt="Treehouse Logo" class="social-icon" /></a>
+      <a href="https://www.linkedin.com/in/kennethrblack"><img src="img/linkedin.png" alt="LinkedIn Logo" class="social-icon" /></a>
+      <a href="https://www.facebook.com/kenny.black.39750"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" /></a>
+      <p>&copy; 2015 Kenneth Black.</p>
+    </footer>
+
+    <!--jQuery and modules-->
+    <script src="js/civ.js"></script>
+    <!--controllers-->
+    <script src="js/controllers/CivController.js"></script>
+  </body>
+</html>
