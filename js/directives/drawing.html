@@ -1,7 +1,7 @@
 <!--DRAWING APP HTML-->
 	<div class="canvas">
 		<div class="container">
-			<canvas	width="600" height="400"></canvas>
+			<canvas	id="canvas" width="600" height="400"></canvas>
 			<div class="controls">
 				<ul>
 					<li class="red selected"></li>
@@ -40,7 +40,8 @@
 
 		var context = $('canvas')[0].getContext("2d")
 		var $canvas = $('canvas')
-		var lastEvent;
+		var lastxpos;
+		var lastypos;
 		var mouseDown = false;
 		$color = $('.selected').css('background-color')
 		$('#newColor').css('background-color', 'black')
@@ -90,16 +91,20 @@
 		//on mouse events on the canvas
 			//draw lines
 		$canvas.mousedown(function(e){
-			lastEvent = e;
+			lastxpos = e.offsetX === undefined ? e.originalEvent.layerX-$('#canvas').offset().left : e.offsetX;
+			lastypos = e.offsetY === undefined ? e.originalEvent.layerY-$('#canvas').offset().top : e.offsetY;
 			mouseDown=true;
 		}).mousemove(function(e){
+			xpos = e.offsetX === undefined ? e.originalEvent.layerX-$('#canvas').offset().left : e.offsetX;
+			ypos = e.offsetY === undefined ? e.originalEvent.layerY-$('#canvas').offset().top : e.offsetY;
 			if(mouseDown) {
 				context.beginPath();
-				context.moveTo(lastEvent.offsetX,lastEvent.offsetY);
-				context.lineTo(e.offsetX,e.offsetY);
+				context.moveTo(lastxpos,lastypos);
+				context.lineTo(xpos, ypos);
 				context.strokeStyle = $color
 				context.stroke();
-				lastEvent = e;
+				lastxpos = xpos;
+				lastypos = ypos;
 			}
 		}).mouseup(function(){
 			mouseDown = false;

@@ -13,19 +13,16 @@
     
   </head>
   <body ng-app="treehouseApp">
-    <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-        <ul class="pull-right">
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-    </div><!-- end nav-->
+    <header>
+      <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="spacer"></li>
+        <li class="right"><a href="contact.html">Contact</a></li>
+        <li class="right"><a href="about.html">About</a></li>
+      </nav>
+    </header>
     <div class="jumbotron">
       <div class="container">
         <h1>Kenneth Black</h1>
@@ -37,7 +34,7 @@
       <div class="container">
         <img src="img/avatar.png" alt="" class="profile-photo">
         <h3>About</h3>
-        <p>Hi, I'm Kenneth Black! I'm an aspiring front end web developer currently learning the tricks of the trade. When I'm not coding, I enjoy playing video games, drinking good coffee, and tinkering wih electronics. Feel free to contact me if you have any comments, advice or project suggestons.</p>
+        <p>Hi, I'm Kenneth Black! I'm an aspiring front end web developer currently learning the tricks of the trade. When I'm not coding, I enjoy playing video/board/card games, drinking good coffee, and tinkering with electronics. Feel free to contact me if you have any comments, advice or project suggestons.</p>
       </div>
     </div><!--end about-->   
     <div class="cards" ng-controller="AboutController">
@@ -55,15 +52,16 @@
           <h4 class="treehouse">Treehouse</h4>
             <ul>
               <li>Javascript</li>
+              <li>Object-Oriented Javascripts</li>
               <li>jQuery</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>jQuery Plugins</li>
+              <li>HTML &amp; CSS</li>
               <li>Responsive Layouts</li>
               <li>AJAX</li>
               <li>Website Optimization</li>
               <li>Console Foundations</li>
               <li>Node.js</li>
-              <li>Git (In Progress)</li>
+              <li>Git</li>
               <li>AngularJS (In Progress)</li>
             </ul>
           </div><!-- end column 1-->
@@ -77,17 +75,11 @@
               <li>PHP</li>
               <li>AngularJS</li>
               <li>Bootstrap</li>
+              <li>Ruby</li>
               <li>Python (In Progress)</li>
-              <li>Ruby (In Progress)</li>
+              <li>Ruby on Rails (In Progress)</li>
             </ul>
           </div><!-- end column 2-->
-          <div class="col-sm-3">
-            <h4 class="udemy">Udemy</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div><!-- end column 3-->
           <div class="col-sm-3">
             <h4 class="uo">Univ. of Oregon</h4>
             <ul>
@@ -95,6 +87,18 @@
               <li>Matlab</li>
               <li>Python</li>
               <li>Ruby</li>
+            </ul>
+          </div><!-- end column 3-->
+          <div class="col-sm-3">
+            <h4>Independent Study</h4>
+            <ul>
+              <li>Full stack Javascript</li>
+              <li>Express for node.js</li>
+              <li>Forever for node.js</li>
+              <li>Swig for node.js</li>
+              <li>Console and git</li>
+              <li>Cygwin/Package Management</li>
+              <li>Photoshop</li>
             </ul>
           </div><!-- end column 4-->
         </div><!-- end row-->
