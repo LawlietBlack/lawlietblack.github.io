@@ -94,12 +94,10 @@ JUMBOTRON
 .jtron {
   padding-right: 0;
   padding-left: 0;
-  background-image:url('../img/code.jpg');
-  margin:0 auto 40px;
-  height: 140px;
-  background-repeat: no-repeat;
+  background: #222 url('../img/code.jpg') no-repeat fixed center ;
   background-size: cover;
-  background-color: black;
+  margin:0 auto 0;
+  height: 140px;
 }
 .jtron h1 {
   margin-top: 20px;
