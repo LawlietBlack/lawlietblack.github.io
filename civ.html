@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Civilization V Leaders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/fonts/shift.css" rel="stylesheet" type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type='text/css'>
@@ -10,18 +11,21 @@
     <link rel="stylesheet" href="css/civ.css" type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link rel="stylesheet" href='src/jquery-ui/jquery-ui.min.css'>
+    <link rel="stylesheet" href='src/jquery-ui/jquery-ui.structure.min.css'>
+    <link rel="stylesheet" href="src/jquery-ui/jquery-ui.theme.min.css">
   </head>
   <body data-ng-app="civApp">
     <header>
       <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li class="spacer"></li>
-        <li class="right"><a href="contact.html">Contact</a></li>
-        <li class="right"><a href="about.html">About</a></li>
+        <ul>
+          <li class="ui-state-default"><a href="index.html">Home</a></li>
+          <li class="ui-state-default"><a href="portfolio.html">Portfolio</a></li>
+          <li class="ui-state-default"><a href="projects.html">Projects</a></li>
+          <li class="ui-state-default spacer"></li>
+          <li class="ui-state-default" class="right"><a href="contact.html">Contact</a></li>
+          <li class="ui-state-default" class="right"><a href="about.html">About</a></li>
+        </ul>
       </nav>
     </header>
     <div class="jumbotron">
@@ -74,7 +78,43 @@
     </footer>
 
     <!--jQuery and modules-->
-    <script src="js/civ.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="src/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+      var main = function() {
+        $('.banner').click(function(){
+            $(this).next().slideToggle("fast");
+        });
+        $('.search input').keyup(function(){
+          var $search = $(this).val().toLowerCase();
+          console.log("search for: "+$search);
+          $('.desc').hide();
+          $('.banner .civname').each(function(){
+            $(this).parent().show();
+            if ($search==='') {
+              $(this).parent().show();
+            }else if($(this).text().toLowerCase().search($search) >= 0||$(this).next().next().text().toLowerCase().search($search) >= 0) {
+            } else {
+              $(this).parent().hide();
+            }
+          });
+        });
+        $('.random button').click(function(){
+          var $numCivs = $('.banner').length;
+          var random = Math.floor(Math.random()*($numCivs));
+          $('.desc').hide();
+          $('.banner').hide();
+          console.log(random+": random civ is "+ $('.banner .civname').eq(random).text());
+          $('.banner').eq(random).show();
+          
+        });
+      };
+
+      $(document).ready(main);
+
+      var civApp = angular.module("civApp",[]);
+    </script>
     <!--controllers-->
     <script src="js/controllers/CivController.js"></script>
   </body>

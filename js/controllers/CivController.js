@@ -14,7 +14,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique American Bomber.<br />It is more difficult for enemy anti-aircraft and fighters to target and receives a bonus when attacking enemy cities.<br />Cost: 375 <img src="img/civ/production.png"><br />Strength: 70<img src="img/civ/ranged.png"><br />Range: 10<br /> Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Minuteman',
 		unique2icon: 'minuteman.png',
-		unique2desc: 'Unique American Musketman. <br />This Unit may move through rough ground as though it were flat, receives a bonus when fighting in rough terrain, and earns points toward a <img src="img/civ/golden_age.png"> Golden Age when it defeats an enemy.<br />Cost: 150 <img src="img/civ/production.png"> or 300 <img src="img/civ/faith.png"><br />Strength: 24 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
+		unique2desc: 'Unique American Musketman. <br />This Unit may move through rough ground as though it were flat, receives a bonus when fighting in rough terrain, and earns points toward a <img src="img/civ/golden_age.png"> Golden Age when it defeats an enemy.<br />Cost: 150 <img src="img/civ/production.png"> or 300 <img src="img/civ/faith.png"><br />Strength: 24 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Arabia',
 		civIcon:'arabia.png',
@@ -30,7 +30,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Arabian Market.<br />Cost: 100 <img src="img/civ/production.png"> or 500 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/gold.png">Gold<br />+25\% <img src="img/civ/gold.png"> Gold per turn<br />Provides 1 extra copy of each improved luxury resource near this City. Each source of <img src="img/civ/oil.png"> Oil and each Oasis provides +2 <img src="img/civ/gold.png"> Gold.',
 		unique2name: 'Camel Archer',
 		unique2icon: 'camelarcher.png',
-		unique2desc: 'Unique Arabian Knight.<br />Fast Medieval ranged Unit, weak to Pikemen. Only the Arabians may build it. It is a ranged unit, unlike the Knight which it replaces.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 17 <img src="img/civ/strength.png">or 21 <img src="img/civ/ranged.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Arabian Knight.<br />Fast Medieval ranged Unit, weak to Pikemen. Only the Arabians may build it. It is a ranged unit, unlike the Knight which it replaces.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 17 <img src="img/civ/strength.png">or 21 <img src="img/civ/ranged.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Assyria',
 		civIcon:'assyria.png',
@@ -46,7 +46,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Assyrian Library.<br />Cost: 75 <img src="img/civ/production.png"> or 320 <img src="img/civ/gold.png"><br />Has a slot for a Great Work of Writing which, when filled, gives extra XP to trained Units.',
 		unique2name: 'Siege Tower',
 		unique2icon: 'siegetower.png',
-		unique2desc: 'Unique Assyrian Catapult<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 12 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Assyrian Catapult<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 12 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Austria',
 		civIcon:'austria.png',
@@ -62,7 +62,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Austrian Windmill<br />Cost: 250 <img src="img/civ/production.png"> or 1000 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/production.png"> Production<br />+5% <img src="img/civ/production.png"> Production per turn<br />+25% <img src="img/civ/great_people.png"> Great People generation in this City.<br />',
 		unique2name: 'Hussar ',
 		unique2icon: 'hussar.png',
-		unique2desc: 'Unique Austrian Cavalry<br />They are faster than cavalry, and start with Promotions that give them +1 Sight and increases their bonus when making a Flank Attack by 50%.<br />Cost: 255 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Austrian Cavalry<br />They are faster than cavalry, and start with Promotions that give them +1 Sight and increases their bonus when making a Flank Attack by 50%.<br />Cost: 255 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Aztecs',
 		civIcon:'aztec.png',
@@ -78,7 +78,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Aztec Water Mill<br />Cost: 75 <img src="img/civ/production.png"> or 400 <img src="img/civ/gold.png"><br />+15% <img src="img/civ/food.png"> Food. <br />Each worked Lake tile provides +2 <img src="img/civ/food.png"> Food.<br />City must be built next to a River or Lake.',
 		unique2name: 'Jaguar',
 		unique2icon: 'jaguar.png',
-		unique2desc: 'Unique Aztec Warrior<br /> This Unit fights more effectively in Jungle and heals damage when it kills an enemy Unit.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Aztec Warrior<br /> This Unit fights more effectively in Jungle and heals damage when it kills an enemy Unit.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Babylon',
 		civIcon:'babylon.png',
@@ -94,7 +94,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Babylonian Wall<br />Cost: 65 <img src="img/civ/production.png"> or 360 <img src="img/civ/gold.png"><br />The Walls of Babylon increase the damage output of all the city\'s ranged attacks and increase the city\'s defense.',
 		unique2name: 'Bowman',
 		unique2icon: 'bowman.png',
-		unique2desc: 'Unique Babylonian Archer<br /> The Bowman can better withstand melee attacks than the standard Archer available to other civs.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 7 <img src="img/civ/strength.png"> or 9 <img src="img/civ/ranged.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Babylonian Archer<br /> The Bowman can better withstand melee attacks than the standard Archer available to other civs.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 7 <img src="img/civ/strength.png"> or 9 <img src="img/civ/ranged.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Brazil',
 		civIcon:'brazil.png',
@@ -110,7 +110,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Brazillian Tile Improvement<br />May only be built on Jungle<br /> +2 <img src="img/civ/gold.png"> Gold<br />+2 <img src="img/civ/culture.png"> Culture  after Acoustics',
 		unique2name: 'Pracinha',
 		unique2icon: 'pracinha.png',
-		unique2desc: 'Unique Brazillian Infantry.<br />Earns points toward a <img src="img/civ/golden_age.png"> Golden Age when it defeats an enemy.<br />Cost: 375 <img src="img/civ/production.png"> or 750 <img src="img/civ/faith.png"><br />Strength:70<img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Brazillian Infantry.<br />Earns points toward a <img src="img/civ/golden_age.png"> Golden Age when it defeats an enemy.<br />Cost: 375 <img src="img/civ/production.png"> or 750 <img src="img/civ/faith.png"><br />Strength:70<img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Byzantium',
 		civIcon:'byzantium.png',
@@ -126,7 +126,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Byzantine Trireme<br />Dominant Ancient Era Naval Unit used to own the seas through the Classic Era with its ranged attack.<br />Cost: 56 <img src="img/civ/production.png"><br />Strength: 8 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"><br />Movement: 4 <img src="img/civ/movement.png">',
 		unique2name: 'Cataphract',
 		unique2icon: 'cataphract.png',
-		unique2desc: 'Unique Byzantine Horseman<br />This Unit has a higher Strength, defends better, and attacks cities more effectively than the Horseman which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 15 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Byzantine Horseman<br />This Unit has a higher Strength, defends better, and attacks cities more effectively than the Horseman which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 15 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Carthage',
 		civIcon:'carthage.png',
@@ -142,7 +142,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Carthagian Trireme<br >Strong Ancient Era Naval Unit used to dominate the seas through melee attacks on naval units and cities.<br />Cost: 45 <img src="img/civ/production.png"><br />Strength: 13 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">',
 		unique2name: 'African Forest Elephant',
 		unique2icon: 'forestelephant.png',
-		unique2desc: 'Unique Carthagian Horseman<br >This Unit has a higher <img src="img/civ/strength.png"> Combat Strength than the Horseman which it replaces and strikes fear into nearby enemy units. Helps produce Great Generals more quickly.<br />Cost: 100 <img src="img/civ/production.png"> or 200 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Carthagian Horseman<br >This Unit has a higher <img src="img/civ/strength.png"> Combat Strength than the Horseman which it replaces and strikes fear into nearby enemy units. Helps produce Great Generals more quickly.<br />Cost: 100 <img src="img/civ/production.png"> or 200 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Celts',
 		civIcon:'celts.png',
@@ -158,7 +158,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Celtic Opera House<br />Cost: 200 <img src="img/civ/production.png"> or 740 <img src="img/civ/gold.png"><br />+3 <img src="img/civ/happiness.png"> Happiness<br />+1 <img src="img/civ/culture.png"> Culture<br />1 Great Work of Music slot',
 		unique2name: 'Pictish Warrior',
 		unique2icon: 'pictishwarrior.png',
-		unique2desc: 'Unique Celtic Spearman<br />Has a combat bonus outside of friendly territory and can pillage enemy improvements at no additional movement cost. Earns 50% of opponents\' strength as peace Faith for kills.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 11 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Celtic Spearman<br />Has a combat bonus outside of friendly territory and can pillage enemy improvements at no additional movement cost. Earns 50% of opponents\' strength as peace Faith for kills.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 11 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'China',
 		civIcon:'china.png',
@@ -174,7 +174,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Chinese Library<br />Cost: 75 <img src="img/civ/production.png"> or 400 <img src="img/civ/gold.png"><br />In addition to the Science boost of the library, it also provides a boost to the city\'s intake of <img src="img/civ/gold.png"> Gold.<br />+2 <img src="img/civ/gold.png"> Gold<br />+1 <img src="img/civ/science.png"> Science per 2 <img src="img/civ/citizen.png"> Citizens',
 		unique2name: 'Chu-Ko-Nu',
 		unique2icon: 'chukonu.png',
-		unique2desc: 'Unique Chinese Crossbowman<br />This Unit may fire twice in one turn.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 13 <img src="img/civ/strength.png"> or 14 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Chinese Crossbowman<br />This Unit may fire twice in one turn.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 13 <img src="img/civ/strength.png"> or 14 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Denmark',
 		civIcon:'denmark.png',
@@ -190,7 +190,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Danish Longswordsman<br />Strong, front-line land Unit of the Medieval Era that specializes in attacks from the sea. Replaces the Longswordsman, but is available earlier.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 21 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">',
 		unique2name: 'Norwegian Ski Infantry',
 		unique2icon: 'skiinfantry.png',
-		unique2desc: 'Unique Danish Rifleman<br />Strong, front-line land Unit of the mid-game that specializes in operating in Snow, Tundra and Hills.<br />Cost: 225 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Danish Rifleman<br />Strong, front-line land Unit of the mid-game that specializes in operating in Snow, Tundra and Hills.<br />Cost: 225 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Egypt',
 		civIcon:'egypt.png',
@@ -206,7 +206,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Egyptian Temple<br />Cost: 100 <img src="img/civ/production.png"> or 500 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/happiness.png"> Happiness<br />Requires no gold Gold maintenance.<br />Should this city be captured, the amount of <img src="img/civ/gold.png"> Gold plundered by the enemy is doubled.',
 		unique2name: 'War Chariot',
 		unique2icon: 'warchariot.png',
-		unique2desc: 'Unique Egyptian Chariot Archer<br />Faster than the Chariot Archer and does not require horses Horses to be built.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 6 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Egyptian Chariot Archer<br />Faster than the Chariot Archer and does not require horses Horses to be built.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 6 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'England',
 		civIcon:'england.png',
@@ -222,7 +222,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique English Crossbowman<br />This Unit has 1 additional range compared to the Crossbowman, which it replaces.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 13 <img src="img/civ/strength.png"> or 18 <img src="img/civ/ranged.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Ship of the Line',
 		unique2icon: 'shipoftheline.png',
-		unique2desc: 'Unique English Frigate<br />The Ship of the Line has a slightly higher Ranged Combat strength than the Frigate, and it\'s slightly cheaper to produce. It can see one hex farther than the Frigate, allowing it to spot enemies in a significantly larger section of ocean.<br />Cost: 170 <img src="img/civ/production.png"><br />Strength: 30 <img src="img/civ/strength.png"> or 35 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique English Frigate<br />The Ship of the Line has a slightly higher Ranged Combat strength than the Frigate, and it\'s slightly cheaper to produce. It can see one hex farther than the Frigate, allowing it to spot enemies in a significantly larger section of ocean.<br />Cost: 170 <img src="img/civ/production.png"><br />Strength: 30 <img src="img/civ/strength.png"> or 35 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Ethiopia',
 		civIcon:'ethiopia.png',
@@ -238,7 +238,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Ethiopian Monument<br />Cost: 40 <img src="img/civ/production.png"> or 200 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/culture.png"> Culture<br />+2 <img src="img/civ/faith.png"> Faith',
 		unique2name: 'Mehal Sefari',
 		unique2icon: 'mehal.png',
-		unique2desc: 'Unique Ethiopian Rifleman<br />They start with promotions that give them bonuses fighting in rough terrain and near their capital. They are slightly cheaper to build than the Rifleman that they replace.<br />Cost: 200 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Ethiopian Rifleman<br />They start with promotions that give them bonuses fighting in rough terrain and near their capital. They are slightly cheaper to build than the Rifleman that they replace.<br />Cost: 200 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'France',
 		civIcon:'france.png',
@@ -254,7 +254,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique French Tile Improvement<br />May only be built adjacent to a luxury resource, and not adjacent to another Chateau<br />+1 <img src="img/civ/gold.png"> Gold, +3 <img src="img/civ/gold.png"> Gold after Flight<br />+2 <img src="img/civ/culture.png"> Culture, +3 <img src="img/civ/culture.png"> Culture after Flight',
 		unique2name: 'Musketeer',
 		unique2icon: 'musketeer.png',
-		unique2desc: 'Unique French Musketman<br />This Unit has a higher Strength than the Musketman, which it replaces.<br />Cost: 150 <img src="img/civ/production.png"> or 300 <img src="img/civ/faith.png"><br />Strength: 28 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique French Musketman<br />This Unit has a higher Strength than the Musketman, which it replaces.<br />Cost: 150 <img src="img/civ/production.png"> or 300 <img src="img/civ/faith.png"><br />Strength: 28 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Germany',
 		civIcon:'germany.png',
@@ -270,7 +270,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique German Bank<br />Cost: 200 <img src="img/civ/production.png"> or 740 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/gold.png"> Gold<br />+25% <img src="img/civ/gold.png"> Gold per turn<br />+5% <img src="img/civ/production.png"> Production for each Trade Route your civilization has with a City-State.',
 		unique2name: 'Panzer',
 		unique2icon: 'panzer.png',
-		unique2desc: 'Unique German Tank<br />This Unit is stronger and has 1 additional movement compared to the Tank, which it replaces.<br />Cost: 375 <img src="img/civ/production.png"> or 750 <img src="img/civ/faith.png"><br />Strength: 80 <img src="img/civ/strength.png"><br />Movement: 6 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique German Tank<br />This Unit is stronger and has 1 additional movement compared to the Tank, which it replaces.<br />Cost: 375 <img src="img/civ/production.png"> or 750 <img src="img/civ/faith.png"><br />Strength: 80 <img src="img/civ/strength.png"><br />Movement: 6 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Greece',
 		civIcon:'greece.png',
@@ -286,7 +286,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Greek Horseman<br />This Unit is faster, has a higher Strength and helps produce Great Generals more quickly than the Horseman which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">',
 		unique2name: 'Hoplite',
 		unique2icon: 'hoplite.png',
-		unique2desc: 'Unique Greek Spearman<br /> This Unit has a higher Strength than the Spearman which it replaces.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 13 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Greek Spearman<br /> This Unit has a higher Strength than the Spearman which it replaces.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 13 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'India',
 		civIcon:'india.png',
@@ -302,7 +302,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Indian Castle<br />Cost: 150 <img src="img/civ/production.png"> or 680 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/culture.png"> Culture<br />+2 <img src="img/civ/tourism.png"> Tourism after Flight',
 		unique2name: 'War Elephant',
 		unique2icon: 'warelephant.png',
-		unique2desc: 'Unique Indian Chariot Archer<br />This Unit has a higher Combat and Ranged Strength than the Chariot Archer, which it replaces.<br />Cost: 70 <img src="img/civ/production.png"> or 140 <img src="img/civ/faith.png"><br />Strength: 9 <img src="img/civ/strength.png"> or 11 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 3 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Indian Chariot Archer<br />This Unit has a higher Combat and Ranged Strength than the Chariot Archer, which it replaces.<br />Cost: 70 <img src="img/civ/production.png"> or 140 <img src="img/civ/faith.png"><br />Strength: 9 <img src="img/civ/strength.png"> or 11 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 3 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Huns',
 		civIcon:'huns.png',
@@ -318,7 +318,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Hunnic Spearman Replacement<br />Siege unit deadly at melee attacks versus cities.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 10 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Horse Archer',
 		unique2icon: 'horsearcher.png',
-		unique2desc: 'Unique Hunnic <br /> They are slightly stronger in defense than the Chariot Archer and can move through rough terrain without the Chariot Archer\'s movement penalty. They also start with the Accuracy I promotion. Does not require horses<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 7 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"> <br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Hunnic <br /> They are slightly stronger in defense than the Chariot Archer and can move through rough terrain without the Chariot Archer\'s movement penalty. They also start with the Accuracy I promotion. Does not require horses<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 7 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"> <br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Inca',
 		civIcon:'inca.png',
@@ -334,7 +334,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Incan Tile Improvement<br />May only be built on hills<br />+1 <img src="img/civ/food.png"> Food<br />+1 <img src="img/civ/food.png">additional Food for every adjacent mountain tile<br />',
 		unique2name: 'Slinger',
 		unique2icon: 'slinger.png',
-		unique2desc: 'Unique Incan Archer<br />Possesses a promotion that gives it a good chance to withdraw to the rear before an enemy melee attack can occur.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 4 <img src="img/civ/strength.png"> or 7 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Incan Archer<br />Possesses a promotion that gives it a good chance to withdraw to the rear before an enemy melee attack can occur.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 4 <img src="img/civ/strength.png"> or 7 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Indonesia',
 		civIcon:'indonesia.png',
@@ -350,7 +350,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Indonesian Garden<br />Cost: 120 <img src="img/civ/production.png"> or 580 <img src="img/civ/gold.png"><br />Unlike the Garden the Candi does not have to be built next to a River or Lake.<br />+2 <img src="img/civ/faith.png"> Faith for each World Religion that has at least 1 follower in the city<br />+25% <img src="img/civ/great_people.png"> Great People generation in this City',
 		unique2name: 'Kris Swordsman',
 		unique2icon: 'krisswordsman.png',
-		unique2desc: 'Unique Indonesian Swordsman<br />Has a mystical weapon whose abilities will be discovered the first time it is used in combat.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Indonesian Swordsman<br />Has a mystical weapon whose abilities will be discovered the first time it is used in combat.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Iroquois',
 		civIcon:'iroquois.png',
@@ -366,7 +366,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Iroquois Workshop<br />Cost: 100 <img src="img/civ/production.png"> or 500 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/production.png"> Production<br />+1 <img src="img/civ/production.png"> Production from each worked Forest tile.',
 		unique2name: 'Mohawk Warrior',
 		unique2icon: 'mohawkwarrior.png',
-		unique2desc: 'Unique Iroquois Swordsman<br />This Unit receives a major bonus when fighting on Forest and Jungle, unlike the Swordsman which it replaces. Also, unlike the Swordsman, it does not require Iron to build<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Iroquois Swordsman<br />This Unit receives a major bonus when fighting on Forest and Jungle, unlike the Swordsman which it replaces. Also, unlike the Swordsman, it does not require Iron to build<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 14 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Japan',
 		civIcon:'japan.png',
@@ -382,7 +382,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Japanese Longswordsman<br />This Unit fights more effectively and helps produce Great Generals more quickly than the Longswordsman, which it replaces. Embarked Samurai can build Fishing Boats in one turn without being consumed.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 21 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Zero',
 		unique2icon: 'zero.png',
-		unique2desc: 'Unique Japanese Fighter<br />This Unit has a bonus against other Fighters and does not require Oil.<br />Cost: 375 <img src="img/civ/production.png"><br />Strength: 45 <img src="img/civ/ranged.png"><br />Range: 8 <br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Japanese Fighter<br />This Unit has a bonus against other Fighters and does not require Oil.<br />Cost: 375 <img src="img/civ/production.png"><br />Strength: 45 <img src="img/civ/ranged.png"><br />Range: 8 <br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Korea',
 		civIcon:'korea.png',
@@ -398,7 +398,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Korean Caravel<br />Heavily-armored naval unit of the Renaissance Era that is extremely difficult to kill. However Turtle Ships cannot enter deep ocean hexes outside of the city borders.<br />Cost: 120 <img src="img/civ/production.png"><br />Strength: 36 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">',
 		unique2name: 'Hwach\'a',
 		unique2icon: 'hwacha.png',
-		unique2desc: 'Unique Korean Trebuchet<br />Anti-personnel rocket unit of the Medieval Era. Strong against land units, but weak against cities. <br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 11 <img src="img/civ/strength.png"> or 26 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Korean Trebuchet<br />Anti-personnel rocket unit of the Medieval Era. Strong against land units, but weak against cities. <br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 11 <img src="img/civ/strength.png"> or 26 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Maya',
 		civIcon:'maya.png',
@@ -414,7 +414,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Mayan Shrine.<br />Cost: 40 <img src="img/civ/production.png"> or 250 <img src="img/civ/gold.png"><br />Increases the research Science and peace Faith of a city, speeding Research and the civilization\'s acquisition of Religions.<br />+2<img src="img/civ/faith.png" class="ico">Faith<br />+2<img src="img/civ/science.png" class="ico">Science',
 		unique2name: 'Atlatlist',
 		unique2icon: 'atlatlist.png',
-		unique2desc: 'Unique Mayan Archer<br /> It is cheaper and available sooner than the Archer. <br />Cost: 36 <img src="img/civ/production.png"> or 72 <img src="img/civ/faith.png"><br />Strength:7<img src="img/civ/ranged.png"> or 5<img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Mayan Archer<br /> It is cheaper and available sooner than the Archer. <br />Cost: 36 <img src="img/civ/production.png"> or 72 <img src="img/civ/faith.png"><br />Strength:7<img src="img/civ/ranged.png"> or 5<img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Mongolia',
 		civIcon:'mongolia.png',
@@ -430,7 +430,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Mongolian Great General<br />While providing the same combat bonuses as a normal Great General, the Khan moves at an increased rate and can heal adjacent units.',
 		unique2name: 'Keshik',
 		unique2icon: 'keshik.png',
-		unique2desc: 'Unique Mongolian Knight<br />It possesses a strong ranged attack, increased movement rate, and earns promotions 50% faster. Unit battles also contribute double the amount of points towards earning a Great General.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 15 <img src="img/civ/strength.png"> or 16 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Mongolian Knight<br />It possesses a strong ranged attack, increased movement rate, and earns promotions 50% faster. Unit battles also contribute double the amount of points towards earning a Great General.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 15 <img src="img/civ/strength.png"> or 16 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Morocco',
 		civIcon:'morocco.png',
@@ -446,7 +446,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Moroccan Tile Improvement<br />May only be built on desert<br />+1 <img src="img/civ/food.png"> Food<br />+1 <img src="img/civ/production.png"> Prodction<br />+1 <img src="img/civ/gold.png"> Gold',
 		unique2name: 'Berber Cavalry',
 		unique2icon: 'berbercavalry.png',
-		unique2desc: 'Unique Moroccan Cavalry<br />Cost: 255 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Receives combat bonuses when fighting both in Desert tiles and Moroccan territory.<br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Moroccan Cavalry<br />Cost: 255 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Receives combat bonuses when fighting both in Desert tiles and Moroccan territory.<br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Netherlands',
 		civIcon:'netherlands.png',
@@ -462,7 +462,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Dutch Tile Improvement<br />May only be built on Marsh or Flood Plains<br />+3 <img src="img/civ/food.png"> Food<br />+1 <img src="img/civ/production.png"> Production after Economics<br />+2 <img src="img/civ/gold.png"> Gold after Economics',
 		unique2name: 'Sea Beggar',
 		unique2icon: 'seabeggar.png',
-		unique2desc: 'Unique Dutch Privateer<br />Heals outside friendly territory. Starts with the first two Coastal Raider promotions allowing it to earn gold from attacking coastal cities. May capture any enemy naval units it defeats as prize ships.<br />Cost: 150 <img src="img/civ/production.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Dutch Privateer<br />Heals outside friendly territory. Starts with the first two Coastal Raider promotions allowing it to earn gold from attacking coastal cities. May capture any enemy naval units it defeats as prize ships.<br />Cost: 150 <img src="img/civ/production.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Ottomans',
 		civIcon:'ottoman.png',
@@ -478,7 +478,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Ottoman Musketman<br />This Unit is stronger on offense and heals when it kills an enemy.<br />Cost: 150 <img src="img/civ/production.png"> or 300 <img src="img/civ/faith.png"><br />Strength: 24 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Sipahi',
 		unique2icon: 'sipahi.png',
-		unique2desc: 'Unique Ottoman Lancer<br />This Unit is faster and can see further than the Lancer, which it replaces.<br />Cost: 185 <img src="img/civ/production.png"> or 370 <img src="img/civ/faith.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Ottoman Lancer<br />This Unit is faster and can see further than the Lancer, which it replaces.<br />Cost: 185 <img src="img/civ/production.png"> or 370 <img src="img/civ/faith.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Persia',
 		civIcon:'persia.png',
@@ -494,7 +494,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Persian Bank<br />Cost: 200 <img src="img/civ/production.png"> or 780 <img src="img/civ/gold.png"><br />+2 <img src="img/civ/happiness.png"> Happiness<br />+3 <img src="img/civ/gold.png"> Gold<br />+25% <img src="img/civ/gold.png"> Gold per turn',
 		unique2name: 'Immortal',
 		unique2icon: 'immortal.png',
-		unique2desc: 'Unique Persian Spearman<br />This Unit has a higher Strength and heals more quickly than the Spearman, which it replaces.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 12 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Persian Spearman<br />This Unit has a higher Strength and heals more quickly than the Spearman, which it replaces.<br />Cost: 56 <img src="img/civ/production.png"> or 112 <img src="img/civ/faith.png"><br />Strength: 12 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Poland',
 		civIcon:'poland.png',
@@ -510,7 +510,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Polish Stable.<br />Cost: 75 <img src="img/civ/production.png"> or 320 <img src="img/civ/gold.png"><br />+15% <img src="img/civ/production.png"> Production and +15 XP for Mounted Units. <br />Each Pasture worked by this City produces +1 <img src="img/civ/production.png"> Production and +1 <img src="img/civ/gold.png"> Gold.',
 		unique2name: 'Winged Hussar',
 		unique2icon: 'wingedhussar.png',
-		unique2desc: 'Unique Polish Lancer.<br />Forces defenders to retreat when it inflicts more damage than it receives. <br />Cost: 185 <img src="img/civ/production.png"> or 370 <img src="img/civ/faith.png"><br />Strength: 28 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Polish Lancer.<br />Forces defenders to retreat when it inflicts more damage than it receives. <br />Cost: 185 <img src="img/civ/production.png"> or 370 <img src="img/civ/faith.png"><br />Strength: 28 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Polynesia',
 		civIcon:'polynesia.png',
@@ -526,7 +526,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Polynesian Tile Improvement<br />May only be build on coastal tiles<br />+1 <img src="img/civ/culture.png"> Culture<br />+1 <img src="img/civ/culture.png"> additional Culture for each adjacent Moai<br />+1 <img src="img/civ/gold.png"> Gold after Flight',
 		unique2name: 'Maori Warrior',
 		unique2icon: 'maoriwarrior.png',
-		unique2desc: 'Unique Polynesian Warrior<br />Ancient Era unit that strikes fear into nearby enemies making them less effective in combat.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Polynesian Warrior<br />Ancient Era unit that strikes fear into nearby enemies making them less effective in combat.<br />Cost: 40 <img src="img/civ/production.png"> or 80 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Portugal',
 		civIcon:'portugal.png',
@@ -542,7 +542,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Portuguese Tile Improvement<br />May only be built in a City-State\'s lands, on a coastal tile without a resource. It provides one copy of each Luxury Resource type that the City-State has connected, regardless of your status with that City-State, but that copy cannot be traded.',
 		unique2name: 'Nau',
 		unique2icon: 'nau.png',
-		unique2desc: 'Unique Portuguese Caravel<br />It has more <img src="img/civ/movement.png"> Movement than the Caravel, which it replaces, and can perform a one-time ability next to foreign lands to earn <img src="img/civ/gold.png"> Gold and XP.<br />Cost: 120 <img src="img/civ/production.png"> or  <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Portuguese Caravel<br />It has more <img src="img/civ/movement.png"> Movement than the Caravel, which it replaces, and can perform a one-time ability next to foreign lands to earn <img src="img/civ/gold.png"> Gold and XP.<br />Cost: 120 <img src="img/civ/production.png"> or  <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 5 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Rome',
 		civIcon:'rome.png',
@@ -558,7 +558,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Roman Catpult<br />This Unit has a higher <img src="img/civ/ranged.png"> Ranged Combat Strength than the Catapult, which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"> or 10 <img src="img/civ/ranged.png"><br />Range: 2<br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Legion',
 		unique2icon: 'legion.png',
-		unique2desc: 'Unique Roman Swordsman<br />This Unit has a higher Strength than the Swordsman, which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 17 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Roman Swordsman<br />This Unit has a higher Strength than the Swordsman, which it replaces.<br />Cost: 75 <img src="img/civ/production.png"> or 150 <img src="img/civ/faith.png"><br />Strength: 17 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Russia',
 		civIcon:'russia.png',
@@ -574,7 +574,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Russian Barracks<br />Cost: 75 <img src="img/civ/production.png"> or 400 <img src="img/civ/gold.png"><br />+15 XP for all Units.<br /><img src="img/civ/culture.png"> Culture and <img src="img/civ/gold.png"> Gold costs of acquiring new tiles reduced by 25% in this city.',
 		unique2name: 'Cossack',
 		unique2icon: 'cossack.png',
-		unique2desc: 'Unique Russian Cavalry<br />This Unit has a combat bonus when fighting enemies that have already taken damage.<br />Cost: 225 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Russian Cavalry<br />This Unit has a combat bonus when fighting enemies that have already taken damage.<br />Cost: 225 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Shoshone',
 		civIcon:'shoshone.png',
@@ -590,7 +590,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Shoshone Scout<br />Excellent at exploring and fearsome in combat. It possesses a promotion that allows it to choose the benefit when uncovering an ancient ruin.<br />Cost: 45 <img src="img/civ/production.png"> or 50 <img src="img/civ/faith.png"><br />Strength: 8 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Comanche Riders',
 		unique2icon: 'comancheriders.png',
-		unique2desc: 'Unique Shoshone Cavalry<br />Cheaper and faster than the base unit.<br />Cost: 200 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Shoshone Cavalry<br />Cheaper and faster than the base unit.<br />Cost: 200 <img src="img/civ/production.png"> or 450 <img src="img/civ/faith.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Siam',
 		civIcon:'siam.png',
@@ -606,7 +606,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Siamese University<br />Cost: 160 <img src="img/civ/production.png"> or 200 <img src="img/civ/faith.png"><br />+3 <img src="img/civ/culture.png"> Culture<br />+2 <img src="img/civ/science.png"> from jungle tiles<br />+33% <img src="img/civ/science.png"> Science',
 		unique2name: 'Naresuan\'s Elephant',
 		unique2icon: 'naresuan.png',
-		unique2desc: 'Unique Siamese Knight<br />This Unit receives a bonus against other mounted Units and has a higher <img src="img/civ/strength.png"> Combat Strength than the Knight, which it replaces.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Siamese Knight<br />This Unit receives a bonus against other mounted Units and has a higher <img src="img/civ/strength.png"> Combat Strength than the Knight, which it replaces.<br />Cost: 120 <img src="img/civ/production.png"> or 240 <img src="img/civ/faith.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 3 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Songhai',
 		civIcon:'songhai.png',
@@ -622,7 +622,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Songhai Temple<br />Cost: 100 <img src="img/civ/production.png"> or 500 <img src="img/civ/gold.png"><br /> The Mud Pyramid Mosque greatly increases the city\'s culture Culture, speeding the growth of the city\'s territory and the civilization\'s acquisition of Social Policies. The Mud Pyramid Mosque has no maintenance costs.<br />+2 <img src="img/civ/culture.png"> Culture<br />+2 <img src="img/civ/faith.png"> Faith',
 		unique2name: 'Mandekalu Cavalry',
 		unique2icon: 'mandekalucavalry.png',
-		unique2desc: 'Unique Songhai Knight<br />This Unit is not penalized when attacking Cities, unlike the Knight which it replaces.<br />Cost: 110 <img src="img/civ/production.png"> or 220 <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Songhai Knight<br />This Unit is not penalized when attacking Cities, unlike the Knight which it replaces.<br />Cost: 110 <img src="img/civ/production.png"> or 220 <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Spain',
 		civIcon:'spain.png',
@@ -638,7 +638,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Spanish Musketman<br /> This Unit has a higher Strength than the Musketman which it replaces, as well as a Bonus vs Mounted promotion.<br />Cost: 160 <img src="img/civ/production.png"> or 320 <img src="img/civ/faith.png"><br />Strength: 26 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
 		unique2name: 'Conquistador',
 		unique2icon: 'conquistador.png',
-		unique2desc: 'Unique Spanish Knight<br />It has extra visibility, the ability to found new cities on a foreign continents, the defensive embarkation promotion, and also suffers no penalty when attacking cities.<br />Cost: 135 <img src="img/civ/production.png"> or 270 <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Spanish Knight<br />It has extra visibility, the ability to found new cities on a foreign continents, the defensive embarkation promotion, and also suffers no penalty when attacking cities.<br />Cost: 135 <img src="img/civ/production.png"> or 270 <img src="img/civ/faith.png"><br />Strength: 20 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">'
 	}, {
 		civName:'Sweden',
 		civIcon:'sweden.png',
@@ -654,7 +654,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Swedish Lancer<br />Elite mounted Unit that specializes in working with Great Generals.<br />Cost: 185 <img src="img/civ/production.png"> or 370 <img src="img/civ/faith.png"><br />Strength: 25 <img src="img/civ/strength.png"><br />Movement: 4 <img src="img/civ/movement.png">',
 		unique2name: 'Carolean',
 		unique2icon: 'carolean.png',
-		unique2desc: 'Unique Swedish Rifleman<br />Starts with the March promotion that allows it to Heal every turn, even if it performs an action.<br />Cost: 225 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">',
+		unique2desc: 'Unique Swedish Rifleman<br />Starts with the March promotion that allows it to Heal every turn, even if it performs an action.<br />Cost: 225 <img src="img/civ/production.png"><br />Strength: 34 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}, { 
 		civName:'Venice',
 		civIcon:'venice.png',
@@ -670,7 +670,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Venician Great Merchant<br />Aside from the ability to Conduct a Trade Mission, the Merchant of Venice can purchase City-States outright, bringing them under Venetian control as a Puppet.',
 		unique2name: 'Great Galleass',
 		unique2icon: 'greatgalleass.png',
-		unique2desc: 'Unique Venician <br />Better at attacking and defending than the normal Galleass it replaces, but more expensive.<br />Cost: 110 <img src="img/civ/production.png"><br />Strength: 18 <img src="img/civ/strength.png"> or 20 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 3 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Venician <br />Better at attacking and defending than the normal Galleass it replaces, but more expensive.<br />Cost: 110 <img src="img/civ/production.png"><br />Strength: 18 <img src="img/civ/strength.png"> or 20 <img src="img/civ/ranged.png"><br />Range: 2 <br />Movement: 3 <img src="img/civ/movement.png">'
 	}, {
 		civName:'The Zulus',
 		civIcon:'zulu.png',
@@ -686,7 +686,7 @@ civApp.controller('CivController', ['$scope', function($scope){
 		unique1desc: 'Unique Zulu Barracks<br />Cost: 75 <img src="img/civ/production.png"> or 400 <img src="img/civ/faith.png"><br />Grants a unique set of promotions to pre-gunpowder melee units created within the city. These include faster movement, and greater combat strength.',
 		unique2name: 'Impi',
 		unique2icon: 'impi.png',
-		unique2desc: 'Unique Zulu Pikeman<br />Before engaging in melee, the Impi performs a spear throw attack that can damage or kill the enemy unit before making contact.<br />Cost: 90 <img src="img/civ/production.png"> or 180 <img src="img/civ/faith.png"><br />Strength: 16 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">', 
+		unique2desc: 'Unique Zulu Pikeman<br />Before engaging in melee, the Impi performs a spear throw attack that can damage or kill the enemy unit before making contact.<br />Cost: 90 <img src="img/civ/production.png"> or 180 <img src="img/civ/faith.png"><br />Strength: 16 <img src="img/civ/strength.png"><br />Movement: 2 <img src="img/civ/movement.png">'
 	}];
 }]);
 
@@ -695,22 +695,3 @@ civApp.filter("sanitize", ["$sce", function($sce) {
 		return $sce.trustAsHtml(htmlCode);
 	};
 }]);
-
-/* Template Civ
-		civName:'',
-		civIcon:'',
-		leaderName: '',
-		leaderIcon: '',
-		colorlight: '',
-		colordark: '',
-		fontcolor: '',
-		abilityname: '',
-		ability: '',
-		unique1name: '',
-		unique1icon: '',
-		unique1desc: '',
-		unique2name: '',
-		unique2icon: '',
-		unique2desc: '<br />Cost:  <img src="img/civ/production.png"> or  <img src="img/civ/faith.png"><br />Strength:  <img src="img/civ/strength.png"><br />Movement:  <img src="img/civ/movement.png">', 
-	}, {
-*/
