@@ -1,8 +1,8 @@
 /************************************
 GENERAL
 *************************************/
-body {
-  background-color: #101010;
+main, body {
+  background-color: #242424;
 }
 h1, h2, h3, h4, h5, h6 {
   color:#888686;
@@ -27,11 +27,6 @@ ul {
   list-style: none;
 }
 
-.sectionTitle {
-  width:85%;
-  margin:40px auto 0;
-
-}
 
 /************************************
 NAVIGATION
@@ -94,7 +89,8 @@ JUMBOTRON
 .jtron {
   padding-right: 0;
   padding-left: 0;
-  background: #222 url('../img/code.jpg') no-repeat fixed center ;
+  background: linear-gradient(transparent, #1b5e20),
+              #222 url('../img/code.jpg') no-repeat fixed center;
   background-size: cover;
   margin:0 auto 0;
   height: 140px;
@@ -174,7 +170,61 @@ PAGE: PORTFOLIO
   background-color: #171717;
   position: relative;
 }
+paper-card {
+  float:left;
+  margin:20px;
+  width:350px;
 
+}
+paper-card .card-content {
+  background-color: #424b4b;
+  width:350px !important;
+  width:200px;
+  padding:10px;
+  margin:0;
+}
+paper-card img {
+  height:200px;
+  width:350px;
+  margin-bottom:-4px;
+}
+.avatar {
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background: green;
+  color: white;
+  line-height: 64px;
+  font-size: 30px;
+  text-align: center;
+}
+.fullstack {
+  background: #c25975;
+
+}
+
+.fancy .title {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  color: var(--paper-indigo-500);
+}
+
+.fancy img {
+  width: 100%;
+}
+
+.fancy .big {
+  font-size: 22px;
+  padding: 8px 0 16px;
+  color: var(--google-grey-500);
+}
+
+.fancy .medium {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
 
 
 /************************************
@@ -199,7 +249,7 @@ PAGE: PROJECTS
 select, #search, .survey, #output {
   width:100%;
   height:40px;
-  background-color: #222;
+  background-color: #101010;
   color:#fff;
   border: 1px solid black;
   font-size: 20px;
@@ -226,45 +276,16 @@ select, #search, .survey, #output {
 
 }
 
-/************************************
-PAGE: CONTACT
-*************************************/
-.contact {
-  width:80%;
-  margin:auto;
-  min-height: 300px;
-}
-.contact-info {
-  list-style:none;
-  padding:0;
-  margin:0;
-  font-size:0.9em;
-}
-.contact-info a {
-  display:block;
-  min-height:20px;
-  background-repeat:no-repeat;
-  background-size: 20px 20px;
-  padding:0 0 0 30px;
-  margin:0 0 10px;
-}
-.contact-info li.phone a {
-  background-image:url('../img/phone.png');
-}
-.contact-info li.mail a {
-  background-image:url('../img/mail.png');
-}
-.contact-info li.twitter a {
-  background-image:url('../img/twitter.png');
-}
-
 
 
 /************************************
 PAGE: ABOUT
 *************************************/
 .about {
-  font-size: 1.6rem;
+  margin-top:40px;
+}
+.about p {
+  font-size: 1rem;
 }
 .profile-photo {
   display:block;
@@ -283,29 +304,28 @@ PAGE: ABOUT
   font-family: 'Shift', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  padding-left:30px;
+  padding-left:30px !important;
   background-size:20px 20px;
   background-repeat:no-repeat;
 }
+
 .codecademy {
   background:url('../img/codecademy.png');
 }
 .treehouse {
-  background:url('../img/treehouse.png')
+  background:url('../img/treehouse.png');
 }
 .uo {
-  background:url('../img/uo.png')
+  background:url('../img/uo.png');
 }
-.udemy {
-  background:url('../img/udemy.png')
-}
+
 
 
 /************************************
 FOOTER
 *************************************/
 footer {
-  background-color:#101010; 
+  background-color: #242424;
   font-size:0.75em;
   text-align:center;
   clear:both;
