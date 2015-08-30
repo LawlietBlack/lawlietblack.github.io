@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kenneth Black | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/polymer-themes/area-51.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  </head>
+
+  <body data-ng-app="projectsApp">
+
+  <header>
+    <nav>
+      <div class="jtron">
+        <div class="container">
+          <h1>Kenneth Black</h1>
+          <p>Projects</p>
+        </div>
+      </div> <!-- end jtron-->
+      <paper-tabs selected="1">
+        <paper-tab link>
+          <a href="index.html" class="horizontal center-center layout">PORTFOLIO</a>
+        </paper-tab>
+        <paper-tab link>
+          <a href="projects.html" class="horizontal center-center layout">PROJECTS</a>
+        </paper-tab>
+        <paper-tab link>
+          <a href="updates.html" class="horizontal center-center layout">UPDATES</a>
+        </paper-tab>
+        <paper-tab link>
+          <a href="about.html" class="horizontal center-center layout">ABOUT</a>
+        </paper-tab>
+      </paper-tabs>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project" data-ng-controller="ProjectController">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>Here are a few of my current and ongoing projects.</p>
+        <form>
+          <select id="app-select">
+            <option>Apps</option>
+            <option>To Do List</option>
+            <option>Dice Rolling</option>
+            <option>Drawing App</option>
+            <option>Flickr Search</option>
+          </select>
+        </form>
+        <div id="project-output">
+          <dice class="app"></dice>
+          <todo class="app"></todo>
+          <drawing class="app"></drawing>
+          <flickr class="app"></flickr>
+          <treehouse class="app"></treehouse>
+        </div>
+      </div>
+    </div><!-- end project-->
+  </main>
+  <!--added angular JS to make it so the different apps are accessed from a drop-down menu-->
+  <footer>
+    <a href="https://twitter.com/Kenneth_R_Black"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon" /></a>
+    <a href="http://www.codecademy.com/lawlietblack"><img src="img/codecademy.png" alt="Codecademy Logo" class="social-icon" /></a>
+    <a href="https://teamtreehouse.com/kennethblack"><img src="img/treehouse.png" alt="Treehouse Logo" class="social-icon" /></a>
+    <a href="https://www.linkedin.com/in/kennethrblack"><img src="img/linkedin.png" alt="LinkedIn Logo" class="social-icon" /></a>
+    <a href="https://www.facebook.com/kenny.black.39750"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" /></a>
+    <p>&copy; 2015 Kenneth Black.</p>
+  </footer>
+  <!--modules-->
+  <script src="js/projectapp.js"></script>
+  <!-- controllers-->
+  <script src="js/controllers/ProjectController.js"></script>
+  <!--directives-->
+  <script src="js/directives/todo.js"></script>
+  <script src="js/directives/dice.js"></script>
+  <script src="js/directives/drawing.js"></script>
+  <script src="js/directives/flickr.js"></script>
+  <script src="js/directives/treehouse.js"></script>
+  <!--jQuery-->
+  <script src="js/projects.js"></script>
+</body>
+</html>

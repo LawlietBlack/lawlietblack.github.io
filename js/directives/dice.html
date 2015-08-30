@@ -1,0 +1,51 @@
+<!--DICE APP HTML-->
+	<div class="dice">
+		<form class="dice">
+		  <div>
+		    <h4>Dice Rolling!</h4>
+		    <label>Number of sides.</label>
+		      <input class="survey" type="text" value="" id="diceSides"><br />
+		    <label>Number of dice.</label>
+		      <input class="survey" type="text" value="" id="diceNumber"><br />
+		  </div>
+		    <input type="button" value="Dice Roll" onclick="diceRoll();" class="button">
+		</form>
+		<label>Results.</label>
+		<form id="output">
+		</form>
+	</div>
+<!--DICE APP CSS-->
+	<style>
+		.dice .button {
+			margin-top: 20px;
+		}
+		.dice #output {
+			padding-top: 4px;
+			margin:0;
+		}
+	</style>
+<!--DICE APP JAVASCRIPT-->
+	<script>
+		function docEl(v) {
+		  return document.getElementById(v).value;
+		}//makes a shorthand version of this document method
+		function Write(message) {
+			var node = document.createTextNode(message);
+			document.getElementById("output").appendChild(node);
+		}// function to write a message to the document without losing the page contents
+		function diceRoll() {
+			var sides = docEl("diceSides");
+			var rolls = docEl("diceNumber");
+			if(isNaN(sides)||isNaN(rolls)||sides===""||rolls==="") {
+				alert("Invalid Input");
+			} else {
+				var output = [];
+					for(var i=0;i<rolls;i++) {
+						output[i] = Math.floor(Math.random()*sides+1);
+				}
+				var message = "You roll " + rolls + " " + sides + "-sided dice and get: " + output;
+				document.getElementById('output').innerHTML = "";
+				Write(message);
+			}
+		}//Dice rolling function, accepts input from the page. DocEl is shorthand for document.getElementById().value 
+	</script>

@@ -1,0 +1,127 @@
+<!--TREEHOUSE HTML-->
+<div class="treehouse-card">
+  <img class="avatar" ng-src="{{info.gravatar_url}}" alt="Profile Photo">
+  <div class="profile-info">
+	  <h1 id="treehouseName">{{info.name}}</h1>
+	  <h3><strong>{{info.points.total}}</strong> Points<br><strong>{{info.badges.length}}</strong> Badges</h3>
+  </div>
+  <div class="points">
+	  <div class="points-info">
+	  	<span class="javascript"></span>
+	  	<h3 id="jsPoints">{{info.points.JavaScript}}</h3>
+	  	<p>Javascript</p>
+		</div>
+		<div class="points-info">
+		  <span class="html"></span>
+		  <h3 id="htmlPoints">{{info.points.HTML}}</h3>
+		  <p>HTML</p>
+	  </div>
+		<div class="points-info">
+		  <span class="css"></span>
+		  <h3 id="cssPoints">{{info.points.CSS}}</h3>
+		  <p>CSS</p>
+		</div>
+	</div>
+	<div class="badges">
+		<div class="badge-info" ng-repeat="badge in badges">
+	  	<img class="badge-icon" ng-src="{{badge.icon_url}}" alt="{{badge.name}} Badge Icon">
+	    <h3>{{badge.name}}</h3>
+	    <p>{{badge.earned_date | date:'MMM dd, yyyy' }}</p>
+	  </div>
+	</div>
+</div>
+<!--TREEHOUSE CSS-->
+<style>
+	.treehouse-card {
+		background-color: white;
+		width:620px;
+		height:260px;
+		padding:20px;
+		border-radius: 10px;
+		font-family: 'Asap', sans-serif;
+		margin:auto;
+	}
+	.treehouse-card div {
+		float:left;
+	}
+	.treehouse-card h1, .treehouse-card h3 {
+		color:#384047;
+	}
+	.profile-info h1{
+		font-weight: bold;
+		float:left;
+		font-size: 28px;
+		margin:5px 0;
+	}
+	.profile-info h3{
+		font-weight: normal;
+		float:right;
+		font-size: 18px;
+		margin:0;
+	}
+	.avatar {
+		width:120px;
+		height:120px;
+		border-radius:90px;
+		margin-right:10px;
+		margin-bottom: 10px;
+		float:left;
+	}
+	.points, .profile-info {
+		width:420px;
+		margin:10px;
+		clear:right;
+	}
+	.points-info {
+		width:33%;
+	}
+	.points-info h3 {
+		font-weight: bold;
+		font-size: 20px;
+		display:inline;
+		margin-left:10px;
+	}
+	.points-info p {
+		margin:6px 0 10px 25px;
+	}
+	.treehouse-card span {
+		float:left;
+	  width: 15px;
+	  height: 15px;
+	  border-radius: 15px;
+	  margin-top:4px;
+	}
+	.treehouse-card .javascript {
+	  background-color: #c25975;
+	}
+	.html {
+	  background-color: #39ADD1;
+	}
+	.css {
+	  background-color: #3079AB;
+	}
+	.badges {
+		width: 100%;
+		margin:0;
+	}
+	.badge-info {
+		width:33%;
+	}
+	.treehouse-card .badge-icon {
+		width:73px;
+		height:80px;
+		float:left;
+	}
+	.badges h3, .badges p{
+		font-size:14px;
+		margin-left: 80px;
+		margin-bottom: 0px;
+	}
+	.badges h3 {
+		margin-top:10px;
+		font-weight: bold;
+	}
+	.badges p {
+		margin-top: 0px
+	}
+</style>

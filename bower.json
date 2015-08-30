@@ -1,0 +1,24 @@
+{
+  "name": "LawlietBlack.com",
+  "version": "2.0.0",
+  "authors": [
+    "LawlietBlack <kenneth.black@live.com>"
+  ],
+  "description": "Website Portfolio for Kenneth Black",
+  "main": "index.html",
+  "keywords": [
+    "portfolio"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.4",
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
