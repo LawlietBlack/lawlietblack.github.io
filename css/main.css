@@ -183,6 +183,10 @@ paper-card .card-content {
   padding:10px;
   margin:0;
 }
+paper-card .card-bottom {
+  min-height: 150px;
+}
+
 paper-card img {
   height:200px;
   width:350px;
