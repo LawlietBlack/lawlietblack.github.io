@@ -1,0 +1,133 @@
+  <style>
+  #weather {
+    margin:40px auto;
+    padding:40px;
+  }
+  #weather h1, #weather h2 {
+    color:#fff !important;
+    text-shadow: 1px 1px #000;
+
+  }
+    .form-group input {
+    display: inline;
+    width:200px;
+  }
+  </style>
+  <div class="container-fluid " id="weather">
+    <h1 class="text-center title">Local Weather App</h1>
+    <h1 class="text-center" id="location"></h1>
+    <h2 class="text-center"><span id="weather-icons"></span> <span id="temp"></span></h2>
+    <div class="text-center"><button class="btn btn-info" id="change-temp">Switch to &#8457;</i></button></div>
+    <h2 class="text-center top-spacing">Get Weather by Zip Code</h2>
+    <div class="form-group text-center">
+      <label for="zip">Zip Code:</label>
+      <input type="text" class="form-control" id="zip">
+      <button class="btn btn-info" id="getWeather">Get Weather</button>
+    </div>
+  </div>
+  <script>
+  $(document).ready(function() { 
+    function getIcons(icon) {
+      switch(icon) {
+        case "01d": return "day-sunny";
+        case "02d": return "day-cloudy";
+        case "03d": return "cloud";
+        case "04d": return "cloudy";
+        case "09d": return "showers";
+        case "10d": return "day-rain";
+        case "11d": return "thunderstorm";
+        case "13d": return "snow";
+        case "50d": return "fog";
+        case "01n": return "night-clear";
+        case "02n": return "night-alt-cloudy";
+        case "03n": return "cloud";
+        case "04n": return "cloudy";
+        case "09n": return "showers";
+        case "10n": return "night-alt-rain";
+        case "11n": return "thunderstorm";
+        case "13n": return "snow";
+        case "50n": return "fog";
+        default: return "alien";
+        }
+      }
+    function getLocation() {
+      if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        console.log("Geolocation is not supported on this browser.");
+      }
+    }
+    function showPosition(position) {
+      if(position.coords.latitude !== undefined && position.coords.longitude !== undefined) {
+        getWeather(position.coords.latitude, position.coords.longitude);
+      } else {
+        alert("weather not loading...");
+      }
+    }
+    function getWeather(lat, lon) {
+      var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon;
+      $.getJSON(url, function(data) {
+        renderPage(data);
+      });
+    }
+    function renderPage(data) {
+      var tempCel = Math.round(data.main.temp - 272.15);
+      $('#location').html(data.name);
+      $('#temp').attr("data-temp", data.main.temp).attr("temp-type", "cel");
+      $('#temp').html(tempCel + "&#8451;");
+      console.log(tempCel)
+      renderBackground(tempCel);
+      var iconString = "";
+      for(var i=0;i<data.weather.length;i++) {
+        iconString += "<i class='wi wi-" + getIcons(data.weather[i].icon) + "'></i>";
+      }
+      $('#weather-icons').html(iconString);
+      console.log(data); 
+    }
+    function renderBackground(temp) {
+      //cutoffs at 15 and 32 degrees celsius
+      var imageUrl;
+      if(temp >= 32) {
+        //hot background
+        tempName = 'hot';
+      } else if(temp >15) {
+        //warm background
+        tempName = 'warm';
+      } else if(temp <=15) {
+        //cold background
+        tempName = 'cold';
+      }
+      $('#weather').css('background', "radial-gradient(transparent, transparent 65%, #242424 70%) ,#333 url('http://dev.lawlietblack.com/img/" + tempName + ".png') no-repeat center center").css("background-size", "cover")
+    }
+    getLocation(); 
+    $("#change-temp").click(function() {
+      var temp = $('#temp').attr("data-temp");
+      var tempCel = Math.round(temp - 272.15);
+      var tempFar = Math.round(tempCel*(9/5)+32);
+      var currentType = $('#temp').attr("temp-type");
+      if(currentType === "cel") {
+        $('#temp').html(tempFar + "&#8457;").attr('temp-type', 'far');
+        $(this).html('Switch to &#8451;');
+      } else if(currentType === "far") {
+        $('#temp').html(tempCel + '&#8451;').attr('temp-type', 'cel');
+        $(this).html('Switch to &#8457;');
+      }
+    });
+    $('#getWeather').click(function() {
+      var zip = $('#zip').val();
+      var url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us";
+      $.getJSON(url, function(data) {
+        renderPage(data);
+      });
+    });
+    $('#zip').bind('keypress', function(e) {
+      if(e.keyCode==13){
+        var zip = $('#zip').val();
+        var url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us";
+        $.getJSON(url, function(data) {
+          renderPage(data);
+        });
+      }
+    });
+  });
+  </script>
