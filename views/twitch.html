@@ -24,6 +24,7 @@
 		  display:inline-block;
 		  width:375px;
 		  color:#888;
+		  margin:0;
 		}
 		.ch-status {
 		  height:100px;
@@ -38,7 +39,7 @@
 		  background-color: red;
 		}
 		.sort {
-		  width:32.85%;
+		  width:32.8%;
 		  height:30px;
 		  font-weight: bold;
 		  background-color: #444;
@@ -79,7 +80,7 @@
 		  Twitch.api({method: method }, function(error, list) {
 		    if(error) {
 		      var $twitch = $('<div>').addClass('twitch');
-		      $twitch.html('<div class="twitch" data-href="#"><img class="ch-icon" src="http://dev.lawlietblack.com/img/glitchyz.png"><h2 class="ch-title">Not Found<br><span class="ch-desc">' + error.message + '</span></h2><div class="ch-status null"><h1><i class="fa fa-times-circle"></i></h1></div></div>');
+		      $twitch.html('<div class="twitch" data-href="#"><img class="ch-icon" src="http://dev.lawlietblack.com/img/glitchyz.png"><h2 class="ch-title" style-scope>Not Found<br><span class="ch-desc">' + error.message + '</span></h2><div class="ch-status null"><h1><i class="fa fa-times-circle"></i></h1></div></div>');
 		        $('#twitch-streams').append($twitch);
 		    } else {
 		      renderChannel(list)
@@ -99,7 +100,7 @@
 		  }
 		  var titleString = list.display_name;
 		  if(list.delay !== null) {
-		    titleString += "<br><span class='ch-desc'>";
+		    titleString += "<br><span class='ch-desc' style-scope>";
 		    titleString += list.status + "</span>"
 		  }
 		  $title.html(titleString).appendTo($twitch);
