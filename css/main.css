@@ -121,37 +121,6 @@ JUMBOTRON
 
 
 /************************************
-PAGE: HOME
-*************************************/
-  .slides {
-    width:683px;
-    margin:auto;
-    max-width: 100%;
-  }
-  .slides img {
-    width:683px;
-    max-width: 100%;
-  }
-  .slick-dots li button:before {
-    font-size: 20px;
-    color:#ccc;
-  }
-  .slick-dots li.slick-active button:before {
-    color:#292;
-  }
-  .updates {
-    width:90%;
-    margin:20px auto;
-  }
-  #accordion {
-    padding: 1em 2.2em;
-  }
-  .ui-accordion .ui-accordion-content {
-      padding: 1em 2.2em;
-  }
-
-
-/************************************
 PAGE: PORTFOLIO
 *************************************/
   .portfolio {
@@ -181,7 +150,6 @@ PAGE: PORTFOLIO
     float:left;
     margin:20px;
     width:350px;
-
   }
   paper-card .card-content {
     background-color: #424b4b;
@@ -299,6 +267,18 @@ PAGE: PROJECTS
   }
 
 
+
+/************************************
+PAGE: UPDATES
+*************************************/
+
+  .updates {
+    width:90%;
+    margin:20px auto;
+  }
+
+
+
 /************************************
 PAGE: ABOUT
 *************************************/
@@ -365,61 +345,36 @@ FOOTER
     padding-top: 6px;
   }
 
+
+
 /************************************
 MEDIA QUERIES
 *************************************/
   @media screen and (min-width:1200px) {
-    .slides {
-      width:1024px;
-      height:576px;
-      margin:auto;
+    paper-card:nth-child(3n+1) {
+      margin-left:  calc((100% - 1130px)/2);
     }
-    .slides img {
-      width:1024px;
-      height:576px;
+  }
+  @media screen and (min-width: 801px) and (max-width: 1199px) {
+    paper-card:nth-child(2n+1) {
+      margin-left:  calc((100% - 740px)/2);
+    }
+  }
+  @media screen and (max-width:800px) {
+    paper-card {
+      margin-left:  calc((100% - 350px)/2);
     }
   }
 
-  @media screen and (max-width: 450px) {
-    nav ul {
-      flex-direction: column;
-    }
-    nav li {
-      width: 100%;
-    }
-    .spacer {
-      display: none;
-    }
-    .jtron {
-      height:160px;
-    }
-    .updates {
-      width:100%;
-    }
-  }
 
-  @media screen and (min-width: 480px) {
-    
-    /************************************
-    TWO COMUMN LAYOUT
-    *************************************/
-
-    #primary {
-      width:50%;
-      float:left;
-    }
-    #secondary {
-      width:40%;
-      float:right;
-    }
-
+  @media screen and (min-width: 800px) {
     /************************************
     PAGE:ABOUT
     *************************************/
 
     .profile-photo {
       float:left;
-      margin:0 5% 80px 0;
+      margin:0 5% 100px 0;
     }
   }
 
