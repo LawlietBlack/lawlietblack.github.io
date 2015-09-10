@@ -15,9 +15,11 @@
   <link rel="import" href="bower_components/paper-input/paper-input.html">
   <link rel='stylesheet' href='css/main.css'>
   <script src="/js/jquery/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/jquery/jquery-ui.min.js" type="text/javascript"></script>
   <script src="/js/angularjs/angular.min.js" type="text/javascript"></script>
   <script src="/js/angularjs/angular-route.min.js" type="text/javascript"></script>
   <script src="/js/angularjs/angular-animate.js" type="text/javascript"></script>
+  <script src="/js/angularjs/angular-sanitize.min.js" type="text/javascript"></script>
   <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
 </head>
 <body>
@@ -49,13 +51,16 @@
   <main>
     <div class="container-fluid" id="projects">
       <div class="text-center">
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/dice'">Dice Roller</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/draw'">Drawing App</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/flickr'">Flickr Search</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/quotes'">Random Quote</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/weather'">Local Weather</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/pomodoro'">Pomodoro Clock</paper-button>
-        <paper-button class="secondary" raised="" onclick="window.location.href='#/twitch'">Twitch Status</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/dice'">Dice Roller</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/draw'">Drawing App</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/flickr'">Flickr Search</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/quotes'">Random Quote</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/weather'">Local Weather</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/pomodoro'">Pomodoro Clock</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/twitch'">Twitch Status</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/campernews'">Camper News</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/wikisearch'">Wiki Search</paper-button>
+        <paper-button class="primary" raised="" onclick="window.location.href='#/calculator'">Calculator</paper-button>
       </div>
       <ng-view></ng-view>
     </div>

@@ -10,10 +10,10 @@ GENERAL
     min-height: calc(100% - 289px);
   }
   h1, h2, h3, h4, h5, h6 {
-    color:#aaa;
+    color:#ddd;
   }
   p, ul {
-    color:#999;
+    color:#ccc;
   }
   #wrapper {
     max-width:940px;
@@ -276,7 +276,9 @@ PAGE: UPDATES
     width:90%;
     margin:20px auto;
   }
-
+  .updates a {
+    color: #2a2 !important;
+  }
 
 
 /************************************
