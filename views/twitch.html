@@ -119,7 +119,7 @@
 		$('body').on('click', '.twitch', function(event) {
 		  // console.log(event);
 		  var url = event.currentTarget.getAttribute('data-href');
-		  window.location.href = url;
+		  window.open(url);
 		});
 		$('body').on('click', '#all', function() {
 		  $('#search').val("");
