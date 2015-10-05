@@ -1,0 +1,379 @@
+/*
+ * PolymerThemes v1.0.3
+ * Homepage: https://polymerthemes.com
+ * Copyright 2015 Polymer Themes
+ * Licensed under BSD
+ * Based on Polymer: http://www.polymer-project.org/
+ * Compatible with Polymer 1.0
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Lustria|Lato:300");
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  color: #e0e0e0;
+  background-color: #242424;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+section {
+  padding: 40px 0px;
+}
+section[hero] {
+  background-color: #616161;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h3, h5 {
+  font-family: 'Lustria', serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 20px 0px 10px;
+}
+
+h2 {
+  color: #aaa;
+  font-size: 35px;
+  margin: 20px 0px;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 15px 0px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a, a:active, a:visited, a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+nav a:hover {
+  font-weight: bold;
+}
+:root {
+  --default-primary-color: #3d6868;
+  --dark-primary-color: #3d6868;
+  --light-primary-color: #c5cae9;
+  --text-primary-color: #ffffff;
+  --accent-color: #ff4081;
+  --primary-background-color: #ffffff;
+  --primary-text-color: #e0e0e0;
+  --secondary-text-color: #bdbdbd;
+  --disabled-text-color: #274c4c;
+  --divider-color: #e0e0e0;
+  --paper-checkbox-checked-color: #1E6711;
+  --paper-checkbox-checked-ink-color: #3d6868;
+  --paper-checkbox-unchecked-color: #e0e0e0;
+  --paper-checkbox-unchecked-ink-color: #c0c0c0;
+  --paper-checkbox-label-color: #e0e0e0;
+  --paper-fab-background: #3d6868;
+  --paper-fab-disabled-background: #9e9e9e;
+  --paper-fab-disabled-text: #274c4c;
+  --paper-icon-button-disabled-text: #9e9e9e;
+  --paper-input-container-color: #c0c0c0;
+  --paper-input-container-focus-color: #3d6868;
+  --paper-input-container-invalid-color: #ff7043;
+  --paper-input-container-input-color: #c0c0c0;
+  --paper-menu-background-color: #616161;
+  --paper-menu-color: #e0e0e0;
+  --paper-menu-disabled-color: #64dd17;
+  --paper-progress-active-color: #4caf50;
+  --paper-progress-secondary-color: #66bb6a;
+  --paper-radio-button-checked-color: #1E6711;
+  --paper-radio-button-checked-ink-color: #e6f1f1;
+  --paper-radio-button-unchecked-color: #e0e0e0;
+  --paper-radio-button-unchecked-ink-color: #c0c0c0;
+  --paper-radio-button-label-color: #e0e0e0;
+  --paper-slider-knob-color: #00c853;
+  --paper-slider-active-color: #00c853;
+  --paper-slider-pin-color: #00c853;
+  --paper-spinner-layer-1-color: #2e7d32;
+  --paper-spinner-layer-2-color: #2e7d32;
+  --paper-spinner-layer-3-color: #2e7d32;
+  --paper-spinner-layer-4-color: #2e7d32;
+  --paper-tabs-selection-bar-color: #4caf50;
+  --paper-tab-ink: #64dd17;
+  --paper-toggle-button-checked-bar-color: #2e7d32;
+  --paper-toggle-button-checked-button-color: #2e7d32;
+  --paper-toggle-button-checked-ink-color: #2e7d32;
+  --paper-toggle-button-unchecked-bar-color: #e0e0e0;
+  --paper-toggle-button-unchecked-button-color: white;
+  --paper-toggle-button-unchecked-ink-color: white;
+  --paper-toolbar-background: #1b5e20;
+  --paper-toolbar-color: #ffffff;
+}
+
+html paper-toolbar a, html paper-toolbar a:hover, html paper-toolbar a:active,
+html paper-toolbar a:visited, html paper-toolbar a:focus,
+html paper-toolbar a, html paper-toolbar a:hover,
+html paper-toolbar a:active, html paper-toolbar a:visited,
+html paper-toolbar a:focus {
+  color: #ffffff;
+}
+html paper-button.primary, html paper-button.btn-primary,
+html paper-button[primary], html paper-button.primary,
+html paper-button.btn-primary, html paper-button[primary] {
+  color: #1E6711;
+}
+html paper-button.primary[raised], html paper-button.btn-primary[raised],
+html paper-button[primary][raised], html paper-button.primary[raised],
+html paper-button.btn-primary[raised],
+html paper-button[primary][raised] {
+  background-color: #1E6711;
+  color: #fff;
+}
+html paper-button.secondary, html paper-button.btn-secondary,
+html paper-button[secondary], html paper-button.secondary,
+html paper-button.btn-secondary, html paper-button[secondary] {
+  color: #29b6f6;
+}
+html paper-button.secondary[raised], html paper-button.btn-secondary[raised],
+html paper-button[secondary][raised], html paper-button.secondary[raised],
+html paper-button.btn-secondary[raised],
+html paper-button[secondary][raised] {
+  background-color: #29b6f6;
+  color: #fff;
+}
+html paper-button.success, html paper-button.btn-success,
+html paper-button[success], html paper-button.success,
+html paper-button.btn-success, html paper-button[success] {
+  color: #1E6711;
+}
+html paper-button.success[raised], html paper-button.btn-success[raised],
+html paper-button[success][raised], html paper-button.success[raised],
+html paper-button.btn-success[raised],
+html paper-button[success][raised] {
+  background-color: #1E6711;
+  color: #fff;
+}
+html paper-button.info, html paper-button.btn-info, html paper-button[info],
+html paper-button.info, html paper-button.btn-info,
+html paper-button[info] {
+  color: #ba68c8;
+}
+html paper-button.info[raised], html paper-button.btn-info[raised],
+html paper-button[info][raised], html paper-button.info[raised],
+html paper-button.btn-info[raised], html paper-button[info][raised] {
+  background-color: #ba68c8;
+  color: #fff;
+}
+html paper-button.warning, html paper-button.btn-warning,
+html paper-button[warning], html paper-button.warning,
+html paper-button.btn-warning, html paper-button[warning] {
+  color: #fadd60;
+}
+html paper-button.warning[raised], html paper-button.btn-warning[raised],
+html paper-button[warning][raised], html paper-button.warning[raised],
+html paper-button.btn-warning[raised],
+html paper-button[warning][raised] {
+  background-color: #fadd60;
+  color: #4b421d;
+}
+html paper-button.error, html paper-button.btn-error, html paper-button[error],
+html paper-button.error, html paper-button.btn-error,
+html paper-button[error] {
+  color: #ff7043;
+}
+html paper-button.error[raised], html paper-button.btn-error[raised],
+html paper-button[error][raised], html paper-button.error[raised],
+html paper-button.btn-error[raised], html paper-button[error][raised] {
+  background-color: #ff7043;
+  color: #4d2214;
+}
+html paper-button.link, html paper-button.btn-link, html paper-button[link],
+html paper-button.link, html paper-button.btn-link,
+html paper-button[link] {
+  text-decoration: underline;
+}
+html paper-button[raised], html paper-button[raised] {
+  color: #e0e0e0;
+}
+html paper-button[disabled], html paper-button[disabled] {
+  color: #274c4c !important;
+  background: #9e9e9e !important;
+}
+html paper-icon-button.primary, html paper-icon-button.btn-primary,
+html paper-icon-button[primary], html paper-icon-button.primary,
+html paper-icon-button.btn-primary, html paper-icon-button[primary] {
+  color: #1E6711;
+}
+html paper-icon-button.primary:hover, html paper-icon-button.btn-primary:hover,
+html paper-icon-button[primary]:hover, html paper-icon-button.primary:hover,
+html paper-icon-button.btn-primary:hover,
+html paper-icon-button[primary]:hover {
+  background-color: #3b4f44;
+  background-color: rgba(0, 200, 83, 0.2);
+  border-radius: 50%;
+}
+html paper-icon-button.secondary, html paper-icon-button.btn-secondary,
+html paper-icon-button[secondary], html paper-icon-button.secondary,
+html paper-icon-button.btn-secondary,
+html paper-icon-button[secondary] {
+  color: #29b6f6;
+}
+html paper-icon-button.secondary:hover, html paper-icon-button.btn-secondary:hover,
+html paper-icon-button[secondary]:hover,
+html paper-icon-button.secondary:hover,
+html paper-icon-button.btn-secondary:hover,
+html paper-icon-button[secondary]:hover {
+  background-color: #404e54;
+  background-color: rgba(41, 182, 246, 0.2);
+  border-radius: 50%;
+}
+html paper-icon-button.success, html paper-icon-button.btn-success,
+html paper-icon-button[success], html paper-icon-button.success,
+html paper-icon-button.btn-success, html paper-icon-button[success] {
+  color: #1E6711;
+}
+html paper-icon-button.success:hover, html paper-icon-button.btn-success:hover,
+html paper-icon-button[success]:hover, html paper-icon-button.success:hover,
+html paper-icon-button.btn-success:hover,
+html paper-icon-button[success]:hover {
+  background-color: #3b4f44;
+  background-color: rgba(0, 200, 83, 0.2);
+  border-radius: 50%;
+}
+html paper-icon-button.info, html paper-icon-button.btn-info,
+html paper-icon-button[info], html paper-icon-button.info,
+html paper-icon-button.btn-info, html paper-icon-button[info] {
+  color: #ba68c8;
+}
+html paper-icon-button.info:hover, html paper-icon-button.btn-info:hover,
+html paper-icon-button[info]:hover, html paper-icon-button.info:hover,
+html paper-icon-button.btn-info:hover,
+html paper-icon-button[info]:hover {
+  background-color: #4e464f;
+  background-color: rgba(186, 104, 200, 0.2);
+  border-radius: 50%;
+}
+html paper-icon-button.warning, html paper-icon-button.btn-warning,
+html paper-icon-button[warning], html paper-icon-button.warning,
+html paper-icon-button.btn-warning, html paper-icon-button[warning] {
+  color: #fadd60;
+}
+html paper-icon-button.warning:hover, html paper-icon-button.btn-warning:hover,
+html paper-icon-button[warning]:hover, html paper-icon-button.warning:hover,
+html paper-icon-button.btn-warning:hover,
+html paper-icon-button[warning]:hover {
+  background-color: #545245;
+  background-color: rgba(250, 221, 96, 0.2);
+  border-radius: 50%;
+}
+html paper-icon-button.error, html paper-icon-button.btn-error,
+html paper-icon-button[error], html paper-icon-button.error,
+html paper-icon-button.btn-error, html paper-icon-button[error] {
+  color: #ff7043;
+}
+html paper-icon-button.error:hover, html paper-icon-button.btn-error:hover,
+html paper-icon-button[error]:hover, html paper-icon-button.error:hover,
+html paper-icon-button.btn-error:hover,
+html paper-icon-button[error]:hover {
+  background-color: #554742;
+  background-color: rgba(255, 112, 67, 0.2);
+  border-radius: 50%;
+}
+html paper-checkbox #checkmark.paper-checkbox, html paper-checkbox,
+paper-checkbox::shadow #checkmark.paper-checkbox,
+html paper-checkbox #checkmark.paper-checkbox,
+html paper-checkbox, paper-checkbox::shadow #checkmark.paper-checkbox {
+  border-color: #fff !important;
+}
+html paper-dialog, html paper-dialog {
+  color: #e0e0e0;
+  background-color: #424242;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+html paper-dialog h1, html paper-dialog h2, html paper-dialog h3,
+html paper-dialog h4, html paper-dialog h5, html paper-dialog h6,
+html paper-dialog h1, html paper-dialog h2,
+html paper-dialog h3, html paper-dialog h4,
+html paper-dialog h5, html paper-dialog h6 {
+  overflow: visible;
+  padding: 0 1em;
+  text-align: center;
+}
+html paper-fab, html paper-fab {
+  --text-primary-color: white;
+}
+html paper-fab, html paper-fab {
+  background-color: #1E6711;
+  color: #fff;
+  --paper-fab-keyboard-focus-background: #48ff94;
+}
+html paper-fab.primary, html paper-fab.btn-primary, html paper-fab[primary],
+html paper-fab.primary, html paper-fab.btn-primary,
+html paper-fab[primary] {
+  background-color: #1E6711;
+  color: #fff;
+  --paper-fab-keyboard-focus-background: #48ff94;
+}
+html paper-fab.secondary, html paper-fab.btn-secondary, html paper-fab[secondary],
+html paper-fab.secondary, html paper-fab.btn-secondary,
+html paper-fab[secondary] {
+  background-color: #29b6f6;
+  color: #fff;
+  --paper-fab-keyboard-focus-background: #066b99;
+}
+html paper-fab.success, html paper-fab.btn-success, html paper-fab[success],
+html paper-fab.success, html paper-fab.btn-success,
+html paper-fab[success] {
+  background-color: #1E6711;
+  color: #fff;
+  --paper-fab-keyboard-focus-background: #48ff94;
+}
+html paper-fab.info, html paper-fab.btn-info, html paper-fab[info],
+html paper-fab.info, html paper-fab.btn-info,
+html paper-fab[info] {
+  background-color: #ba68c8;
+  color: #fff;
+  --paper-fab-keyboard-focus-background: #752f81;
+}
+html paper-fab.warning, html paper-fab.btn-warning, html paper-fab[warning],
+html paper-fab.warning, html paper-fab.btn-warning,
+html paper-fab[warning] {
+  background-color: #fadd60;
+  color: #4b421d;
+  --paper-fab-keyboard-focus-background: #d4ad07;
+}
+html paper-fab.error, html paper-fab.btn-error, html paper-fab[error],
+html paper-fab.error, html paper-fab.btn-error,
+html paper-fab[error] {
+  background-color: #ff7043;
+  color: #4d2214;
+  --paper-fab-keyboard-focus-background: #c32f00;
+}
+html paper-fab[disabled], html paper-fab[disabled] {
+  color: #274c4c !important;
+  background: #9e9e9e !important;
+}
+html section.hero paper-menu, html section[hero] paper-menu,
+html section.hero paper-menu, html section[hero] paper-menu {
+  --paper-menu-background-color: #616161;
+}
+html paper-tabs, html paper-tabs {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
