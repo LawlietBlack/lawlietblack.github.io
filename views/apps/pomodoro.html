@@ -1,4 +1,4 @@
- <style>
+  <style>
     #stopWatch {
       border:2px solid #444;
       border-radius:50%;
@@ -38,43 +38,47 @@
       display:inline-block;
       margin-top:60px;
     }
- </style>
- <audio src="http://dev.lawlietblack.com/media/sweet.wav" id="alarm"></audio>
- <div class="container-fluid">
-    <div class="text-center" id="options">
-      <div class="option pull-left">
-        <div class="text-center">
-          <h4>Session Length</h4>
-          <button class="btn btn-xs btn-danger time-select" data-method="sub-sess">
-            <i class="fa fa-minus" data-method="sub-sess"></i>
-          </button>
-          <p id="sessTime"></p>
-          <button class="btn btn-xs btn-info time-select" data-method="add-sess">
-            <i class="fa fa-plus" data-method="add-sess"></i>
-          </button>
+  </style>
+<div class="container-fluid" id="projects">
+  <apps-nav></apps-nav>
+
+    <audio src="http://dev.lawlietblack.com/media/sweet.wav" id="alarm"></audio>
+    <div class="container-fluid">
+      <div class="text-center" id="options">
+        <div class="option pull-left">
+          <div class="text-center">
+            <h4>Session Length</h4>
+            <button class="btn btn-xs btn-danger time-select" data-method="sub-sess">
+              <i class="fa fa-minus" data-method="sub-sess"></i>
+            </button>
+            <p id="sessTime"></p>
+            <button class="btn btn-xs btn-info time-select" data-method="add-sess">
+              <i class="fa fa-plus" data-method="add-sess"></i>
+            </button>
+          </div>
+        </div>
+        <div class="text-center" id="resetContainer">
+          <button id="reset" class="btn btn-md btn-primary">Reset</button>
+        </div>
+        <div class="option pull-right">
+         <div class="text-center">
+            <h4>Break Length</h4>
+            <button class="btn btn-xs btn-danger time-select" data-method="sub-break">
+              <i class="fa fa-minus" data-method="sub-break"></i>
+            </button>
+            <p id="brkTime"></p>
+            <button class="btn btn-xs btn-info time-select" data-method="add-break">
+              <i class="fa fa-plus" data-method="add-break"></i>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="text-center" id="resetContainer">
-        <button id="reset" class="btn btn-md btn-primary">Reset</button>
-      </div>
-      <div class="option pull-right">
-       <div class="text-center">
-          <h4>Break Length</h4>
-          <button class="btn btn-xs btn-danger time-select" data-method="sub-break">
-            <i class="fa fa-minus" data-method="sub-break"></i>
-          </button>
-          <p id="brkTime"></p>
-          <button class="btn btn-xs btn-info time-select" data-method="add-break">
-            <i class="fa fa-plus" data-method="add-break"></i>
-          </button>
-        </div>
+      <div class="text-center session" id="stopWatch">
+        <h2 id="title" style-scope>Session</h2>
+        <h1 id="time" style-scope></h1>
       </div>
     </div>
-    <div class="text-center session" id="stopWatch">
-      <h2 id="title" style-scope>Session</h2>
-      <h1 id="time" style-scope></h1>
-    </div>
-  </div>
+  </div>  
   <script>
   $(document).ready(function() { 
     var clockRunning = false;

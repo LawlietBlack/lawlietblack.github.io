@@ -1,10 +1,13 @@
- 	<style>
+<style>
 	#quote {
 		width:40%;
 		margin:20px auto;
 		font-size: 2rem;
 	}
- 	</style>
+</style>
+<div class="container-fluid" id="projects">
+	<apps-nav></apps-nav>
+
  	<h1 class="text-center">Quote Machine</h1>
   <div class="text-center">
     <button id="get-quotes" class="btn btn-primary btn-lg">Get Quote</button>
@@ -12,7 +15,8 @@
     <a class="btn btn-primary btn-lg twitter-share-button popup" href="https://twitter.com/intent/tweet"><i class="fa fa-twitter"></i> Tweet</a>
   </div>
   <div id="quote"></div>
-  <script>
+</div>
+<script>
   $(document).ready(function() { 
 		//gets quotes from my own API, https://github.com/LawlietBlack/quotes-api
 		$('#get-quotes').click(function(event) {
@@ -48,4 +52,4 @@
 	  	return false;
 	  });
 	});
-  </script>
+</script>

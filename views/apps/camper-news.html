@@ -50,14 +50,18 @@
 		color:#fff;
 	}
 </style>
-<section>
-  <div class="container-fluid">
-    <div class="title text-center">
-      <h1>Camper News</h1>
-      <h4>FreeCodeCamp.com</h4>
-    </div>
-    <div id="news" class="row">
-      <camper-story ng-repeat="story in news" story="story"></camper-story>
-    </div>
-  </div>
-</section>
+<div class="container-fluid" id="projects">
+  <apps-nav></apps-nav>
+  <!-- app goes here -->
+	<section>
+	  <div class="container-fluid">
+	    <div class="title text-center">
+	      <h1>Camper News</h1>
+	      <h4>FreeCodeCamp.com</h4>
+	    </div>
+	    <div id="news" class="row">
+	      <camper-story ng-repeat="story in news" story="story"></camper-story>
+	    </div>
+	  </div>
+	</section>
+</div>

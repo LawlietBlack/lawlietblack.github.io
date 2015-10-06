@@ -1,62 +1,65 @@
- 	<style>
-		.main {
-		  width:600px;
-		  margin:40px auto;
-		}
-		.twitch {
-		  border: 1px solid #333;
-		  background-color: #444;
-		  height:102px;
-		  cursor:pointer;
-		}
-		.ch-icon {
-		  height:100px;
-		  width:100px;
-		  float:left;
-		}
-		.ch-title {
-		  display:inline-block;
-		  font-size:28px;
-		  margin:32px 20px 0;
-		}
-		.ch-desc {
-		  font-size: 14px;
-		  display:inline-block;
-		  width:375px;
-		  color:#888;
-		  margin:0;
-		}
-		.ch-status {
-		  height:100px;
-		  width:50px;
-		  float:right;
-		  padding:10px;
-		}
-		.active {
-		  background-color: green;
-		}
-		.down {
-		  background-color: red;
-		}
-		.sort {
-		  width:32.8%;
-		  height:30px;
-		  font-weight: bold;
-		  background-color: #444;
-		  border:0px;
-		  margin:0;
-		  padding:0;
-		}
-		#search {
-		  width:100%;
-		  margin:4px 0;
-		  border:0px;
-		  height:30px;
-		  background-color: #000;
-		  padding:10px;
-		  font-weight: bold;
-		}
- 	</style>
+<style>
+	.main {
+	  width:600px;
+	  margin:40px auto;
+	}
+	.twitch {
+	  border: 1px solid #333;
+	  background-color: #444;
+	  height:102px;
+	  cursor:pointer;
+	}
+	.ch-icon {
+	  height:100px;
+	  width:100px;
+	  float:left;
+	}
+	.ch-title {
+	  display:inline-block;
+	  font-size:28px;
+	  margin:32px 20px 0;
+	}
+	.ch-desc {
+	  font-size: 14px;
+	  display:inline-block;
+	  width:375px;
+	  color:#888;
+	  margin:0;
+	}
+	.ch-status {
+	  height:100px;
+	  width:50px;
+	  float:right;
+	  padding:10px;
+	}
+	.active {
+	  background-color: green;
+	}
+	.down {
+	  background-color: red;
+	}
+	.sort {
+	  width:32.8%;
+	  height:30px;
+	  font-weight: bold;
+	  background-color: #444;
+	  border:0px;
+	  margin:0;
+	  padding:0;
+	}
+	#search {
+	  width:100%;
+	  margin:4px 0;
+	  border:0px;
+	  height:30px;
+	  background-color: #000;
+	  padding:10px;
+	  font-weight: bold;
+	}
+</style>
+<div class="container-fluid" id="projects">
+  <apps-nav></apps-nav>
+  
  	<div class="container-fluid main">
     <h1 class="text-center">Twitch Streams</h1>
     <button class="sort text-center" id="all">All</button>
@@ -66,7 +69,8 @@
     <div id="twitch-streams">
     </div>
   </div>
-  <script>
+</div>
+<script>
 	$(document).ready(function() { 
 
 		Twitch.init({clientId: '7slve55bcpxq289sk8rojb2a491i1j6'}, function(error, status) {
@@ -153,4 +157,4 @@
 		})
 
 	});
-  </script>
+</script>

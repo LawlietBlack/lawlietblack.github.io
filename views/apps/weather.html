@@ -1,4 +1,4 @@
-  <style>
+<style>
   #weather {
     margin:40px auto;
     padding:40px;
@@ -12,7 +12,10 @@
     display: inline;
     width:200px;
   }
-  </style>
+</style>
+<div class="container-fluid" id="projects">
+  <apps-nav></apps-nav>
+
   <div class="container-fluid " id="weather">
     <h1 class="text-center title">Local Weather App</h1>
     <h1 class="text-center" id="location"></h1>
@@ -25,7 +28,8 @@
       <button class="btn btn-info" id="getWeather">Get Weather</button>
     </div>
   </div>
-  <script>
+</div>
+<script>
   $(document).ready(function() { 
     function getIcons(icon) {
       switch(icon) {
@@ -130,4 +134,4 @@
       }
     });
   });
-  </script>
+</script>

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>LawlietBlack | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link rel="import" href="bower_components/polymer/polymer.html">
-    <link rel="import" href="bower_components/polymer-themes/area-51.html">
-    <link rel="import" href="bower_components/paper-card/paper-card.html">
-    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  </head>
-  <body fullbleed layout vertical>
+<html ng-app="PortfolioApp">
+<head>
+  <meta charset="utf-8" />
+  <title>LawlietBlack | Portfolio</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/polymer-themes/area-51.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body fullbleed layout vertical>
 
   <header>
     <nav>
@@ -27,119 +29,23 @@
       </div> <!-- end jtron-->
       <paper-tabs selected="0">
         <paper-tab link>
-          <a href="index.html" class="horizontal center-center layout">PORTFOLIO</a>
+          <a href="#/" class="horizontal center-center layout">PORTFOLIO</a>
         </paper-tab>
         <paper-tab link>
-          <a href="projects.html" class="horizontal center-center layout">APPS</a>
+          <a href="#/apps" class="horizontal center-center layout">APPS</a>
         </paper-tab>
         <paper-tab link>
-          <a href="updates.html" class="horizontal center-center layout">UPDATES</a>
+          <a href="#/updates" class="horizontal center-center layout">UPDATES</a>
         </paper-tab>
         <paper-tab link>
-          <a href="about.html" class="horizontal center-center layout">ABOUT</a>
+          <a href="#/about" class="horizontal center-center layout">ABOUT</a>
         </paper-tab>
       </paper-tabs>
     </nav>
   </header>
 
-  <main class="portfolio">
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://persona.lawlietblack.com">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">Persona 4 Golden Guide</div>
-            <div class="small">Fullstack Javascript</div>
-          </div>
-        </div>
-        <!-- take this out of the content class so that it can span the whole card -->
-        <img src="img/test/persona.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">AngularJS, jquery APIs, HTML5, CSS3, JSON, Photoshop. Full Stack JavaScript version with node.js, express is on github. </div>
-        </div>
-      </a>
-    </paper-card>
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://magic.lawlietblack.com">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">Magic: the Gathering Deckbuilder</div>
-            <div class="small">AngularJS</div>
-          </div>
-        </div>
-        <img src="img/test/mtg.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">Object-Oriented Javascript, jQuery, AngularJS, RESTful APIs, MongoDB, HTML5, CSS</div>
-        </div>
-      </a>
-    </paper-card>
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://git.lawlietblack.com/civ/index.html">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">Civilization 5 Leaders Guide</div>
-            <div class="small">AngularJS</div>
-          </div>
-        </div>
-        <img src="img/test/civ5.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">HTML, CSS, Javascript, jQuery, AngularJS, Responsive Web Design, Bootstrap</div>
-        </div>
-      </a>
-    </paper-card>
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://vote-lawlietblack.herokuapp.com">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">Vote</div>
-            <div class="small">Fullstack JavaScript: MEAN</div>
-          </div>
-        </div>
-        <img src="img/test/vote.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">JavaScript, AngularJS, MongoDB, Node.js, Yeoman, Grunt, oAuth, Express.js, HTML5, CSS3, RESTful APIs, AJAX</div>
-        </div>
-      </a>
-    </paper-card>
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://pokedex.lawlietblack.com">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">Pokedex </div>
-            <div class="small">AngularJS</div>
-          </div>
-        </div>
-        <img src="img/test/pokemon.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">UNDER CONSTRUCTION</div>
-        </div>
-      </a>
-    </paper-card>
-    <paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
-      <a href="http://nightlife-lawlietblack.herokuapp.com">
-        <div class="card-content">
-          <div class="avatar fullstack">JS</div>
-          <div class="title">
-            <div class="medium">NightLife</div>
-            <div class="small">Fullstack JavaScript: MEAN</div>
-          </div>
-        </div>
-        <img src="img/test/nightlife.png">
-        <div class="card-content card-bottom">
-          <div class="big">Skills used</div>
-          <div class="medium">JavaScript, AngularJS, MongoDB, Node.js, Yeoman, Grunt, oAuth, Express.js, HTML5, CSS3, RESTful APIs, AJAX</div>
-        </div>
-      </a>
-    </paper-card>
+  <main>
+    <ng-view></ng-view>
   </main>
 
 
@@ -154,5 +60,16 @@
     <a href="http://freecodecamp.com/lawlietblack"><img src="img/fcc.png" alt="FreeCodeCamp Logo" class="social-icon" /></a>
     <p>&copy; 2015 Kenneth Black.</p>
   </footer>
+
+  <script src="/js/jquery/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/jquery/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="/js/angularjs/angular.min.js" type="text/javascript"></script>
+  <script src="/js/angularjs/angular-route.min.js" type="text/javascript"></script>
+  <script src="/js/angularjs/angular-animate.js" type="text/javascript"></script>
+  <script src="/js/angularjs/angular-sanitize.min.js" type="text/javascript"></script>
+  <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+  <script src="js/app.js"></script>
+
+
 </body>
 </html>

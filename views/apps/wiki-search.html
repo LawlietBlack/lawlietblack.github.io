@@ -1,0 +1,48 @@
+<style>
+  input.form-control, .ui-autocomplete {
+    background-color: #000;
+    border:0;
+    color:#ddd;
+    list-style: none;
+    width:500px;
+  }
+  #search {
+    margin:auto;
+  }
+  .page {
+    height:120px;
+    background-color: #444;
+    padding:10px;
+    margin:10px;
+    cursor:pointer;
+  }
+  .page h3 {
+    margin-top:0;
+  }
+  .ui-helper-hidden-accessible { 
+    display:none; 
+  }
+  .ui-state-focus {
+    background-color:#337ab7;
+  }
+  .ui-autocomplete {
+    padding:10px;
+  }
+</style>
+<div class="container-fluid" id="projects">
+  <apps-nav></apps-nav>
+  <section>
+    <div class="container-fluid">
+     <div class="title text-center">
+        <h1>Wikipedia Viewer</h1>    
+        <form class="form-group form" ng-submit="getWiki(search)">
+          <input type="text" ng-model="search" class="form-control" placeholder="Search" id="search" wiki-autocomplete info="searchScope">
+        </form>
+        <button class="btn btn-primary" ng-click="random()">Go to a Random Page</button>
+      </div>
+      <section>
+        <wiki-story ng-repeat="page in pages" page="page"></wiki-story>
+      </section>
+    </div>
+  </section>
+</div>

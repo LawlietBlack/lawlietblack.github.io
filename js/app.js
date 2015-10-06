@@ -1,89 +1,110 @@
-var app = angular.module("projectsApp", ['ngRoute', 'ngSanitize']);
+angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
 
-app.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/', {
+		controller: 'MainController',
+		templateUrl: 'views/portfolio.html'
+	}).when('/apps', {
 		controller: 'ProjectController', 
-		templateUrl: 'views/home.html'
-	}).when('/dice', {
+		templateUrl: 'views/apps.html'
+	}).when('/updates', {
 		controller: 'ProjectController', 
-		template: '<dice class="app"></dice>'
-	}).when('/draw', {
+		templateUrl: 'views/updates.html'
+	}).when('/about', {
+		controller: 'MainController',
+		templateUrl: 'views/about.html'
+	}).when('/apps/dice', {
 		controller: 'ProjectController', 
-		template: '<drawing class="app"></drawing>'
-	}).when('/flickr', {
+		template: '<div class="container-fluid" id="projects"><apps-nav></apps-nav><dice class="app"></dice></div>'
+	}).when('/apps/draw', {
 		controller: 'ProjectController', 
-		template: '<flickr class="app"></flickr>'
-	}).when('/quotes', {
+		template: '<div class="container-fluid" id="projects"><apps-nav></apps-nav><drawing class="app"></drawing></div>'
+	}).when('/apps/flickr', {
+		controller: 'ProjectController', 
+		template: '<div class="container-fluid" id="projects"><apps-nav></apps-nav><flickr class="app"></flickr></div>'
+	}).when('/apps/quotes', {
 		controller: 'ProjectController',
-		templateUrl: 'views/quotes.html'
-	}).when('/weather', {
+		templateUrl: 'views/apps/quotes.html'
+	}).when('/apps/weather', {
 		controller: 'ProjectController',
-		templateUrl: 'views/weather.html'
-	}).when('/pomodoro', {
+		templateUrl: 'views/apps/weather.html'
+	}).when('/apps/pomodoro', {
 		controller: 'ProjectController',
-		templateUrl: 'views/pomodoro.html'
-	}).when('/twitch', {
+		templateUrl: 'views/apps/pomodoro.html'
+	}).when('/apps/twitch', {
 		controller: 'ProjectController',
-		templateUrl: 'views/twitch.html'
-	}).when('/campernews', {
+		templateUrl: 'views/apps/twitch.html'
+	}).when('/apps/campernews', {
 		controller: 'CamperNewsController',
-		templateUrl:'views/camper-news.html'
-	}).when('/wikisearch', {
+		templateUrl:'views/apps/camper-news.html'
+	}).when('/apps/wikisearch', {
 		controller: 'WikiSearchController',
-		templateUrl: 'views/wiki-search.html'
-	}).when('/calculator', {
+		templateUrl: 'views/apps/wiki-search.html'
+	}).when('/apps/calculator', {
     controller: 'CalculatorController',
-    templateUrl: 'views/calculator.html'
-  }).when('/tictactoe', {
+    templateUrl: 'views/apps/calculator.html'
+  }).when('/apps/tictactoe', {
     controller: 'ProjectController',
-    templateUrl: 'views/t3.html'
-  })
-}]);
+    templateUrl: 'views/apps/t3.html'
+  });
+}])
 
-app.directive('dice', function(){
+.controller('MainController', ['$scope', function($scope) {
+	
+}])
+.directive('appsNav', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'views/apps/apps-nav.html'
+  };
+})
+
+.directive('dice', function(){
 	return {
 		restrict: 'E',
 		scope: {},
-		templateUrl: 'views/dice.html'
+		templateUrl: 'views/apps/dice.html'
 	};
-});
+})
 
-app.directive('drawing', function(){
+.directive('drawing', function(){
 	return {
 		restrict: 'E',
 		scope: {},
-		templateUrl: 'views/drawing.html'
+		templateUrl: 'views/apps/drawing.html'
 	};
-});
-app.directive('flickr', function(){
+})
+
+.directive('flickr', function(){
 	return {
 		restrict: 'E',
 		scope: {},
-		templateUrl: 'views/flickr.html'
+		templateUrl: 'views/apps/flickr.html'
 	};
-});
+})
 
-app.directive('treehouse', function(){
+.directive('treehouse', function(){
 	return {
 		restrict: 'E',
 		scope: {
 			info: '=',
 			badges: "="
 		},
-		templateUrl: 'views/treehouse.html'
+		templateUrl: 'views/apps/treehouse.html'
 	};
-});
+})
 
-app.controller('ProjectController', ['$scope', '$routeParams', function($scope, $routeParams) {
-}]);
+.controller('ProjectController', ['$scope', '$routeParams', function($scope, $routeParams) {
+}])
 
-app.controller('CamperNewsController', ['$scope', 'news', function($scope, news) {
+.controller('CamperNewsController', ['$scope', 'news', function($scope, news) {
   $scope.news = [];
   news.success(function(data) {
     $scope.news = data;    
   });
-}]);
-app.factory('news', ['$http', function($http) {
+}])
+
+.factory('news', ['$http', function($http) {
   return $http.get('http://www.freecodecamp.com/news/hot?callback=JSON_CALLBACK?')
   .success(function(data) {
     return data;
@@ -91,9 +112,9 @@ app.factory('news', ['$http', function($http) {
   .error(function(err) {
     return err;
   });
-}]);
+}])
 
-app.directive('camperStory', function() {
+.directive('camperStory', function() {
   return {
     restrict: 'E',
     scope: {
@@ -106,7 +127,7 @@ app.directive('camperStory', function() {
       }
       $scope.newsRedirect = function(url) {
         window.location.href = url;
-      }
+      };
     },
     link: function($scope, $element, $attrs) {
       $element.hover(function() {
@@ -115,12 +136,12 @@ app.directive('camperStory', function() {
         window.setTimeout( function(){
           $element.removeClass('animated pulse');
           }, 1000); 
-      })
+      });
     }
-  }
-});
+  };
+})
 
-app.controller('WikiSearchController', ['$scope', 'wiki', function($scope, wiki ) {
+.controller('WikiSearchController', ['$scope', 'wiki', function($scope, wiki ) {
     $scope.search = "";
     $scope.searchScope = this;
     $scope.pages = [];
@@ -128,11 +149,11 @@ app.controller('WikiSearchController', ['$scope', 'wiki', function($scope, wiki 
     $scope.getWiki = function(query) {
       wiki.get(query).success(function(data) {
         $scope.pages = data.query.search;
-        console.log($scope.pages)
+        console.log($scope.pages);
       }).error(function(err) {
         console.log(err, err.message);
-      })
-    }
+      });
+    };
     $scope.$on('search-update', function(event, data) {
       $scope.search = data;
       $scope.getWiki(data);
@@ -144,17 +165,17 @@ app.controller('WikiSearchController', ['$scope', 'wiki', function($scope, wiki 
         window.location.href = url;
       }).error(function(err) {
         console.log(err, err.message);
-      })
-    }
-}]);
+      });
+    };
+}])
 
 
-app.factory('wiki', ['$http', function($http) {
+.factory('wiki', ['$http', function($http) {
   return {
     get: function(query) {
       return $http.jsonp('https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + encodeURI(query) + '&format=json&callback=JSON_CALLBACK')
       .success(function(data) {
-        console.log(data)
+        console.log(data);
         return data;
       })
       .error(function(err) {
@@ -170,23 +191,24 @@ app.factory('wiki', ['$http', function($http) {
         return err;
       });
     }
-  }
-}]);
+  };
+}])
 
-app.directive('wikiStory', function() {
+.directive('wikiStory', function() {
   return {
     restrict: 'E',
     scope: { page: '='},
     template: '<div class="page" ng-click="redirect(page.title)">  <h3>{{page.title}}</h3><p ng-bind-html="page.snippet"></p></div>',
     link: function($scope, $element, $attrs) {
       $scope.redirect = function(title) {
-          var url = 'https://en.wikipedia.org/wiki/' + title
+          var url = 'https://en.wikipedia.org/wiki/' + title;
           window.location.href = url;
       };
     }
-  }
-});
-app.directive('wikiAutocomplete', ['wiki', function(wiki) {
+  };
+})
+
+.directive('wikiAutocomplete', ['wiki', function(wiki) {
     return {
       restrict: 'A',
       scope: { info: '=' },
@@ -205,7 +227,7 @@ app.directive('wikiAutocomplete', ['wiki', function(wiki) {
               },
               success: function(data) {
                 response(data[1]);
-                console.log(data)
+                console.log(data);
               }
             });
           },
@@ -214,10 +236,10 @@ app.directive('wikiAutocomplete', ['wiki', function(wiki) {
           }
         }).appendTo('#search');
       }
-    }
-}]);
+    };
+}])
 
-app.controller('CalculatorController', ['$scope', function($scope) {
+.controller('CalculatorController', ['$scope', function($scope) {
   $scope.output = "";
   $scope.running = "";
   $scope.staged = false;
@@ -239,12 +261,12 @@ app.controller('CalculatorController', ['$scope', function($scope) {
     }
   };
   //main function for + - / % * buttons. Staged variable tracks if the last button press was another operand
-  $scope.mathClick = function(eval) {
+  $scope.mathClick = function(operation) {
     if($scope.staged) {
-      $scope.running = $scope.running.slice(0,$scope.running.length-1) + eval;
+      $scope.running = $scope.running.slice(0,$scope.running.length-1) + operation;
     } else {
       $scope.zeroCheck();
-      $scope.running += $scope.output + eval;
+      $scope.running += $scope.output + operation;
     }
     $scope.staged = true;
     $scope.evaluated = false;
@@ -253,13 +275,13 @@ app.controller('CalculatorController', ['$scope', function($scope) {
   //main evaluate function. checks for an empty input, evaluates the running total with the output, resets the running total, and sets evaluated to true and staged to false;
   $scope.evaluate = function() {
     if($scope.output === "") {
-      return
+      return;
     }
     $scope.output = math.eval($scope.running += $scope.output).toString();
     $scope.running = "";
     $scope.evaluated = true;
     $scope.staged = false;
-  }
+  };
   $scope.clearEntry = function() {
     $scope.output = "";
     $scope.staged = true;
@@ -280,7 +302,7 @@ app.controller('CalculatorController', ['$scope', function($scope) {
   //checks for an empty string and adds zero as appropriate
   $scope.zeroCheck = function() {
     if($scope.output === ""|| $scope.output.substr(-1) === ".") {
-      $scope.output += "0"
+      $scope.output += "0";
     }
   };
   // checks if the output is a result of evaluation, and if so, clears before adding num
@@ -289,13 +311,13 @@ app.controller('CalculatorController', ['$scope', function($scope) {
       $scope.clearAll();
       $scope.evaluated = false;
     }
-  }
-}]);
+  };
+}])
 
-app.directive('ticTacToe', function() {
+.directive('ticTacToe', function() {
   return {
     restrict: 'E',
-    templateUrl: 'views/tictactoe.html',
+    templateUrl: 'views/apps/tictactoe.html',
     controller: ['$scope', function($scope) {
       $scope.winCon = [
         ["t1","t3","t2"],
@@ -310,11 +332,11 @@ app.directive('ticTacToe', function() {
       $scope.player = {
         symbol: "X",
         color: "green",
-      }
+      };
       $scope.computer = {
         symbol: "O",
         color: "red"
-      }
+      };
       $scope.score = function() {
         var scores = $scope.winCon.map(function(win) {
           var threatLevel = 0;
@@ -324,58 +346,59 @@ app.directive('ticTacToe', function() {
             } else if($scope.board[win[i]] === $scope.computer.symbol) {
               threatLevel -=2;
             }
-          };
+          }
           return threatLevel;
         });
         console.log("scores:", scores);
-        return scores
-      }
+        return scores;
+      };
       $scope.playerMove = function(tile) {
-        if($scope.board[tile] !== "" || $scope.gameOver) { return };
+        if($scope.board[tile] !== "" || $scope.gameOver) { return; }
         $scope.score();
         $scope.board[tile] = $scope.player.symbol;
         console.log("player chooses ", tile);
         $('#' + tile).html('<span style="color:' + $scope.player.color + '">' + $scope.player.symbol + '</span>');
         $scope.turn += 1;
-        $scope.winCheck()
+        $scope.winCheck();
         if($scope.turn < 9) {
           $scope.compTurn();
         }
       };
       $scope.compTurn = function() {
         var tiles = ["t1","t2","t3","t4","t5","t6","t7","t8","t9"];
-        var available = tiles.filter(function(tile) {return $scope.board[tile] === ""});
+        var available = tiles.filter(function(tile) {return $scope.board[tile] === "";});
         var scores = $scope.score();
         var tile;
         if(available.indexOf("t5") > 0) {
-          console.log("t5 gate")
+          console.log("t5 gate");
           tile = "t5";
         } else if(scores.indexOf(-4) >= 0) {
           console.log("win gate");
-          tile = $scope.winCon[scores.indexOf(-4)].filter(function(tile) {return $scope.board[tile] === ""});
+          tile = $scope.winCon[scores.indexOf(-4)].filter(function(tile) {return $scope.board[tile] === "";});
         } else if(scores.indexOf(2) >= 0) {
           console.log("block gate");
-          tile = $scope.winCon[scores.indexOf(2)].filter(function(tile) {return $scope.board[tile] === ""});
+          tile = $scope.winCon[scores.indexOf(2)].filter(function(tile) {return $scope.board[tile] === "";});
         } else if(scores.indexOf(-2) >=0) {
-          console.log("progress gate")
-          tile = $scope.winCon[scores.indexOf(-2)].filter(function(tile) {return $scope.board[tile] === ""})[0];
+          console.log("progress gate");
+          tile = $scope.winCon[scores.indexOf(-2)].filter(function(tile) {return $scope.board[tile] === "";})[0];
         } else if(available.indexOf("t7") >= 0) {
-          console.log("t7 gate")
+          console.log("t7 gate");
           tile = "t7";
         } else {
-          console.log("random gate")
+          console.log("random gate");
           tile = available[Math.floor(Math.random()*available.length)];
         }
         $scope.compPick(tile);
       };
       $scope.compPick = function(tile) {
-        console.log("Computer chooses " + tile)
+        console.log("Computer chooses " + tile);
         $('#' + tile).html('<span style="color:' + $scope.computer.color + '">' + $scope.computer.symbol + '</span>');
         $scope.board[tile] = $scope.computer.symbol;
         $scope.turn +=1;
-        $scope.winCheck()
-      } 
+        $scope.winCheck();
+      };
       $scope.winCheck = function() {
+        var timeout;
         var board = $scope.board;
         for(var i=0;i<$scope.winCon.length;i++) {
           var win = $scope.winCon[i];
@@ -383,24 +406,24 @@ app.directive('ticTacToe', function() {
             var winnerSymbol = board[win[0]];
             if($scope.player.symbol === winnerSymbol) {
               $('#winnerBoard').html("Player Wins!");
-              var timeout = window.setTimeout($scope.reset, 2000);
+              timeout = window.setTimeout($scope.reset, 2000);
               $scope.gameOver = true;
-              return "Player Wins!"
+              return "Player Wins!";
             } else {
               $('#winnerBoard').html("Computer Wins!");
-              var timeout = window.setTimeout($scope.reset, 2000);
+              timeout = window.setTimeout($scope.reset, 2000);
               $scope.gameOver = true;
-              return "Computer Wins!"
+              return "Computer Wins!";
             }
           } 
         }
         if($scope.turn === 9) {
           $('#winnerBoard').html("Game Tie!");
-          var timeout = window.setTimeout($scope.reset, 2000);
+          timeout = window.setTimeout($scope.reset, 2000);
           $scope.gameOver = true;
-          return "Game Tie!"
+          return "Game Tie!";
         }
-      }
+      };
       $scope.reset = function() {
         $scope.board = { t1:"", t2:"", t3:"", t4:"", t5:"", t6:"", t7:"", t8:"", t9:""};
         $scope.turn = 0;
@@ -425,10 +448,10 @@ app.directive('ticTacToe', function() {
           $('#pickX').show();
         }
         $scope.reset();
-      }
+      };
 
       $('#pickX').hide();
       $scope.reset();
     }]
-  }
-})
+  };
+});

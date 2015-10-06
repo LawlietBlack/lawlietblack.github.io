@@ -1,0 +1,18 @@
+  <div id="gameboard" class="text-center">
+    <div class="tile" id="t1" ng-click="playerMove('t1')"></div>
+    <div class="tile" id="t2" ng-click="playerMove('t2')"></div>
+    <div class="tile" id="t3" ng-click="playerMove('t3')"></div>
+    <div class="tile" id="t4" ng-click="playerMove('t4')"></div>
+    <div class="tile" id="t5" ng-click="playerMove('t5')"></div>
+    <div class="tile" id="t6" ng-click="playerMove('t6')"></div>
+    <div class="tile" id="t7" ng-click="playerMove('t7')"></div>
+    <div class="tile" id="t8" ng-click="playerMove('t8')"></div>
+    <div class="tile" id="t9" ng-click="playerMove('t9')"></div>
+  </div>
+  <div class="text-center">
+    <h4>Change to 
+    <button class="btn btn-success" ng-click="changeSide('X')" id="pickX">X</button>
+    <button class="btn btn-success" ng-click="changeSide('O')" id="pickO">O</button>
+    </h4>
+    <h1 id="winnerBoard"></h1>
+  </div>
