@@ -159,7 +159,7 @@ PAGE: PORTFOLIO
     margin:0;
   }
   paper-card .card-bottom {
-    min-height: 150px;
+    min-height: 160px;
   }
 
   paper-card img {
