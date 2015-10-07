@@ -10,10 +10,10 @@ GENERAL
     min-height: calc(100% - 289px);
   }
   h1, h2, h3, h4, h5, h6 {
-    color:#ddd;
+    color:#fff;
   }
   p, ul {
-    color:#ccc;
+    color:#fff;
   }
   #wrapper {
     max-width:940px;
@@ -54,7 +54,7 @@ NAVIGATION
     height:100%;
     width: 100%;
     text-decoration: none;
-    color:#bbb;
+    color:#fff;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
   }
   nav ul {
@@ -107,7 +107,6 @@ JUMBOTRON
     text-shadow:  2px 8px 8px rgba(0, 0, 0, 0.6);
     color: #ffffff;
     font-size: 48px;  
-    font-family: 'Shift', sans-serif;
     font-weight: bold;
   }
   .jtron p {
@@ -126,26 +125,7 @@ PAGE: PORTFOLIO
   .portfolio {
     padding-top:20px;
   }
-  .portfolio h2 {
-    font-size:24px;
-  }
-  .portfolio p {
-    font-size:15px;
-    margin-bottom:13px;
-  }
-  .portfolio p, .portfolio h2 {
-    padding:0 12px;
-  }
-  .portfolio .thumbnail {
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin:0;
-    padding:0 0 10px 0;
-    border: none;
-    background-color: #171717;
-    position: relative;
-  }
+
   paper-card {
     float:left;
     margin:20px;
@@ -187,7 +167,6 @@ PAGE: PORTFOLIO
     position: absolute;
     top: 30px;
     left: 100px;
-    color: var(--paper-indigo-500);
   }
 
   .fancy img {
@@ -196,8 +175,7 @@ PAGE: PORTFOLIO
 
   .fancy .big {
     font-size: 22px;
-    padding: 8px 0 16px;
-    color: var(--google-grey-500);
+    padding: 0;
   }
 
   .fancy .medium {
@@ -207,7 +185,7 @@ PAGE: PORTFOLIO
 
 
 /************************************
-PAGE: PROJECTS
+PAGE: APPS
 *************************************/
   paper-button {
     margin:4px 0px;
@@ -284,46 +262,55 @@ PAGE: UPDATES
 /************************************
 PAGE: ABOUT
 *************************************/
-  .about {
-    margin-top:40px;
-  }
-  .about p {
-    font-size: 1rem;
-  }
+  
   .profile-photo {
     display:block;
-    max-width:150px;
+    height:140px;
+    width:140px;
     margin:0 auto 50px;
     border-radius:100%;
   }
-  .languages {
-    clear:both;
+  .green {
+    background-color: #1b5e20;
   }
-  .languages h3 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #313131;
+  #about {
+    margin:40px auto 0;
+    max-width:1200px;
   }
-  .languages h4 {
-    font-family: 'Shift', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left:30px !important;
-    background-size:20px 20px;
-    background-repeat:no-repeat;
+  #about p {
+    font-size: 1rem;
+    color: #fff;
   }
+  #skills ul {
+    font-size:2rem;
+    color: #fff;
+    padding:10px;
+  } 
 
-  .codecademy {
-    background:url('../img/codecademy.png');
+  .progress {
+    width:calc(100% - 200px);
+    float:right;margin: 6px 0;
+    height:28px;
   }
-  .treehouse {
-    background:url('../img/treehouse.png');
+  #education h1 {
+    font-size: 3rem;
   }
-  .fcc {  background:url('http://lawlietblack.com/img/fcc.png');
+  #education ul {
+    color: #fff;
+    font-size: 1.4rem;
   }
-  .indep {
-    background: url('http://lawlietblack.com/img/code.png');
+  #enjoys li, #education li {
+    display:inline-block;
+    margin:20px 40px;
+    color: #fff;
   }
-
+  #education li {
+    width:200px;
+  }
+  #education p {
+    color:#fff;
+    font-size:1rem;
+  }
 
 
 /************************************
