@@ -127,6 +127,7 @@ PAGE: PORTFOLIO
   }
 
   paper-card {
+    background-color: #424b4b;
     float:left;
     margin:20px;
     width:350px;
@@ -182,7 +183,16 @@ PAGE: PORTFOLIO
     font-size: 16px;
     padding-bottom: 8px;
   }
-
+  .btn-github, .btn-website {
+    height:30px;
+    width:49.5%;
+    padding:0;
+    margin:0;
+  }
+  .btn-website {
+    background-color: #1E6711;
+    border-color: #1E6711;
+  }
 
 /************************************
 PAGE: APPS
