@@ -5,3 +5,5 @@ bower_components
 img/Thumbs.db
 img/test/Thumbs.db
 
+#node
+node_modules
