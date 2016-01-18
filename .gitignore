@@ -7,3 +7,5 @@ img/test/Thumbs.db
 
 #node
 node_modules
+
+.sass-cache
