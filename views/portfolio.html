@@ -1,9 +1,10 @@
 <div id="skills-tags">
   <div class="skill-tags">
+    <paper-button class="skill-all" ng-click="filterSkills('all')">All <span class="skill-num">14</span></paper-button>
     <paper-button
-       ng-repeat="(skill, num) in skills" 
+       ng-repeat="skill in skillList" 
        class="ngclass: skill-{{skill.toLowerCase()}}" 
-       ng-click="filterSkills(skill)">{{skill}}<span class="skill-num">{{num}}</span>
+       ng-click="filterSkills(skill)">{{skill}}<span class="skill-num">{{skills[skill]}}</span>
    </paper-button>
   </div>
 </div>

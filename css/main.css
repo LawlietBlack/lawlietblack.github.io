@@ -32,6 +32,9 @@ ul {
   ul li {
     list-style: none; }
 
+.paper-tabs-0 #selectionBar.paper-tabs {
+  background-color: #96a9c4; }
+
 paper-button {
   border-radius: 0px; }
   paper-button.content {
@@ -39,7 +42,7 @@ paper-button {
   paper-button[primary][raised] {
     background-color: #1b5e20; }
   paper-button[secondary][raised] {
-    background-color: #103613; }
+    background-color: #465C7B; }
 
 .container {
   padding-right: 15px;
@@ -122,6 +125,8 @@ header nav paper-tabs {
     margin: 4px;
     padding: 4px;
     cursor: pointer; }
+    #skills-tags .skill-tags paper-button.skill-all {
+      background: linear-gradient(#103613, #26862d), #1b5e20; }
     #skills-tags .skill-tags paper-button.skill-angularjs, #skills-tags .skill-tags paper-button.skill-jquery, #skills-tags .skill-tags paper-button.skill-javascript, #skills-tags .skill-tags paper-button.skill-nodejs, #skills-tags .skill-tags paper-button.skill-expressjs, #skills-tags .skill-tags paper-button.skill-d3js, #skills-tags .skill-tags paper-button.skill-reactjs, #skills-tags .skill-tags paper-button.skill-ajax {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-tags .skill-tags paper-button.skill-mongodb, #skills-tags .skill-tags paper-button.skill-yeoman, #skills-tags .skill-tags paper-button.skill-tdd, #skills-tags .skill-tags paper-button.skill-oauth {
@@ -186,6 +191,8 @@ header nav paper-tabs {
         padding: 5px 0;
         height: 30px;
         cursor: pointer; }
+        #portfolio paper-card .skills-bar li.skill-all {
+          background: linear-gradient(#103613, #26862d), #1b5e20; }
         #portfolio paper-card .skills-bar li.skill-angularjs, #portfolio paper-card .skills-bar li.skill-jquery, #portfolio paper-card .skills-bar li.skill-javascript, #portfolio paper-card .skills-bar li.skill-nodejs, #portfolio paper-card .skills-bar li.skill-expressjs, #portfolio paper-card .skills-bar li.skill-d3js, #portfolio paper-card .skills-bar li.skill-reactjs, #portfolio paper-card .skills-bar li.skill-ajax {
           background: linear-gradient(#2b502d, #4E9353), #4E9353; }
         #portfolio paper-card .skills-bar li.skill-mongodb, #portfolio paper-card .skills-bar li.skill-yeoman, #portfolio paper-card .skills-bar li.skill-tdd, #portfolio paper-card .skills-bar li.skill-oauth {

@@ -133,6 +133,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     }).reduce(function(a, b) {
       return a.concat(b);
     });
+    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "MongoDB", "Yeoman", "oAuth", "TDD", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
     for(var i=0; i<skillsData.length; i++) {
       if($scope.skills[skillsData[i]] === undefined) {
         $scope.skills[skillsData[i]] = 1;
@@ -145,14 +146,14 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
         if(card.skills.indexOf(skill) < 0) {
           $('portfolio-card').eq(index).hide()
         } else {
-          $('portfolio-card').eq(index).show()
+          $('portfolio-card').eq(index).slideDown()
         }
         return true;
-      })
-    }
+      });
+    };
     $scope.$on('skillfilter', function(event, skill) {
       $scope.filterSkills(skill);
-    })
+    });
 }])
 
 
