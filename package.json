@@ -1,0 +1,32 @@
+{
+  "name": "lawlietblack",
+  "version": "1.0.0",
+  "description": "Portfolio for Kenneth Black",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp": "^3.9.0",
+    "del": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-uglify": "^1.5.1",
+    "vulcanize": "^1.14.1"
+  },
+  "devDependencies": {
+    "gulp-cdnizer": "^1.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LawlietBlack/lawlietblack.github.io.git"
+  },
+  "author": "Kenneth Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LawlietBlack/lawlietblack.github.io/issues"
+  },
+  "homepage": "https://github.com/LawlietBlack/lawlietblack.github.io#readme"
+}

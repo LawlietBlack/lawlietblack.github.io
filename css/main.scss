@@ -1,0 +1,346 @@
+$bg-color: #242424;
+$card-color: #424b4b;
+$primary-color: #1b5e20;
+$font-color: #fff;
+$primary-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+$icon-size: 40px;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import "_mixins.scss";
+
+html, body {
+  font-family: $primary-font;
+  background-color: $bg-color;
+  color: $font-color;
+  height:100%;
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear:both;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration:none;
+  color:#593;
+  &:hover {
+  text-decoration: none;
+  color:#262;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+paper-button {
+  border-radius: 0px;
+  &.content {
+    padding: 0;
+  }
+  &[primary][raised] {
+    background-color: $primary-color;
+  }
+  &[secondary][raised] {
+    background-color: darken($primary-color, 10%);
+  }
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $screen-small) {
+    width: 750px;
+  }
+  @media (min-width: $screen-medium) {
+    width: 970px;
+  }
+  @media (min-width: $screen-large) {
+    width: 1170px;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.green {
+  background-color: #1B5E20;
+}
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+%tile {
+  display: inline-block;
+  margin: 20px;
+}
+header {
+  nav {
+    .title-block {
+      background: linear-gradient(transparent, $primary-color), 
+            $bg-color url('../img/code.jpg') no-repeat fixed center;
+      background-size: cover;
+      height: 140px;
+      h1 {
+        @include shadowed(8px);
+        padding: 30px 0 0;
+        font-size: 2.5em;
+        font-weight: bold;
+      text-shadow:  2px 8px 8px rgba(0, 0, 0, 0.6);
+      }
+      p {
+        @include shadowed(4px);
+        margin: 0 10px 20px;
+        font-size: 1.25em;
+
+      }
+    }
+    paper-tabs {
+      background-color: #1b5e20;
+      a, a:hover {
+        text-align: center;
+        padding:16px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#skills-tags {
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 10px auto 0;
+    paper-button {
+      margin: 4px;
+      padding: 4px;
+      cursor: pointer;
+      @include skillcolors;
+      .skill-num {
+        background-color: #777;
+        border-radius: 50%;
+        margin-left:4px;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#portfolio {
+  padding-top:20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  paper-material {
+    overflow: auto;
+    }
+    paper-card {
+      margin: 20px;
+      float:left;
+      background-color: $card-color;
+      width: 440px;
+    img {
+      width: 350px;
+      height: 200px;
+    }
+    .card-content {
+      padding: 0;
+      float:left;
+      .title {
+        h2 {
+          font-size: 1.35em;
+         }
+        padding:7px;
+        height: 40px;
+        width: 350px;
+      }
+    }
+    .card-bottom {
+      position:relative;
+      min-height:200px;
+      width: 440px;
+      padding: 10px;
+      p {
+        margin: 6px 0 0;
+      }
+      paper-button {
+        position: absolute;
+        bottom:5px;
+        &.git-btn {
+          right: 90px;
+        }
+        &.web-btn {
+          right:0;
+        }
+      }
+    }
+    .skills-bar {
+      width: 90px;
+      height: 240px;
+      float:right;
+      text-align: center;
+      background-color: darken($card-color, 10%);
+      li {
+        @include skillcolors;
+        padding:5px 0;
+        height:30px;
+      }
+    }
+  }
+}
+
+#updates {
+  margin: 20px auto;
+}
+#about {
+  margin: 40px auto 0;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  section {
+    min-height: 240px;
+    padding: 40px 0;
+  }
+  #profile {
+    .profile-photo {
+      display: block;
+      height: 140px;
+      width: 140px;
+      margin: 0 auto 50px;
+      border-radius: 50%;
+      @media screen and (min-width: $screen-small) {
+        float:left;
+        margin:20px 5% 130px 0;
+      }
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+  }
+  #education {
+    ul {
+      @include flexy();
+      text-align: center;
+      font-size: 1.4em;
+      li {
+        @extend %tile;
+        width: 260px;
+        h2 {
+          font-size: 1.3em;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  #skills {
+    ul {
+      width: 90%;
+      margin-right: 10%;
+      font-size: 2em;
+      padding: 10px;
+      @media screen and (max-width: $screen-small) {
+        margin:auto;
+      }
+      li {
+        height: 48px;
+        text-align: right;
+        .label {
+          float:left;
+          width: 25%;
+          padding: 6px 6px 0 0;
+        }
+        .progress {
+          float:right;
+          margin: 10px 0;
+          width: 75%;
+          height: 28px;
+        } 
+        @media screen and (max-width:$screen-medium) {
+          .label {
+            width: 40%;
+          }
+          .progress {
+            width: 60%;
+          }
+        }
+        @media screen and (max-width: $screen-small) {
+          .label, .progress {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #enjoys {
+    ul {
+      @include flexy();
+      li {
+        @extend %tile;
+      }
+    }
+  }
+}
+footer {
+  font-size: 0.75em;
+  padding-top: 50px;
+  text-align: center;
+  .social-icon {
+    height: $icon-size;
+    width: $icon-size;
+    border-radius: 50%;
+    margin-right:10px;
+  }
+}
+

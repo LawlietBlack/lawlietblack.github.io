@@ -1,0 +1,19 @@
+<paper-card class="fancy x-scope paper-card-0" aria-label="" elevation="5">
+  <div class="card-content title-bar">
+    <div class="title">
+      <h2>{{card.title}}</h2>
+    </div>
+  </div>
+  <div class="card-content skills-bar">
+    <ul class="skills">
+      <li ng-repeat="skill in card.skills" class="ngclass: skill-{{skill.toLowerCase()}}">{{skill}}</li>
+    </ul>
+  </div>
+  <img src="#" ng-src="{{card.img}}">
+  <div class="card-content card-bottom">
+    <h4>Description</h4>
+    <p>{{card.description}}</p>
+    <paper-button primary raised ng-click="link(card.github)" elevation="9" class="git-btn">GitHub</paper-button>
+    <paper-button secondary raised ng-click="link(card.link)" elevation="9" class="web-btn">Website</paper-button>
+  </div> 
+</paper-card>
