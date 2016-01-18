@@ -145,10 +145,7 @@ header {
 
 #skills-tags {
   .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    @include flexy();
     max-width: 1200px;
     margin: 10px auto 0;
     paper-button {
@@ -171,10 +168,7 @@ header {
 
 #portfolio {
   padding-top:20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  @include flexy();
   paper-material {
     overflow: auto;
     }
@@ -228,6 +222,7 @@ header {
         @include skillcolors;
         padding:5px 0;
         height:30px;
+        cursor:pointer;
       }
     }
   }

@@ -9,3 +9,4 @@ img/test/Thumbs.db
 node_modules
 
 .sass-cache
+**/.sass-cache

@@ -6,7 +6,9 @@
   </div>
   <div class="card-content skills-bar">
     <ul class="skills">
-      <li ng-repeat="skill in card.skills" class="ngclass: skill-{{skill.toLowerCase()}}">{{skill}}</li>
+      <li ng-repeat="skill in card.skills" 
+          ng-click="filterSkills(skill)"
+          class="ngclass: skill-{{skill.toLowerCase()}}">{{skill}}</li>
     </ul>
   </div>
   <img src="#" ng-src="{{card.img}}">

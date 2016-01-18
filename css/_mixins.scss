@@ -3,59 +3,14 @@
 }
 
 @mixin skillcolors() {
-	&.skill-angularjs {
-    background: linear-gradient(darken(#C23B22, 20%), #C23B22), #C23B22;
+	&.skill-angularjs, &.skill-jquery, &.skill-javascript, &.skill-nodejs, &.skill-expressjs, &.skill-d3js, &.skill-reactjs, &.skill-ajax {
+    background: linear-gradient(darken(#4E9353, 20%), #4E9353), #4E9353;
   }
-  &.skill-jquery {
-    background: linear-gradient(darken(#779ECB, 20%), #779ECB), #779ECB;
+  &.skill-mongodb, &.skill-yeoman, &.skill-tdd, &.skill-oauth {
+    background: linear-gradient(darken(#465C7B, 20%), #465C7B), #465C7B;
   }
-  &.skill-javascript {
-    background: linear-gradient(darken(#FAC552, 20%), #FAC552), #FAC552;
-  }
-  &.skill-html5 {
-    background: linear-gradient(darken(#F16529, 20%), #F16529), #F16529;
-  }
-  &.skill-css3 {
-    background: linear-gradient(darken(#29A9DF, 20%), #29A9DF), #29A9DF;
-  }
-  &.skill-photoshop {
-    background: linear-gradient(darken(#1C83E8, 20%), #1C83E8), #1C83E8;
-  }
-  &.skill-nodejs {
-    background: linear-gradient(darken(#8FC84E, 20%), #8FC84E), #8FC84E;
-  }
-  &.skill-mongodb {
-    background: linear-gradient(darken(#6B503D, 20%), #6B503D), #6B503D;
-  }
-  &.skill-yeoman {
-    background: linear-gradient(darken(#DD002A, 20%), #DD002A), #DD002A;
-  }
-  &.skill-expressjs {
-    background: linear-gradient(darken(#FF9327, 20%), #FF9327), #FF9327;
-  }
-  &.skill-tdd {
-    background: linear-gradient(darken(#C73834, 20%), #C73834), #C73834;
-  }
-  &.skill-bootstrap {
-    background: linear-gradient(darken(#583E7E, 20%), #583E7E), #583E7E;
-  }
-  &.skill-d3js {
-    background: linear-gradient(darken(#F6804C, 20%), #F6804C), #F6804C;
-  }
-  &.skill-oauth {
-    background: linear-gradient(darken(#037AA6, 20%), #037AA6), #037AA6;
-  }
-  &.skill-responsive {
-    background: linear-gradient(darken(#01A58D, 20%), #01A58D), #01A58D;
-  }
-  &.skill-reactjs {
-    background: linear-gradient(darken(#00D8FF, 20%), #00D8FF),  #00D8FF;
-  }
-  &.skill-sass {
-    background: linear-gradient(darken(#CD6799, 20%), #CD6799),  #CD6799;
-  }
-  &.skill-ajax {
-    background: linear-gradient(darken(#0272BC, 20%), #0272BC),  #0272BC;
+  &.skill-html5, &.skill-photoshop, &.skill-css3, &.skill-bootstrap, &.skill-sass, &.skill-responsive {
+    background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
   }
 }
 
