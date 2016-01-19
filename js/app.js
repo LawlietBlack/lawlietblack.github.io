@@ -143,7 +143,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     }
     $scope.filterSkills = function(skill) {
       $scope.portfolio.filter(function(card, index) {
-        if(card.skills.indexOf(skill) < 0) {
+        if(skill === 'all') {
+          $('portfolio-card').slideDown()
+        } else if(card.skills.indexOf(skill) < 0) {
           $('portfolio-card').eq(index).hide()
         } else {
           $('portfolio-card').eq(index).slideDown()
