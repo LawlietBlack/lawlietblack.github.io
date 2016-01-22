@@ -1,4 +1,4 @@
-angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
+angular.module('PortfolioApp', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/', {

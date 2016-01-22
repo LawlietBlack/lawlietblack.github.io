@@ -1,9 +1,11 @@
+# Bower
+bower_components
 
-#Windows Thumbnail Files
+# Windows Thumbnail Files
 img/Thumbs.db
 img/test/Thumbs.db
 
-#node
+# Node
 node_modules
 
 .sass-cache
