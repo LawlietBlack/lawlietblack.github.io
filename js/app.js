@@ -20,7 +20,7 @@ angular.module('PortfolioApp', ['ngRoute'])
 	$scope.portfolio = [{
       title: 'Persona 4 Golden Guide',
       img: 'img/projects/persona.png',
-      skills: ['AngularJS', 'JavaScript', 'jQuery', 'Nodejs', 'HTML5', 'CSS3', 'Photoshop'],
+      skills: ['AngularJS', 'JavaScript', 'jQuery', 'AJAX', 'Nodejs', 'HTML5', 'CSS3', 'Photoshop'],
       description: 'A website guide for Persona 4 Golden. I initially built this app using a node.js back end with express and swig, but down the line I realized that it would run much faster as an AngularJS single page application. The fullstack JavaScript version is saved as the \'node\' branch.',
       github: 'https://github.com/LawlietBlack/Persona-4-Golden-Guide',
       link: 'http://persona.lawlietblack.com'
@@ -31,6 +31,13 @@ angular.module('PortfolioApp', ['ngRoute'])
       description: 'Magic: the Gathering Deckbuilder that I built using MEAN stack.',
       github: 'https://github.com/LawlietBlack/magic-deckbuilder',
       link: 'http://magic-lawlietblack.herokuapp.com'
+    }, {
+      title: 'Pokedex',
+      img: 'img/projects/pokedex.png',
+      skills: ['AngularJS', 'JavaScript', 'Jasmine', 'TDD', 'Sass', 'Responsive', 'HTML5', 'CSS3'],
+      description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, and an external API.',
+      github: 'https://github.com/LawlietBlack/pokedex',
+      link: 'http://pokedex.lawlietblack.com'
     }, {
       title: 'Civilization 5 Leaders Guide',
       img: 'img/projects/civ5.png',
@@ -133,7 +140,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }).reduce(function(a, b) {
       return a.concat(b);
     });
-    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "MongoDB", "Yeoman", "oAuth", "TDD", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
+    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
     for(var i=0; i<skillsData.length; i++) {
       if($scope.skills[skillsData[i]] === undefined) {
         $scope.skills[skillsData[i]] = 1;
