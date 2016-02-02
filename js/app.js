@@ -53,12 +53,33 @@ angular.module('PortfolioApp', ['ngRoute'])
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15',
       link: 'http://codepen.io/LawlietBlack/full/JGBazL'
     }, {
+      title: 'Conway\'s Game of Life',
+      img: 'img/projects/life.png',
+      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      description: 'Conway\'s game of life with grid size, generation speed, pause/play, and randomize functionality. Hosted on Codepen.',
+      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-14',
+      link: 'http://codepen.io/LawlietBlack/full/oboRwo/'
+    }, {
+      title: 'Recipe Box',
+      img: 'img/projects/recipebox.png',
+      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      description: 'Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deleting, and editing. Hosted on Codepen.',
+      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-13',
+      link: 'http://codepen.io/LawlietBlack/full/gPgqGR'
+    }, {
       title: 'Vote',
       img: 'img/projects/vote.png',
       skills: [ 'AngularJS', 'Nodejs','Expressjs', 'JavaScript', 'MongoDB', 'Yeoman', 'oAuth',  'HTML5'],
       description: 'Voting app built using MEAN stack and oAuth that allows users to login, create polls, and share them with others.',
       github: 'https://github.com/LawlietBlack/vote',
       link: 'http://vote-lawlietblack.herokuapp.com'
+    }, {
+      title: 'Markdown Preview',
+      img: 'img/projects/markdown.png',
+      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      description: 'Markdown preview app built with ReactJS and Sass. Hosted on Codepen.',
+      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-11',
+      link: 'http://codepen.io/LawlietBlack/full/vLgmdm'
     }, {
       title: 'Stocks',
       img: 'img/projects/stocks.png',
@@ -109,26 +130,12 @@ angular.module('PortfolioApp', ['ngRoute'])
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-10',
       link: 'http://codepen.io/LawlietBlack/full/RWWzLz'
     }, {
-      title: 'Markdown Preview',
-      img: 'img/projects/markdown.png',
-      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
-      description: 'Markdown preview app built with ReactJS and Sass. Hosted on Codepen.',
-      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-11',
-      link: 'http://codepen.io/LawlietBlack/full/vLgmdm'
-    }, {
       title: 'FreeCodeCamp Leaderboard',
       img: 'img/projects/fccleaders.png',
       skills: ['ReactJS', 'JavaScript', 'AJAX', 'Sass', 'HTML5', 'Responsive'],
       description: 'Leaderboard for FreeCodeCamp.com created with ReactJS and Sass. Utilizes an api endpoint made by a fellow student. Hosted on Codepen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-12',
       link: 'http://codepen.io/LawlietBlack/full/rxjZEq'
-    }, {
-      title: 'Recipe Box',
-      img: 'img/projects/recipebox.png',
-      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
-      description: 'Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deleting, and editing. Hosted on Codepen.',
-      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-13',
-      link: 'http://codepen.io/LawlietBlack/full/gPgqGR'
     }]
 
     // }, {

@@ -1,6 +1,6 @@
 <div id="skills-tags">
   <div class="skill-tags">
-    <paper-button class="skill-all" ng-click="filterSkills('all')">All <span class="skill-num">16</span></paper-button>
+    <paper-button class="skill-all" ng-click="filterSkills('all')">All <span class="skill-num">{{portfolio.length}}</span></paper-button>
     <paper-button
        ng-repeat="skill in skillList" 
        class="ngclass: skill-{{skill.toLowerCase()}}" 
@@ -25,4 +25,5 @@
   <portfolio-card card="portfolio[13]"></portfolio-card>
   <portfolio-card card="portfolio[14]"></portfolio-card>
   <portfolio-card card="portfolio[15]"></portfolio-card>
+  <portfolio-card card="portfolio[16]"></portfolio-card>
 </div>
