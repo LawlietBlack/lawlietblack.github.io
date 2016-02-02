@@ -132,7 +132,7 @@ header nav paper-tabs {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-tags .skill-tags paper-button.skill-mongodb, #skills-tags .skill-tags paper-button.skill-yeoman, #skills-tags .skill-tags paper-button.skill-tdd, #skills-tags .skill-tags paper-button.skill-oauth, #skills-tags .skill-tags paper-button.skill-jasmine, #skills-tags .skill-tags paper-button.skill-babel, #skills-tags .skill-tags paper-button.skill-socketio, #skills-tags .skill-tags paper-button.skill-restapi {
       background: linear-gradient(#212b3a, #465C7B), #465C7B; }
-    #skills-tags .skill-tags paper-button.skill-html5, #skills-tags .skill-tags paper-button.skill-photoshop, #skills-tags .skill-tags paper-button.skill-css3, #skills-tags .skill-tags paper-button.skill-bootstrap, #skills-tags .skill-tags paper-button.skill-sass, #skills-tags .skill-tags paper-button.skill-responsive {
+    #skills-tags .skill-tags paper-button.skill-html5, #skills-tags .skill-tags paper-button.skill-photoshop, #skills-tags .skill-tags paper-button.skill-css3, #skills-tags .skill-tags paper-button.skill-bootstrap, #skills-tags .skill-tags paper-button.skill-sass, #skills-tags .skill-tags paper-button.skill-responsive, #skills-tags .skill-tags paper-button.skill-bourbon {
       background: linear-gradient(#2f233d, #61487E), #61487E; }
     #skills-tags .skill-tags paper-button .skill-num {
       background-color: #777;
@@ -198,7 +198,7 @@ header nav paper-tabs {
           background: linear-gradient(#2b502d, #4E9353), #4E9353; }
         #portfolio paper-card .skills-bar li.skill-mongodb, #portfolio paper-card .skills-bar li.skill-yeoman, #portfolio paper-card .skills-bar li.skill-tdd, #portfolio paper-card .skills-bar li.skill-oauth, #portfolio paper-card .skills-bar li.skill-jasmine, #portfolio paper-card .skills-bar li.skill-babel, #portfolio paper-card .skills-bar li.skill-socketio, #portfolio paper-card .skills-bar li.skill-restapi {
           background: linear-gradient(#212b3a, #465C7B), #465C7B; }
-        #portfolio paper-card .skills-bar li.skill-html5, #portfolio paper-card .skills-bar li.skill-photoshop, #portfolio paper-card .skills-bar li.skill-css3, #portfolio paper-card .skills-bar li.skill-bootstrap, #portfolio paper-card .skills-bar li.skill-sass, #portfolio paper-card .skills-bar li.skill-responsive {
+        #portfolio paper-card .skills-bar li.skill-html5, #portfolio paper-card .skills-bar li.skill-photoshop, #portfolio paper-card .skills-bar li.skill-css3, #portfolio paper-card .skills-bar li.skill-bootstrap, #portfolio paper-card .skills-bar li.skill-sass, #portfolio paper-card .skills-bar li.skill-responsive, #portfolio paper-card .skills-bar li.skill-bourbon {
           background: linear-gradient(#2f233d, #61487E), #61487E; }
       #portfolio paper-card .skills-bar .over-8 {
         height: 10px;

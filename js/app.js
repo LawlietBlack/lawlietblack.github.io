@@ -34,7 +34,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Pokedex',
       img: 'img/projects/pokemon.png',
-      skills: ['AngularJS', 'JavaScript', 'AJAX', 'Jasmine', 'TDD', 'Sass', 'Responsive', 'HTML5'],
+      skills: ['AngularJS', 'JavaScript', 'AJAX', 'Jasmine', 'TDD', 'Sass', 'Bourbon', 'Responsive', 'HTML5'],
       description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.',
       github: 'https://github.com/LawlietBlack/pokedex',
       link: 'http://pokedex.lawlietblack.com'
@@ -154,7 +154,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }).reduce(function(a, b) {
       return a.concat(b);
     });
-    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
+    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Bourbon", "Photoshop"]
     for(var i=0; i<skillsData.length; i++) {
       if($scope.skills[skillsData[i]] === undefined) {
         $scope.skills[skillsData[i]] = 1;
