@@ -36,7 +36,8 @@ ul {
   background-color: #96a9c4; }
 
 paper-button {
-  border-radius: 0px; }
+  border-radius: 0px;
+  text-transform: none; }
   paper-button.content {
     padding: 0; }
   paper-button[primary][raised] {
@@ -127,9 +128,9 @@ header nav paper-tabs {
     cursor: pointer; }
     #skills-tags .skill-tags paper-button.skill-all {
       background: linear-gradient(#103613, #26862d), #1b5e20; }
-    #skills-tags .skill-tags paper-button.skill-angularjs, #skills-tags .skill-tags paper-button.skill-jquery, #skills-tags .skill-tags paper-button.skill-javascript, #skills-tags .skill-tags paper-button.skill-nodejs, #skills-tags .skill-tags paper-button.skill-expressjs, #skills-tags .skill-tags paper-button.skill-d3js, #skills-tags .skill-tags paper-button.skill-reactjs, #skills-tags .skill-tags paper-button.skill-ajax {
+    #skills-tags .skill-tags paper-button.skill-angularjs, #skills-tags .skill-tags paper-button.skill-jquery, #skills-tags .skill-tags paper-button.skill-javascript, #skills-tags .skill-tags paper-button.skill-nodejs, #skills-tags .skill-tags paper-button.skill-expressjs, #skills-tags .skill-tags paper-button.skill-d3js, #skills-tags .skill-tags paper-button.skill-reactjs, #skills-tags .skill-tags paper-button.skill-ajax, #skills-tags .skill-tags paper-button.skill-jsx {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
-    #skills-tags .skill-tags paper-button.skill-mongodb, #skills-tags .skill-tags paper-button.skill-yeoman, #skills-tags .skill-tags paper-button.skill-tdd, #skills-tags .skill-tags paper-button.skill-oauth, #skills-tags .skill-tags paper-button.skill-jasmine {
+    #skills-tags .skill-tags paper-button.skill-mongodb, #skills-tags .skill-tags paper-button.skill-yeoman, #skills-tags .skill-tags paper-button.skill-tdd, #skills-tags .skill-tags paper-button.skill-oauth, #skills-tags .skill-tags paper-button.skill-jasmine, #skills-tags .skill-tags paper-button.skill-babel, #skills-tags .skill-tags paper-button.skill-socketio, #skills-tags .skill-tags paper-button.skill-restapi {
       background: linear-gradient(#212b3a, #465C7B), #465C7B; }
     #skills-tags .skill-tags paper-button.skill-html5, #skills-tags .skill-tags paper-button.skill-photoshop, #skills-tags .skill-tags paper-button.skill-css3, #skills-tags .skill-tags paper-button.skill-bootstrap, #skills-tags .skill-tags paper-button.skill-sass, #skills-tags .skill-tags paper-button.skill-responsive {
       background: linear-gradient(#2f233d, #61487E), #61487E; }
@@ -193,12 +194,16 @@ header nav paper-tabs {
         cursor: pointer; }
         #portfolio paper-card .skills-bar li.skill-all {
           background: linear-gradient(#103613, #26862d), #1b5e20; }
-        #portfolio paper-card .skills-bar li.skill-angularjs, #portfolio paper-card .skills-bar li.skill-jquery, #portfolio paper-card .skills-bar li.skill-javascript, #portfolio paper-card .skills-bar li.skill-nodejs, #portfolio paper-card .skills-bar li.skill-expressjs, #portfolio paper-card .skills-bar li.skill-d3js, #portfolio paper-card .skills-bar li.skill-reactjs, #portfolio paper-card .skills-bar li.skill-ajax {
+        #portfolio paper-card .skills-bar li.skill-angularjs, #portfolio paper-card .skills-bar li.skill-jquery, #portfolio paper-card .skills-bar li.skill-javascript, #portfolio paper-card .skills-bar li.skill-nodejs, #portfolio paper-card .skills-bar li.skill-expressjs, #portfolio paper-card .skills-bar li.skill-d3js, #portfolio paper-card .skills-bar li.skill-reactjs, #portfolio paper-card .skills-bar li.skill-ajax, #portfolio paper-card .skills-bar li.skill-jsx {
           background: linear-gradient(#2b502d, #4E9353), #4E9353; }
-        #portfolio paper-card .skills-bar li.skill-mongodb, #portfolio paper-card .skills-bar li.skill-yeoman, #portfolio paper-card .skills-bar li.skill-tdd, #portfolio paper-card .skills-bar li.skill-oauth, #portfolio paper-card .skills-bar li.skill-jasmine {
+        #portfolio paper-card .skills-bar li.skill-mongodb, #portfolio paper-card .skills-bar li.skill-yeoman, #portfolio paper-card .skills-bar li.skill-tdd, #portfolio paper-card .skills-bar li.skill-oauth, #portfolio paper-card .skills-bar li.skill-jasmine, #portfolio paper-card .skills-bar li.skill-babel, #portfolio paper-card .skills-bar li.skill-socketio, #portfolio paper-card .skills-bar li.skill-restapi {
           background: linear-gradient(#212b3a, #465C7B), #465C7B; }
         #portfolio paper-card .skills-bar li.skill-html5, #portfolio paper-card .skills-bar li.skill-photoshop, #portfolio paper-card .skills-bar li.skill-css3, #portfolio paper-card .skills-bar li.skill-bootstrap, #portfolio paper-card .skills-bar li.skill-sass, #portfolio paper-card .skills-bar li.skill-responsive {
           background: linear-gradient(#2f233d, #61487E), #61487E; }
+      #portfolio paper-card .skills-bar .over-8 {
+        height: 10px;
+        padding: 0;
+        margin: 0; }
 
 #updates {
   margin: 20px auto; }

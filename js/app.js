@@ -27,28 +27,28 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Magic: the Gathering Deckbuilder',
       img: 'img/projects/mtg.png',
-      skills: ['AngularJS', 'Nodejs', 'Expressjs', 'MongoDB', 'Yeoman', 'TDD', 'HTML5', 'CSS3'],
+      skills: ['AngularJS', 'Nodejs', 'Expressjs','RESTApi', 'MongoDB', 'Yeoman', 'Jasmine', 'TDD', 'HTML5', 'CSS3', 'JavaScript', 'AJAX'],
       description: 'Magic: the Gathering Deckbuilder that I built using MEAN stack.',
       github: 'https://github.com/LawlietBlack/magic-deckbuilder',
       link: 'http://magic-lawlietblack.herokuapp.com'
     }, {
       title: 'Pokedex',
       img: 'img/projects/pokemon.png',
-      skills: ['AngularJS', 'JavaScript', 'Jasmine', 'TDD', 'Sass', 'Responsive', 'HTML5', 'CSS3'],
-      description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, and PokeApi.',
+      skills: ['AngularJS', 'JavaScript', 'AJAX', 'Jasmine', 'TDD', 'Sass', 'Responsive', 'HTML5'],
+      description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.',
       github: 'https://github.com/LawlietBlack/pokedex',
       link: 'http://pokedex.lawlietblack.com'
     }, {
       title: 'Civilization 5 Leaders Guide',
       img: 'img/projects/civ5.png',
-      skills: ['AngularJS','jQuery', 'JavaScript',  'HTML5', 'CSS3', 'Responsive', 'Bootstrap'],
+      skills: ['AngularJS','jQuery', 'JavaScript', 'HTML5', 'CSS3', 'Responsive', 'Bootstrap'],
       description: 'A Reference Page for Civilization V with all of the available leaders in the base game and DLCs that shows each leader\'s unique ability, units, and buildings.',
       github: 'https://github.com/LawlietBlack/civ-leaders',
       link: 'http://git.lawlietblack.com/civ/index.html'
     }, {
       title: 'Dungeon Game',
       img: 'img/projects/roguelike.png',
-      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      skills: ['ReactJS', 'JavaScript', 'JSX', 'Babel', 'Sass', 'HTML5'],
       description: 'Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15',
       link: 'http://codepen.io/LawlietBlack/full/JGBazL'
@@ -62,14 +62,14 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Recipe Box',
       img: 'img/projects/recipebox.png',
-      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      skills: ['ReactJS', 'JavaScript', 'Sass', 'Responsive', 'HTML5'],
       description: 'Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deleting, and editing. Hosted on Codepen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-13',
       link: 'http://codepen.io/LawlietBlack/full/gPgqGR'
     }, {
       title: 'Vote',
       img: 'img/projects/vote.png',
-      skills: [ 'AngularJS', 'Nodejs','Expressjs', 'JavaScript', 'MongoDB', 'Yeoman', 'oAuth',  'HTML5'],
+      skills: [ 'AngularJS', 'Nodejs','Expressjs', 'JavaScript', 'MongoDB', 'Yeoman', 'oAuth',  'HTML5', 'AJAX', 'CSS3', 'Bootstrap'],
       description: 'Voting app built using MEAN stack and oAuth that allows users to login, create polls, and share them with others.',
       github: 'https://github.com/LawlietBlack/vote',
       link: 'http://vote-lawlietblack.herokuapp.com'
@@ -83,21 +83,21 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Stocks',
       img: 'img/projects/stocks.png',
-      skills: [ 'AngularJS', 'Nodejs', 'JavaScript', 'd3js', 'Expressjs', 'MongoDB', 'Yeoman', 'HTML5'],
+      skills: [ 'AngularJS', 'Nodejs', 'd3js', 'Expressjs', 'MongoDB', 'Socketio', 'Yeoman', 'HTML5', 'AJAX', 'CSS3', 'Bootstrap', 'JavaScript'],
       description: 'Single Page App that charts the stock market using data from the Markit on demand Market Data API. Chart updates for all users in real time whenever a stock is added or removed.',
       github: 'https://github.com/LawlietBlack/stocks',
       link: 'http://stocks-lawlietblack.herokuapp.com'
     }, {
       title: 'Nightlife Coordinator',
       img: 'img/projects/nightlife.png',
-      skills: ['AngularJS', 'Nodejs', 'JavaScript', 'Expressjs', 'MongoDB', 'Yeoman', 'oAuth', 'HTML5'],
+      skills: ['AngularJS', 'Nodejs', 'JavaScript', 'Expressjs', 'MongoDB', 'Yeoman', 'oAuth', 'HTML5', 'AJAX', 'CSS3', 'Bootstrap'],
       description: 'Single Page App that allows the user to search for local bars or restraunts and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.',
       github: 'https://github.com/LawlietBlack/nightlife',
       link: 'http://nightlife-lawlietblack.herokuapp.com'
     }, {
       title: 'Book Trade',
       img: 'img/projects/booktrade.png',
-      skills: ['AngularJS', 'Nodejs', 'JavaScript', 'Expressjs', 'MongoDB', 'Yeoman', 'oAuth', 'HTML5'],
+      skills: ['AngularJS', 'Nodejs', 'JavaScript', 'Expressjs', 'MongoDB', 'Yeoman', 'oAuth', 'HTML5', 'AJAX', 'CSS3', 'Bootstrap'],
       description: 'Prototype Book Trading site for a local club. Uses the Google Books API and a RESTful API to allow users to search, select, and trade books. Upon successful trade, enables contact info trading (limited). ',
       github: 'https://github.com/LawlietBlack/books',
       link: 'http://books-lawlietblack.herokuapp.com'
@@ -118,14 +118,14 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Tic Tac Toe',
       img: 'img/projects/tictactoe.png',
-      skills: ['JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
+      skills: ['AngularJS', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
       description: 'Tic Tac Toe, recreated in HTML5 and JavaScript. Player win is impossible. Hosted on Codepen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-09',
       link: 'http://codepen.io/LawlietBlack/full/pjjLee'
     }, {
       title: 'Simon',
       img: 'img/projects/simon.png',
-      skills: ['JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
+      skills: ['AngularJS', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
       description: 'Simon game recreated in HTML and JavaScript. Supports normal and Strict mode, increases tempo at turn 5, 9, and 13. Player win at turn 20. Hosted on Codepen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-10',
       link: 'http://codepen.io/LawlietBlack/full/RWWzLz'
@@ -154,7 +154,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }).reduce(function(a, b) {
       return a.concat(b);
     });
-    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
+    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Photoshop"]
     for(var i=0; i<skillsData.length; i++) {
       if($scope.skills[skillsData[i]] === undefined) {
         $scope.skills[skillsData[i]] = 1;

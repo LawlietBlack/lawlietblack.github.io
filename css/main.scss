@@ -56,6 +56,7 @@ ul {
 }
 paper-button {
   border-radius: 0px;
+  text-transform: none;
   &.content {
     padding: 0;
   }
@@ -227,6 +228,11 @@ header {
         padding:5px 0;
         height:30px;
         cursor:pointer;
+      }
+      .over-8 {
+        height: 10px;
+        padding: 0;
+        margin: 0;
       }
     }
   }
