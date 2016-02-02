@@ -33,9 +33,9 @@ angular.module('PortfolioApp', ['ngRoute'])
       link: 'http://magic-lawlietblack.herokuapp.com'
     }, {
       title: 'Pokedex',
-      img: 'img/projects/pokedex.png',
+      img: 'img/projects/pokemon.png',
       skills: ['AngularJS', 'JavaScript', 'Jasmine', 'TDD', 'Sass', 'Responsive', 'HTML5', 'CSS3'],
-      description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, and an external API.',
+      description: 'Pokedex site with a working IV calculator. Built using AngularJS, Sass, and PokeApi.',
       github: 'https://github.com/LawlietBlack/pokedex',
       link: 'http://pokedex.lawlietblack.com'
     }, {
@@ -45,6 +45,13 @@ angular.module('PortfolioApp', ['ngRoute'])
       description: 'A Reference Page for Civilization V with all of the available leaders in the base game and DLCs that shows each leader\'s unique ability, units, and buildings.',
       github: 'https://github.com/LawlietBlack/civ-leaders',
       link: 'http://git.lawlietblack.com/civ/index.html'
+    }, {
+      title: 'Dungeon Game',
+      img: 'img/projects/roguelike.png',
+      skills: ['ReactJS', 'JavaScript', 'Sass', 'HTML5'],
+      description: 'Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.',
+      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15',
+      link: 'http://codepen.io/LawlietBlack/full/JGBazL'
     }, {
       title: 'Vote',
       img: 'img/projects/vote.png',
