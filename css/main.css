@@ -11,6 +11,7 @@ html, body {
 .clearfix:before, .clearfix:after {
   display: table;
   content: " "; }
+
 .clearfix:after {
   clear: both; }
 
@@ -104,10 +105,12 @@ header nav .title-block {
     font-size: 2.5em;
     font-weight: bold;
     text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.6); }
-  header nav .title-block p {
+  header nav .title-block h2 {
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.6);
     margin: 0 10px 20px;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    font-weight: normal; }
+
 header nav paper-tabs {
   background-color: #1b5e20; }
   header nav paper-tabs a, header nav paper-tabs a:hover {
