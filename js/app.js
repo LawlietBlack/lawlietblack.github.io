@@ -48,7 +48,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }, {
       title: 'Dungeon Game',
       img: 'img/projects/roguelike.png',
-      skills: ['ReactJS', 'JavaScript', 'JSX', 'Babel', 'Sass', 'HTML5'],
+      skills: ['ReactJS', 'JavaScript', 'Gulp', 'JSX', 'Babel', 'Sass', 'HTML5'],
       description: 'Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.',
       github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15',
       link: 'http://codepen.io/LawlietBlack/full/JGBazL'
@@ -182,7 +182,7 @@ angular.module('PortfolioApp', ['ngRoute'])
     }).reduce(function(a, b) {
       return a.concat(b);
     });
-    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Bourbon"]
+    $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "Gulp", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Bourbon"];
     for(var i=0; i<skillsData.length; i++) {
       if($scope.skills[skillsData[i]] === undefined) {
         $scope.skills[skillsData[i]] = 1;

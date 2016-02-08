@@ -10,7 +10,7 @@ $screen-large: 1200px;
 $icon-size: 40px;
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-@import "_mixins.scss";
+@import "mixins";
 
 html, body {
   font-family: $primary-font;
