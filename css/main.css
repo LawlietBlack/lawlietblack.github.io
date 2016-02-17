@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 html, body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #242424;
+  background-color: #191919;
   color: #fff;
   height: 100%; }
 
@@ -11,7 +12,6 @@ html, body {
 .clearfix:before, .clearfix:after {
   display: table;
   content: " "; }
-
 .clearfix:after {
   clear: both; }
 
@@ -96,7 +96,7 @@ paper-button {
   margin: 20px; }
 
 header nav .title-block {
-  background: linear-gradient(transparent, #1b5e20), #242424 url("../img/code.jpg") no-repeat fixed center;
+  background: linear-gradient(transparent, #1b5e20), #191919 url("../img/code.jpg") no-repeat fixed center;
   background-size: cover;
   height: 140px; }
   header nav .title-block h1 {
@@ -110,7 +110,6 @@ header nav .title-block {
     margin: 0 10px 20px;
     font-size: 1.25em;
     font-weight: normal; }
-
 header nav paper-tabs {
   background-color: #1b5e20; }
   header nav paper-tabs a, header nav paper-tabs a:hover {
@@ -207,6 +206,43 @@ header nav paper-tabs {
         height: 10px;
         padding: 0;
         margin: 0; }
+
+#resume {
+  font-family: Lato, sans-serif;
+  background-color: #424b4b;
+  width: 800px;
+  margin: 40px auto;
+  color: #eee; }
+  #resume > div {
+    padding: 20px 30px;
+    overflow: auto;
+    border-bottom: 1px solid #121515; }
+  #resume a {
+    color: #eee; }
+    #resume a:hover {
+      color: #15d345; }
+  #resume p {
+    margin: 0; }
+  #resume .resume-head {
+    border-bottom: 2px solid #15d345; }
+    #resume .resume-head .title-box {
+      width: 400px;
+      float: left; }
+    #resume .resume-head .contact {
+      width: 120px;
+      padding: 6px 0;
+      float: right; }
+  #resume .section-title {
+    float: left;
+    width: 30%;
+    color: #15d345;
+    font-style: italic; }
+  #resume .section-content {
+    float: right;
+    width: 70%; }
+  #resume .skill-list li {
+    width: 33%;
+    float: left; }
 
 #updates {
   margin: 20px auto; }

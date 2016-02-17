@@ -10,7 +10,10 @@ angular.module('PortfolioApp', ['ngRoute'])
 	}).when('/updates', {
 		controller: 'MainController', 
 		templateUrl: 'views/updates.html'
-	}).when('/about', {
+	}).when('/resume', {
+    controller: 'MainController', 
+    templateUrl: 'views/resume.html'
+  }).when('/about', {
 		controller: 'MainController',
 		templateUrl: 'views/about.html'
 	});
@@ -59,6 +62,13 @@ angular.module('PortfolioApp', ['ngRoute'])
       description: 'Recreation of the hacking minigame in Fallout 4. Hosted on Codepen.',
       github: 'https://github.com/LawlietBlack/fallout-terminal',
       link: 'http://codepen.io/LawlietBlack/full/eJOZjN'
+    }, {
+      title: 'Meteor Strike Map',
+      img: 'img/projects/meteors.png',
+      skills: ['AngularJS', 'JavaScript', 'd3js', 'AJAX', 'HTML5', 'Sass'],
+      description: 'D3.js map showing meteor impact sites. Size of point corresponds to mass of meteor and color of point represents the meteor class.',
+      github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-20',
+      link: 'http://codepen.io/LawlietBlack/full/VeRjXG/'
     }, {
       title: 'Exoplanet Heat Map',
       img: 'img/projects/exoplanets.png',
