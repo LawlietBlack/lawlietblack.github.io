@@ -210,7 +210,7 @@ header nav paper-tabs {
 #resume {
   font-family: Lato, sans-serif;
   background-color: #424b4b;
-  width: 800px;
+  max-width: 800px;
   margin: 40px auto;
   color: #eee; }
   #resume > div {
@@ -226,10 +226,10 @@ header nav paper-tabs {
   #resume .resume-head {
     border-bottom: 2px solid #15d345; }
     #resume .resume-head .title-box {
-      width: 400px;
+      max-width: 600px;
       float: left; }
     #resume .resume-head .contact {
-      width: 120px;
+      max-width: 120px;
       padding: 6px 0;
       float: right; }
   #resume .section-title {
@@ -240,9 +240,40 @@ header nav paper-tabs {
   #resume .section-content {
     float: right;
     width: 70%; }
+    #resume .section-content li {
+      margin-bottom: 20px; }
+    #resume .section-content h4 {
+      font-weight: normal;
+      font-style: italic; }
+    #resume .section-content li p {
+      margin: 6px 0 0;
+      color: #ddd;
+      padding-left: 10px; }
   #resume .skill-list li {
+    margin: 0;
     width: 33%;
     float: left; }
+  @media screen and (max-width: 700px) {
+    #resume .resume-head {
+      text-align: center;
+      padding-bottom: 4px; }
+      #resume .resume-head .contact {
+        clear: both;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin: 0; }
+        #resume .resume-head .contact p {
+          width: 33%;
+          float: left; }
+    #resume .section-title, #resume .section-content, #resume .title-box {
+      width: 100%;
+      float: none;
+      margin: 0 auto 10px; } }
+  @media screen and (max-width: 500px) {
+    #resume .resume-head .contact p {
+      width: 100%;
+      float: none; } }
 
 #updates {
   margin: 20px auto; }

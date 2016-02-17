@@ -184,6 +184,41 @@ angular.module('PortfolioApp', ['ngRoute'])
     //   github: '',
     //   link: ''
 
+    $scope.experience = [{
+      title: 'Discovery Expert',
+      employer: 'Stahancyk, Kent & Hook',
+      duration: '2014-2015',
+      description: 'Compiled, indexed and maintained discovery documentation. Spearheaded the transition to paperless discovery.'
+    }, {
+      title: 'Lab Assistant',
+      employer: 'University of Oregon Physics Department',
+      duration: '2010-2011',
+      description: 'Maintained and analyzed data from the rooftop solar array.Machined parts for a specialized electron microscope.'
+    }, {
+      title: 'Student Intern',
+      employer: 'Social Security Administration',
+      duration: '2010',
+      description: 'Reviewed cases using database programs such as CPMS and PACER. Managed dynamic priorities in a busy office environment.'
+    }, {
+      title: 'Resident Assistant',
+      employer: 'University of Oregon',
+      duration: '2007-2008',
+      description: 'Worked as a leader and mentor for my hall. Administered and enforced housing protocol and dealt with emergency situations.'
+    }];
+
+    $scope.education = [{
+      program: 'Code Oregon',
+      completed: 'Front End Web Development, Full Stack JavaScript, Python Tracks',
+      school: 'Treehouse, Portland OR',
+    }, {
+      program: 'Full Stack Web Development',
+      completed: 'Front End Development, Data Visualization',
+      school: 'FreeCodeCamp, Portland OR'
+    }, {
+      program: 'Bachelor of Science in Applied Physics',
+      completed: 'Graduated',
+      school: 'University of Oregon, Eugene OR'
+    }]
 
     $scope.active = $scope.portfolio
     $scope.skills = {}

@@ -243,7 +243,7 @@ header {
 #resume {
   font-family: $secondary-font;
   background-color: $card-color;
-  width: 800px;
+  max-width: 800px;
   margin: 40px auto;
   color: #eee;
   &>div {
@@ -260,11 +260,11 @@ header {
   .resume-head {
     border-bottom: 2px solid $light-primary-font;
     .title-box {
-      width: 400px;
+      max-width: 600px;
       float: left;
     }
     .contact {
-      width: 120px;
+      max-width: 120px;
       padding: 6px 0;
       float: right;
     }
@@ -278,12 +278,52 @@ header {
   .section-content {
     float: right;
     width: 70%;
+    li {
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-weight: normal;
+      font-style: italic;
+    }
+    li p {
+      margin: 6px 0 0;
+      color: #ddd;
+      padding-left: 10px;
+    }
   }
   .skill-list li {
+    margin: 0;
     width: 33%;
     float: left;
   }
-
+  @media screen and (max-width: 700px) {
+    .resume-head {
+      text-align: center;
+      padding-bottom: 4px;
+      .contact {
+        clear: both;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin: 0;
+        p {
+          width: 33%;
+          float: left;
+        }
+      }
+    }
+    .section-title, .section-content, .title-box {
+      width: 100%;
+      float: none;
+      margin: 0 auto 10px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .resume-head .contact p {
+      width: 100%;
+      float: none;
+    }
+  }
 }
 #updates {
   margin: 20px auto;

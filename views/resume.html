@@ -14,7 +14,7 @@
     <h1 class="section-title">Profile</h1>
     <div class="section-content">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat semper turpis, ac posuere sem finibus sed. Donec condimentum tincidunt velit. Suspendisse luctus elementum convallis. Nulla pretium fermentum risus eu fermentum. Nulla vel augue eu dolor placerat semper vel mollis purus. Ut quis enim turpis. Cras venenatis aliquet justo, vel malesuada nunc consequat eget. 
+        Applied Physics Graduate, Tenacious Problem Solver, Self-taught Web Developer. Since last April I have devoted over 2,300 hours to learning the ins and outs of web development, from simple front end applications to full stack MEAN apps. Web development has become a passion of mine, combining my love of problem solving with the satisfaction I get from building things to become something I truly enjoy.
       </p>
     </div>
   </div>
@@ -23,6 +23,41 @@
     <div class="section-content">
       <ul class="skill-list">
         <li ng-repeat="skill in skillList"> {{skill}} </li>
+      </ul>
+    </div>
+  </div>
+  <div class="projects content">
+    <h1 class="section-title">Projects</h1>
+    <div class="section-content">
+      <ul class="project-list">
+        <li ng-repeat="project in portfolio | limitTo:10">
+          <h2><a href="{{project.link}}">{{project.title}}</a></h2>
+          <p>{{project.description}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="experience content">
+    <h1 class="section-title">Experience</h1>
+    <div class="section-content">
+      <ul class="experience-list">
+        <li ng-repeat="job in experience">
+          <h2>{{job.title}}</h2>
+          <h4>{{job.employer}} - <span class="job-duration">{{job.duration}}</span></h4>
+          <p>{{job.description}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="education content">
+    <h1 class="section-title">Education</h1>
+    <div class="section-content">
+      <ul class="education-list">
+        <li ng-repeat="edu in education">
+          <h2>{{edu.program}}</h2>
+          <h4>{{edu.completed}}</h4>
+          <p>{{edu.school}}</p>
+        </li>
       </ul>
     </div>
   </div>
