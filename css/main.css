@@ -222,6 +222,8 @@ header nav paper-tabs {
     #resume a:hover {
       color: #15d345; }
   #resume p {
+    font-size: 1em;
+    line-height: 1.4em;
     margin: 0; }
   #resume .resume-head {
     border-bottom: 2px solid #15d345; }

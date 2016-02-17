@@ -256,6 +256,8 @@ header {
     &:hover {
       color: $light-primary-font;}}
   p {
+    font-size: 1em;
+    line-height: 1.4em;
     margin: 0;}
   .resume-head {
     border-bottom: 2px solid $light-primary-font;
