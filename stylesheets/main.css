@@ -12,7 +12,6 @@ html, body {
 .clearfix:before, .clearfix:after {
   display: table;
   content: " "; }
-
 .clearfix:after {
   clear: both; }
 
@@ -108,7 +107,6 @@ header nav .title-block {
     margin: 0 10px 20px;
     font-size: 1.25em;
     font-weight: normal; }
-
 header nav paper-tabs {
   background-color: #1b5e20; }
   header nav paper-tabs a, header nav paper-tabs a:hover {
@@ -316,7 +314,27 @@ header nav paper-tabs {
 #logs {
   margin: 20px auto;
   width: 95%;
-  max-width: 800px; }
+  max-width: 600px; }
+  #logs .title {
+    text-align: center; }
+  #logs .log {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: table;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    width: 100%; }
+    #logs .log .log-content {
+      width: 100%; }
+      #logs .log .log-content h1 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0; }
+      #logs .log .log-content p {
+        line-height: 1.5em;
+        margin-bottom: 0.5em; }
+      #logs .log .log-content p.log-detail {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9em;
+        font-style: italic; }
 
 #about {
   margin: 40px auto 0; }

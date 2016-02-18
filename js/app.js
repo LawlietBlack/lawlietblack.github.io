@@ -1,11 +1,11 @@
-angular.module('PortfolioApp', ['ngRoute'])
+angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
     controller: 'MainController',
     templateUrl: 'views/portfolio.html'
   }).when('/logs', {
-    controller: 'MainController', 
+    controller: 'LogController', 
     templateUrl: 'views/logs.html'
   }).when('/resume', {
     controller: 'MainController', 
@@ -243,6 +243,17 @@ angular.module('PortfolioApp', ['ngRoute'])
   });
 }])
 
+.controller('LogController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+  $scope.SkipValidation = function(value) {
+    return $sce.trustAsHtml(value);
+  };
+  $http.get('js/logs.json').success(function(data) {
+    $scope.logs = data.map(function(item) {
+      item.log = $sce.trustAsHtml(item.log)
+      return item;
+    });
+  });
+}])
 
 .directive('portfolioCard', function() {
   return {
