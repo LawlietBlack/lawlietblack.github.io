@@ -8,6 +8,9 @@
    </paper-button>
   </div>
 </div>
+<h4 ng-show="currentSkill !== 'all'" class="current-skill">
+  Current Filter: {{currentSkill}}
+  </h4>
 <div class="portfolio clearfix" id="portfolio"> 
   <!--Polymer and ng-repeat don't play nice, else this would be ng-repeat-ed -->
   <portfolio-card card="portfolio[0]"></portfolio-card>

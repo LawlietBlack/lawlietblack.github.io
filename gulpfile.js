@@ -57,7 +57,7 @@ gulp.task('cdnizer', function() {
         file: '/bower_components/devicon/devicon.min.css',
         cdn: '//cdn.rawgit.com/konpa/devicon/master/devicon.min.css'
       }, {
-        file: 'css/normalize.css',
+        file: 'stylesheets/normalize.css',
         cdn: '//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
     }]))
     .pipe(rename('index.html'))
@@ -67,6 +67,6 @@ gulp.task('cdnizer', function() {
 gulp.task('default', ['scripts', 'sass'])
 
 gulp.task('stream', () => {
-  gulp.watch('./main.html', ['cdnizer']);
-  gulp.watch('css/main.scss', ['sass']);
+  // gulp.watch('./main.html', ['cdnizer']);
+  gulp.watch('stylesheets/main.scss', ['sass']);
 });

@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import "mixins";
+
 $bg-color: #191919;
 $card-color: #424b4b;
 $primary-color: #1b5e20;
@@ -10,10 +14,6 @@ $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
 $icon-size: 40px;
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@import "mixins";
 
 html, body {
   font-family: $primary-font;
@@ -54,9 +54,7 @@ ul {
     list-style: none;
   }
 }
-.paper-tabs-0 #selectionBar.paper-tabs {
-  background-color: lighten($secondary-color, 30%); 
-}
+
 paper-button {
   border-radius: 0px;
   text-transform: none;
@@ -173,21 +171,23 @@ header {
     }
   }
 }
-
+.current-skill {
+  text-align: center;
+  margin: 0 0 -19px;
+}
 #portfolio {
   padding-top:20px;
   @include flexy();
   paper-material {
-    overflow: auto;
-    }
-    paper-card {
-      margin: 20px;
-      float:left;
-      background-color: $card-color;
-      width: 440px;
+    overflow: auto;}
+  paper-card {
+    margin: 20px;
+    float:left;
+    background-color: $card-color;
+    width: 426px;
     img {
-      width: 350px;
-      height: 200px;
+      width: 336px;
+      height: 192px;
     }
     .card-content {
       padding: 0;
@@ -196,46 +196,86 @@ header {
         h2 {
           font-size: 1.35em;
          }
-        padding:7px;
+        padding:7px 0 7px 7px;
         height: 40px;
-        width: 350px;
+        width: 336px;
       }
     }
     .card-bottom {
       position:relative;
-      min-height:200px;
-      width: 440px;
+      min-height:170px;
+      width: 426px;
       padding: 10px;
+      z-index: 50;
       p {
-        margin: 6px 0 0;
+        margin: 12px 0 0;
       }
       paper-button {
         position: absolute;
         bottom:5px;
         &.git-btn {
-          right: 90px;
+          background-color: #242424;
+          right:0;
         }
         &.web-btn {
-          right:0;
+          background-color: #055081;
+          right: 90px;
         }
       }
     }
     .skills-bar {
       width: 90px;
-      height: 240px;
+      height: 232px;
       float:right;
       text-align: center;
       background-color: darken($card-color, 10%);
       li {
         @include skillcolors;
         padding:5px 0;
-        height:30px;
+        height:29px;
         cursor:pointer;
       }
       .over-8 {
-        height: 10px;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
         padding: 0;
         margin: 0;
+      }
+    }
+    .extras {
+      position: relative;
+      z-index: 100;
+      display: none;
+    }
+    @media screen and (max-width: 1420px) {
+      margin: 10px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 336px;
+      .card-content h2 {
+        text-align: center;
+      }
+      .skills-bar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-height: 261px;
+        .over-8 {
+          background-color: darken($card-color, 10%);
+        }
+      }
+      .card-bottom {
+        min-height: 257px;
+        width: 246px;
+        paper-button.git-btn {
+          width: 46%;
+          right: 0px;
+        }
+        paper-button.web-btn {
+          width: 46%;
+          right: 123px;
+        }
       }
     }
   }
@@ -327,15 +367,13 @@ header {
     }
   }
 }
-#updates {
+#logs {
   margin: 20px auto;
+  width: 95%;
+  max-width: 800px;
 }
 #about {
   margin: 40px auto 0;
-  h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
   section {
     min-height: 240px;
     padding: 40px 0;
