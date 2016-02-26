@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+
+
 @import "mixins";
 
 $bg-color: #191919;
@@ -7,9 +12,10 @@ $card-color: #424b4b;
 $primary-color: #1b5e20;
 $secondary-color: #465C7B;
 $base-font-color: #fff;
-$primary-font: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-font: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$paragraph-font: 'Questrial', sans-serif;
 $light-primary-font: #15d345;
-$secondary-font: Lato, sans-serif;
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large: 1200px;
@@ -409,28 +415,27 @@ header {
     padding: 40px 0;
   }
   #profile {
+    margin:40px auto 0;
+    max-width:800px;
+    text-align: center;
     .profile-photo {
-      display: block;
-      height: 140px;
-      width: 140px;
-      margin: 0 auto 50px;
       border-radius: 50%;
-      @media screen and (min-width: $screen-small) {
-        float:left;
-        margin:20px 5% 130px 0;
-      }
+      height:140px;
+      width:140px;
     }
     h1 {
       font-size: 2em;
+      color: #34ad3c;
     }
     p {
       font-size: 1.2em;
-      margin-bottom: 40px;
     }
   }
   #education {
     ul {
       @include flexy();
+      max-width: 1300px;
+      margin: auto;
       text-align: center;
       font-size: 1.4em;
       li {
@@ -445,42 +450,41 @@ header {
       }
     }
   }
-  #skills {
-    ul {
-      width: 90%;
-      margin-right: 10%;
-      font-size: 2em;
-      padding: 10px;
+
+  #questions {
+    width: 95%;
+    margin: 20px auto;
+    max-width: 1200px;
+    h1 {
+      text-align: center;
+      margin: 20px;}
+    h2 {
+      font-size: 1.4em;
+      font-family: 'Lusitana', serif;
+    }
+    h4 {
+      color: #ddd;
+      margin: 20px 0 0;
+      font-family: 'Merriweather', serif;
+    }
+    p {
+      font-family: $paragraph-font;
+      color: #ccc;
+      margin: 0 0 14px 24px;
+      line-height: 1.4em;
+    }
+    .half {
+      width: 46%;
+      margin: 0 2%;
+      &.left {
+        float: left;}
+      &.right {
+        float: right;}
       @media screen and (max-width: $screen-small) {
-        margin:auto;
-      }
-      li {
-        height: 48px;
-        text-align: right;
-        .label {
-          float:left;
-          width: 25%;
-          padding: 6px 6px 0 0;
-        }
-        .progress {
-          float:right;
-          margin: 10px 0;
-          width: 75%;
-          height: 28px;
-        } 
-        @media screen and (max-width:$screen-medium) {
-          .label {
-            width: 40%;
-          }
-          .progress {
-            width: 60%;
-          }
-        }
-        @media screen and (max-width: $screen-small) {
-          .label, .progress {
-            text-align: center;
-            width: 100%;
-          }
+        width: inherit;
+        margin: 20px;
+        &.left, &.right {
+          float: none;
         }
       }
     }
@@ -494,7 +498,10 @@ header {
     }
   }
 }
+
+
 footer {
+  clear: both;
   font-size: 0.75em;
   padding-top: 50px;
   text-align: center;

@@ -21,13 +21,21 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('css/main.scss')
+  gulp.src('scss/main.scss')
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write('./'))
     .pipe(rename('main.css'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('styles/'))
 })
+
+gulp.task('default', ['scripts', 'sass'])
+
+gulp.task('stream', ['sass'], () => {
+  // gulp.watch('./main.html', ['cdnizer']);
+  gulp.watch('scss/main.scss', ['sass']);
+});
+
 
 gulp.task('cdnizer', function() {
   gulp.src('./main.html')
@@ -62,11 +70,4 @@ gulp.task('cdnizer', function() {
     }]))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('./'))
-})
-
-gulp.task('default', ['scripts', 'sass'])
-
-gulp.task('stream', () => {
-  // gulp.watch('./main.html', ['cdnizer']);
-  gulp.watch('stylesheets/main.scss', ['sass']);
 });

@@ -241,6 +241,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   $scope.$on('skillfilter', function(event, skill) {
     $scope.filterSkills(skill);
   });
+  $scope.link = function(linkurl) {
+    window.open(linkurl)
+  }
 }])
 
 .controller('LogController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {

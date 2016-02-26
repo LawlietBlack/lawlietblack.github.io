@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 html, body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #191919;
   color: #fff;
   height: 100%; }
@@ -12,6 +15,7 @@ html, body {
 .clearfix:before, .clearfix:after {
   display: table;
   content: " "; }
+
 .clearfix:after {
   clear: both; }
 
@@ -107,6 +111,7 @@ header nav .title-block {
     margin: 0 10px 20px;
     font-size: 1.25em;
     font-weight: normal; }
+
 header nav paper-tabs {
   background-color: #1b5e20; }
   header nav paper-tabs a, header nav paper-tabs a:hover {
@@ -242,7 +247,7 @@ header nav paper-tabs {
             right: 123px; } }
 
 #resume {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: #424b4b;
   max-width: 800px;
   margin: 40px auto;
@@ -341,26 +346,26 @@ header nav paper-tabs {
   #about section {
     min-height: 240px;
     padding: 40px 0; }
-  #about #profile .profile-photo {
-    display: block;
-    height: 140px;
-    width: 140px;
-    margin: 0 auto 50px;
-    border-radius: 50%; }
-    @media screen and (min-width: 768px) {
-      #about #profile .profile-photo {
-        float: left;
-        margin: 20px 5% 130px 0; } }
-  #about #profile h1 {
-    font-size: 2em; }
-  #about #profile p {
-    font-size: 1.2em;
-    margin-bottom: 40px; }
+  #about #profile {
+    margin: 40px auto 0;
+    max-width: 800px;
+    text-align: center; }
+    #about #profile .profile-photo {
+      border-radius: 50%;
+      height: 140px;
+      width: 140px; }
+    #about #profile h1 {
+      font-size: 2em;
+      color: #34ad3c; }
+    #about #profile p {
+      font-size: 1.2em; }
   #about #education ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    max-width: 1300px;
+    margin: auto;
     text-align: center;
     font-size: 1.4em; }
     #about #education ul li {
@@ -369,35 +374,38 @@ header nav paper-tabs {
         font-size: 1.3em; }
       #about #education ul li p {
         margin: 0; }
-  #about #skills ul {
-    width: 90%;
-    margin-right: 10%;
-    font-size: 2em;
-    padding: 10px; }
-    @media screen and (max-width: 768px) {
-      #about #skills ul {
-        margin: auto; } }
-    #about #skills ul li {
-      height: 48px;
-      text-align: right; }
-      #about #skills ul li .label {
-        float: left;
-        width: 25%;
-        padding: 6px 6px 0 0; }
-      #about #skills ul li .progress {
-        float: right;
-        margin: 10px 0;
-        width: 75%;
-        height: 28px; }
-      @media screen and (max-width: 992px) {
-        #about #skills ul li .label {
-          width: 40%; }
-        #about #skills ul li .progress {
-          width: 60%; } }
+  #about #questions {
+    width: 95%;
+    margin: 20px auto;
+    max-width: 1200px; }
+    #about #questions h1 {
+      text-align: center;
+      margin: 20px; }
+    #about #questions h2 {
+      font-size: 1.4em;
+      font-family: 'Lusitana', serif; }
+    #about #questions h4 {
+      color: #ddd;
+      margin: 20px 0 0;
+      font-family: 'Merriweather', serif; }
+    #about #questions p {
+      font-family: "Questrial", sans-serif;
+      color: #ccc;
+      margin: 0 0 14px 24px;
+      line-height: 1.4em; }
+    #about #questions .half {
+      width: 46%;
+      margin: 0 2%; }
+      #about #questions .half.left {
+        float: left; }
+      #about #questions .half.right {
+        float: right; }
       @media screen and (max-width: 768px) {
-        #about #skills ul li .label, #about #skills ul li .progress {
-          text-align: center;
-          width: 100%; } }
+        #about #questions .half {
+          width: inherit;
+          margin: 20px; }
+          #about #questions .half.left, #about #questions .half.right {
+            float: none; } }
   #about #enjoys ul {
     display: flex;
     flex-wrap: wrap;
@@ -405,6 +413,7 @@ header nav paper-tabs {
     justify-content: center; }
 
 footer {
+  clear: both;
   font-size: 0.75em;
   padding-top: 50px;
   text-align: center; }

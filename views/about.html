@@ -1,9 +1,19 @@
 <div id="about">
   <section id="profile">
-    <div class="container clearfix">
+    <div class="clearfix">
       <img src="img/profile.jpg" alt="" class="profile-photo">
+      <h1>Kenneth Black</h1>
       <p>Applied Physics Major, Tenacious Problem Solver, Self-taught Web Developer. On April 16th, 2015 I started my journey to learn all I can about web development, at which time I had little experience in HTML and only knew of CSS as "That thing that makes webpages prettier." Since then, I have devoured every piece of knowledge from every source possible. When I'm not coding, I enjoy playing video/board/card games, drinking good coffee, and tinkering with electronics. Feel free to contact me at on twitter at @LawlietBlack or email me at Kenneth.Black@live.com if you have any comments, advice or project suggestons.</p>
     </div>  
+    <div class="buttons text-center">
+      <paper-button primary raised ng-click="link('http://lawlietblack.com')" class="btn btn-default btn-lg" ><i class="fa fa-globe"></i> Porfolio</paper-button>
+      <paper-button primary raised ng-click="link('https://github.com/LawlietBlack')" class="btn btn-default btn-lg"><i class="fa fa-github"></i> Github</paper-button>
+      <paper-button primary raised ng-click="link('https://www.linkedin.com/in/kennethrblack')" class="btn btn-default btn-lg"><i class="fa fa-linkedin"></i> LinkedIn</paper-button>
+      <paper-button primary raised ng-click="link('https://teamtreehouse.com/kennethblack')" class="btn btn-default btn-lg" ><i class="fa fa-tree"></i> Treehouse</paper-button>
+      <paper-button primary raised ng-click="link('https://twitter.com/Kenneth_R_Black')" class="btn btn-default btn-lg" ><i class="fa fa-twitter"></i> Twitter</paper-button>
+      <paper-button primary raised ng-click="link('http://freecodecamp.com/lawlietblack')" class="btn btn-default btn-lg"><i class="fa fa-fire"></i> CodeCamp</paper-button>
+
+    </div>
   </section>
   <section id="education" class="text-center green">
       <h1>Education</h1>
@@ -12,161 +22,67 @@
         <li><h1><i class="devicon-javascript-plain"></i></h1><h2>Front-end Web Development Track</h2><p>TeamTreehouse.com</p></li>
         <li><h1><i class="devicon-nodejs-plain"></i></h1><h2>Fullstack Javascript Track</h2><p>TeamTreehouse.com</p></li>
         <li><h1><i class="devicon-angularjs-plain"></i></h1><h2>Front End Development</h2><p>FreeCodeCamp.com</p></li>
+        <li><h1><i class="devicon-python-plain"></i></h1><h2>Python and Flask Tracks</h2><p>TeamTreehouse.com</p></li>
+        <li><h1><i class="devicon-d3js-plain"></i></h1><h2>Data Visualization</h2><p>FreeCodeCamp.com</p></li>
       </ul>
   </section>
-  <section id="skills">
-    <div class="text-center">
-      <h1>Skills</h1>
-    </div>
-    <ul class="skills clearfix">
-        <li class="clearfix"> 
-          <div class="label">
-            <i class="devicon-javascript-plain"></i> JavaScript
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 95%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-angularjs-plain"></i> AngularJS
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-jquery-plain"></i> jQuery
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-html5-plain"></i> HTML5 
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 95%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-css3-plain"></i> CSS3
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-python-plain"></i> Python
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 75%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-git-plain"></i> Git
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 85%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-linux-plain"></i> Terminal
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-bootstrap-plain"></i> Bootstrap
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 75%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-bower-plain"></i> Bower
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 75%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-nodejs-plain"></i> Node.js
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 65%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-mongodb-plain"></i> MongoDB
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 60%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-gulp-plain"></i> Gulp
-          </div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 50%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-php-plain"></i> PHP
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-ruby-plain"></i> Ruby
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-rails-plain"></i> Rails
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 30%"></div>
-          </div>
-        </li>
-        <li class="clearfix">
-          <div class="label">
-            <i class="devicon-grunt-plain"></i> Grunt
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 20%"></div>
-          </div>
-        </li>
-    </ul>
+  <section id="questions">
+    <div class="clearfix">
+      <h1>Interview Questions</h1>
+      <div class="basic half left">
+        <h2>Basic Interview Questions: </h2>
+        <h4>Q: Tell me about yourself.</h4>
+        <p>I moved to Portland a few years ago after graduating with a B.S. in Applied Physics from University of Oregon. I love the outdoors, good coffee and beer, so I can't imagine a place I would be happier to live. After a few false starts, last April I finally committed to learning code and that was that - 10 months and 2,300 hours of code later and I've progressed from a VERY rudimentary knowledge of HTML from the 90s to building Full Stack MEAN and Django apps. I think my Physics education has played a key role in my success, preparing me for everything from algorithmic logic to just staying calm and being methodical when a problem looks like complete Greek to me.</p> 
+        <p>Web development has become a passion of mine, combining my love of problem solving with the satisfaction I get from making things to become something I truly enjoy.</p>
+
+        <h4>Q: What are your strengths?</h4>
+        <p>If this experience has taught me anything, it's that I posess the ability to learn new technologies quickly, thoroughly, and independently. Thanks in part to my background in Physics, I'm also a logical, tenacious problem solver.</p> 
+        <p>In the code community, I love to help whenever the need arises and have served as a mentor to some of my peers. In college I was never far from a leadership role, whether it was as a Resident Assistant, a member of student council, or as the President of Society of Physics Students - my current work helping to organize the Portland FreeCodeCamp meetup has me reprising some of the same roles and it feels great to be giving back again!</p>
+
+        <h4>Q: What are your weaknesses?</h4>
+        <p>Sometimes when I'm enveloped in a problem, it's kind of like being really into a good book: before I know it, hours have passed and it feels like minutes. Good thing I know how to set an alarm!</p>
+
+        <h4>Q: Where would you like to be in your career five years from now?</h4>
+        <p>Still learning and building things, hopefully making valuable open source contributions.</p>
+
+        <h4>Q: What's your ideal company?</h4>
+        <p>My ideal company would provide me with a steady stream of tough problems for me to solve and would encourage and support my ongoing learning.</p>
+
+        <!--<h4>Q: Why should we hire you?</h4>
+        <p></p>-->
+
+        <h4>Q: What did you like least about your last job?</h4>
+        <p>Overall, I enjoyed my last job - which is saying something since I hardly expected to be doing office work after studying Physics. Ideally, I'd like something more challenging. </p>
+
+      </div>
+      <div class="more half right">
+        <h2>More About Me:</h2>
+
+        <h4>Q: Tell me about your proudest achievement.</h4>
+        <p>I'd have to say my year of code - which is saying something, since getting a B.S. in Applied Physics was no cake walk! Over the last year I've spent 2,300 hours learning code, working 60+ hours a week independently, of my own motivation, and using only online, mostly free resources. The journey has been challenging and rewarding, and I'm still amazed every day at how much I've learned!</p>
+
+        <h4>Q: How would you describe your work style?</h4>
+        <p>If I'm working alone, I generally work on projects independently in long sessions, only asking for help when it's truly needed - I'm usually just fine figuring things out for myself. If it's a group project, I usually focus on logistics and the difficult problems, trying to make sure no one is blocked.</p>
+
+        <h4>Q: What would be your ideal working environment?</h4>
+        <p>A casual environment would be best. If possible, I'd like to have solid blocks of uninterrupted time so I can really focus. Also plenty of coffee.</p>
+
+        <h4>Q: If you had to choose one, would you consider yourself a big-picture person or a detail-oriented person?</h4>
+        <p>I'm mostly detail oriented, but I know the importance of both.</p>
+
+      </div>
+    <div>
   </section>
-  <section id="enjoys" class="text-center green">
+  <section id="enjoys" class="text-center green clearfix">
     <h1>Things I enjoy</h1>
     <ul>
       <li><h1><i class="fa fa-coffee"></i></h1>Coffee</li>
       <li><h1><i class="fa fa-gamepad"></i></h1>Games</li>
       <li><h1><i class="fa fa-tree"></i></h1>Camping</li> 
+      <li><h1><i class="fa fa-code"></i></h1>Code</li>
       <li><h1><i class="fa fa-rebel"></i></h1>SciFi</li>
       <li><h1><i class="fa fa-cutlery"></i></h1>Cooking</li>
       <li><h1><i class="fa fa-star"></i></h1>Astronomy</li>
-      <li><h1><i class="fa fa-code"></i></h1>Code</li>
     </ul>
   </section>
 </div>
