@@ -1,4 +1,7 @@
 [{  
+  "date": "February 26th, 2016",
+  "log": "As of now, I've finished 4 more projects, covering all of the new material at FreeCodeCamp and only leaving one project to go! The new projects are too small to really go on my portfolio, but they are a <a href='https://header-parser-lawlietblack.herokuapp.com/'>Request Header Parser Microservice</a>, a <a href='http://st-lb.herokuapp.com/'>URL Shortener Microservice</a>, <a href='https://images-lawlietblack.herokuapp.com/'>Image Search Abstraction Layer</a>, and a <a href='https://file-meta-lawlietblack.herokuapp.com/'>File Metadata Microservice</a>. I've also started working on answering basic interview questions on my about page, an idea given to me by the very awesome <a href='http://annewoods.us/portfolio/'>Anne Rainy Woods</a> :)"
+  }, {  
   "date": "February 17th, 2016",
   "log": "I've finished the last d3 project, a d3 map of meteor strikes, and added it to the main page. I was a bit annoyed that the original example seemingly used colors at random, so I did a little research and added meaningful colors to the data. I've also completed my first new back end project, a simple Timestamp service that can be found at <a href=\"http://timestamp-lawlietblack.herokuapp.com\">timestamp-lawlietblack.herokuapp.com</a>. Lastly, I made and added a digital resume to my site."
   }, {
