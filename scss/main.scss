@@ -413,8 +413,12 @@ header {
   section {
     min-height: 240px;
     padding: 40px 0;
+    h1 {
+      color: #ccc;
+    }
   }
   #profile {
+    color: #ccc;
     margin:40px auto 0;
     max-width:800px;
     text-align: center;
@@ -434,6 +438,7 @@ header {
   #education {
     ul {
       @include flexy();
+      color: #ddd;
       max-width: 1300px;
       margin: auto;
       text-align: center;
@@ -492,6 +497,7 @@ header {
   #enjoys {
     ul {
       @include flexy();
+      color: #ddd;
       li {
         @extend %tile;
       }
