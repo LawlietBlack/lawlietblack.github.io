@@ -12,7 +12,7 @@
       <li ng-repeat="skill in card.skills | limitTo:20:8" 
           ng-click="filterSkills(skill)"
           class="extras skill-{{skill.toLowerCase()}}">{{skill}}</li>
-      <li class="over-8" ng-show="card.skills.length > 8" ng-click="showMore()">...</li>
+      <li class="over-8" ng-show="card.skills.length > 8" ng-click="showMore()"><span class="small">{{card.skills.length - 8}} more</span><i class="fa fa-caret-down"></i></li>
     </ul>
   </div>
   <img src="#" ng-src="{{card.img}}">

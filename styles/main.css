@@ -216,7 +216,16 @@ header nav paper-tabs {
         z-index: 100;
         cursor: pointer;
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        background-color: #2a3030;
+        border-radius: 0 0 50% 50%;
+        height: 26px; }
+        #portfolio paper-card .skills-bar .over-8 span {
+          font-size: 12px;
+          height: 12px;
+          display: block; }
+        #portfolio paper-card .skills-bar .over-8 i {
+          display: block; }
     #portfolio paper-card .extras {
       position: relative;
       z-index: 100;
