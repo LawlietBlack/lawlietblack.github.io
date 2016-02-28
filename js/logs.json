@@ -1,4 +1,7 @@
 [{  
+  "date": "February 29th, 2016",
+  "log": "I've added an algorithms page with a language filter and my first 7 algorithms. I spent the earlier part of the day refactoring a lot of my FreeCodeCamp algorithms and I figured it would be cool to show them on my portfolio."
+  }, {    
   "date": "February 26th, 2016",
   "log": "As of now, I've finished 4 more projects, covering all of the new material at FreeCodeCamp and only leaving one project to go! The new projects are too small to really go on my portfolio, but they are a <a href='https://header-parser-lawlietblack.herokuapp.com/'>Request Header Parser Microservice</a>, a <a href='http://st-lb.herokuapp.com/'>URL Shortener Microservice</a>, <a href='https://images-lawlietblack.herokuapp.com/'>Image Search Abstraction Layer</a>, and a <a href='https://file-meta-lawlietblack.herokuapp.com/'>File Metadata Microservice</a>. I've also started working on answering basic interview questions on my about page, an idea given to me by the very awesome <a href='http://annewoods.us/portfolio/'>Anne Rainy Woods</a> :)"
   }, {  
