@@ -15,6 +15,9 @@
   &.skill-html5, &.skill-photoshop, &.skill-css3, &.skill-bootstrap, &.skill-sass, &.skill-responsive, &.skill-bourbon {
     background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
   }
+  &.skill-python {
+    background: linear-gradient(darken(#BE6C97, 20%), #BE6C97), #BE6C97;
+  }
 }
 
 @mixin flexy() {

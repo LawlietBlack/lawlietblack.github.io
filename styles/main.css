@@ -47,6 +47,10 @@ paper-button {
   paper-button[secondary][raised] {
     background-color: #465C7B; }
 
+#tabsContainer {
+  max-width: 1200px;
+  margin: auto; }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -124,7 +128,7 @@ header nav paper-tabs {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 10px auto 0; }
   #skills-tags .skill-tags paper-button {
     margin: 4px;
@@ -138,6 +142,8 @@ header nav paper-tabs {
       background: linear-gradient(#212b3a, #465C7B), #465C7B; }
     #skills-tags .skill-tags paper-button.skill-html5, #skills-tags .skill-tags paper-button.skill-photoshop, #skills-tags .skill-tags paper-button.skill-css3, #skills-tags .skill-tags paper-button.skill-bootstrap, #skills-tags .skill-tags paper-button.skill-sass, #skills-tags .skill-tags paper-button.skill-responsive, #skills-tags .skill-tags paper-button.skill-bourbon {
       background: linear-gradient(#2f233d, #61487E), #61487E; }
+    #skills-tags .skill-tags paper-button.skill-python {
+      background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
     #skills-tags .skill-tags paper-button .skill-num {
       background-color: #777;
       border-radius: 50%;
@@ -211,6 +217,8 @@ header nav paper-tabs {
           background: linear-gradient(#212b3a, #465C7B), #465C7B; }
         #portfolio paper-card .skills-bar li.skill-html5, #portfolio paper-card .skills-bar li.skill-photoshop, #portfolio paper-card .skills-bar li.skill-css3, #portfolio paper-card .skills-bar li.skill-bootstrap, #portfolio paper-card .skills-bar li.skill-sass, #portfolio paper-card .skills-bar li.skill-responsive, #portfolio paper-card .skills-bar li.skill-bourbon {
           background: linear-gradient(#2f233d, #61487E), #61487E; }
+        #portfolio paper-card .skills-bar li.skill-python {
+          background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
       #portfolio paper-card .skills-bar .over-8 {
         position: relative;
         z-index: 100;
@@ -425,6 +433,34 @@ header nav paper-tabs {
     flex-direction: row;
     justify-content: center;
     color: #ddd; }
+
+#code {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20px auto; }
+  #code .snippet {
+    margin: 20px auto; }
+    #code .snippet pre {
+      margin: 10px;
+      padding: 10px;
+      background-color: #262626; }
+  #code .skill {
+    padding: 3px 6px;
+    margin-right: 10px; }
+    #code .skill.skill-all {
+      background: linear-gradient(#103613, #26862d), #1b5e20; }
+    #code .skill.skill-angularjs, #code .skill.skill-jquery, #code .skill.skill-javascript, #code .skill.skill-nodejs, #code .skill.skill-expressjs, #code .skill.skill-d3js, #code .skill.skill-reactjs, #code .skill.skill-ajax, #code .skill.skill-gulp, #code .skill.skill-jsx {
+      background: linear-gradient(#2b502d, #4E9353), #4E9353; }
+    #code .skill.skill-mongodb, #code .skill.skill-yeoman, #code .skill.skill-tdd, #code .skill.skill-oauth, #code .skill.skill-jasmine, #code .skill.skill-babel, #code .skill.skill-socketio, #code .skill.skill-restapi {
+      background: linear-gradient(#212b3a, #465C7B), #465C7B; }
+    #code .skill.skill-html5, #code .skill.skill-photoshop, #code .skill.skill-css3, #code .skill.skill-bootstrap, #code .skill.skill-sass, #code .skill.skill-responsive, #code .skill.skill-bourbon {
+      background: linear-gradient(#2f233d, #61487E), #61487E; }
+    #code .skill.skill-python {
+      background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+  #code p {
+    margin: 10px 0 4px 20px; }
+  #code pre {
+    white-space: pre-wrap; }
 
 footer {
   clear: both;

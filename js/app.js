@@ -13,6 +13,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   }).when('/about', {
     controller: 'MainController',
     templateUrl: 'views/about.html'
+  }).when('/code', {
+    controller: 'MainController',
+    templateUrl: 'views/code.html'
   });
 }])
 
@@ -209,15 +212,15 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     school: 'University of Oregon, Eugene OR'
   }];
 
-  $scope.active = $scope.portfolio
-  $scope.skills = {}
+  $scope.active = $scope.portfolio;
+  $scope.skills = {};
   $scope.currentSkill = "all";
   var skillsData = $scope.portfolio.map(function(item) {
     return item.skills;
   }).reduce(function(a, b) {
     return a.concat(b);
   });
-  $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "Gulp", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Bourbon"];
+  $scope.skillList = ["AngularJS", "JavaScript", "jQuery", "Nodejs", "Expressjs", "ReactJS", "d3js", "AJAX", "Gulp", "JSX", "MongoDB", "Yeoman", "oAuth", "Jasmine", "TDD", "RESTApi", "Babel", "HTML5", "CSS3", "Bootstrap", "Sass", "Responsive", "Bourbon", "Python"];
   for(var i=0; i<skillsData.length; i++) {
     if($scope.skills[skillsData[i]] === undefined) {
       $scope.skills[skillsData[i]] = 1;
@@ -229,11 +232,11 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     $scope.currentSkill = skill;
     $scope.portfolio.filter(function(card, index) {
       if(skill === 'all') {
-        $('portfolio-card').slideDown()
+        $('portfolio-card').slideDown();
       } else if(card.skills.indexOf(skill) < 0) {
-        $('portfolio-card').eq(index).hide()
+        $('portfolio-card').eq(index).hide();
       } else {
-        $('portfolio-card').eq(index).slideDown()
+        $('portfolio-card').eq(index).slideDown();
       }
       return true;
     });
@@ -242,7 +245,74 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     $scope.filterSkills(skill);
   });
   $scope.link = function(linkurl) {
-    window.open(linkurl)
+    window.open(linkurl);
+  };
+  $scope.snippetLanguages = ['JavaScript', 'Python'];
+  $scope.snippets = [{
+    name: 'Roman Numeral Converter',
+    description: 'Convert a number into a roman numeral.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function convert(num) {\n  var numerals = [["M",1000],["CM",900],["D",500],["CD",400],["C",100],["XC",90],["L",50],["XL",40],["X",10],["IX",9],["V",5],["IV",4],["I",1]];\n  return numerals.map(function(n, i) {\n    var rom = Array(Math.floor(num / n[1])).fill(n[0]).join("");\n    num -= n[1] * Math.floor(num / n[1]);\n    return rom;\n  }).join("");\n}'
+    }, {
+    name: 'Mutations',
+    description: 'Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function mutation(arr) {\n  var str = arr[0].toLowerCase();\n  return arr[1].toLowerCase().split("").reduce(function(a, b) {\n    return (a === true || str.indexOf(a) >= 0) && str.indexOf(b) >= 0;\n  });\n}'
+    }, {
+    name: 'Chunky Monkey',
+    description: 'Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a multidimensional array.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function chunk(arr, size) {\n  return arr.filter(function(c, i) {\n    return i % size === 0;\n  }).map(function(c, i) {\n    return arr.slice(i * size, (i * size) + size);\n  });\n}'
+    }, {
+    name: 'Repeat a String',
+    description: 'Repeat a given string (first argument) n times (second argument). Return an empty string if n is a negative number.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function repeat(str, num) {\n  return num < 0 ? "" : Array(num + 1).join(str);\n}'
+    }, {
+    name: 'Largest of Four',
+    description: 'Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function largestOfFour(arr) {\n  return arr.map(function(ar) {\n    return ar.reduce(function(a, b) {\n      return a > b ? a : b;\n    });\n  });\n}'
+    }, {
+    name: 'Check for Palindrome',
+    description: 'Return true if the given string is a palindrome. Otherwise, return false.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function palindrome(str) {\n  var s = str.toLowerCase().replace(/[^a-z0-9]/g,"");\n  return s === s.split("").reverse().join("");\n}'
+    }, {
+    name: 'Check for Palindrome',
+    description: 'Return true if the given string is a palindrome. Otherwise, return false.',
+    language: 'Python',
+    langCode: 'py',
+    code: "import re\n\n\ndef palindrome(string):\n    lis = re.sub(r'[^a-z0-9]', '', string.lower())\n    return lis == lis[::-1]"
+  }];
+  $scope.languages = {};
+  $scope.currentLanguage = 'all';
+  $scope.snippets.map(function(s) {
+    if($scope.languages[s.language] === undefined) {
+      $scope.languages[s.language] = 1;
+    } else {
+      $scope.languages[s.language] += 1;
+    }
+    return s;
+  });
+  $scope.snippetFilter = function(lang) {
+    $scope.currentLanguage = lang;
+    $scope.snippets.filter(function(snippet, index) {
+      if(lang === 'all') {
+        $('.snippet').slideDown();
+      } else if(snippet.language === lang) {
+        $('.snippet').eq(index).slideDown();
+      } else {
+        $('.snippet').eq(index).slideUp();
+      }
+      return true;
+    });
   }
 }])
 
@@ -252,7 +322,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   };
   $http.get('js/logs.json').success(function(data) {
     $scope.logs = data.map(function(item) {
-      item.log = $sce.trustAsHtml(item.log)
+      item.log = $sce.trustAsHtml(item.log);
       return item;
     });
   });
@@ -267,14 +337,29 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     },
     link: function($scope, $element, $attrs) {
       $scope.link = function(linkurl) {
-        window.open(linkurl)
-      }
+        window.open(linkurl);
+      };
       $scope.filterSkills = function(skill) {
         $scope.$emit('skillfilter', skill);
-      }
+      };
       $scope.showMore = function() {
-        $element.find('.extras').slideToggle()
-      }
+        $element.find('.extras').slideToggle();
+      };
     }
-  }
+  };
 })
+
+.directive('snippet', ['$timeout', '$interpolate', function($timeout, $interpolate) {
+  return {
+    restrict: 'E',
+    template:'<pre><code ng-transclude></code></pre>',
+    replace:true,
+    transclude:true,
+    link:function(scope, elm, attrs){             
+      var tmp =  $interpolate(elm.find('code').text())(scope);
+      $timeout(function() {                
+        elm.find('code').html(hljs.highlightAuto(tmp).value);
+      }, 0);
+    }
+  };
+}]);

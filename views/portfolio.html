@@ -3,14 +3,14 @@
     <paper-button class="skill-all" ng-click="filterSkills('all')">All <span class="skill-num">{{portfolio.length}}</span></paper-button>
     <paper-button
        ng-repeat="skill in skillList" 
-       class="ngclass: skill-{{skill.toLowerCase()}}" 
-       ng-click="filterSkills(skill)">{{skill}}<span class="skill-num">{{skills[skill]}}</span>
+       ng-class="'skill-' + skill.toLowerCase()" 
+       ng-click="filterSkills(skill)">{{skill}}<span class="skill-num">{{skills[skill] > 0 ? skills[skill] : 0}}</span>
    </paper-button>
   </div>
 </div>
 <h4 ng-show="currentSkill !== 'all'" class="current-skill">
   Current Filter: {{currentSkill}}
-  </h4>
+</h4>
 <div class="portfolio clearfix" id="portfolio"> 
   <!--Polymer and ng-repeat don't play nice, else this would be ng-repeat-ed -->
   <portfolio-card card="portfolio[0]"></portfolio-card>

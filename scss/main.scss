@@ -77,6 +77,10 @@ paper-button {
     background-color: $secondary-color;
   }
 }
+#tabsContainer {
+  max-width: 1200px;
+  margin: auto;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -161,7 +165,7 @@ header {
 #skills-tags {
   .skill-tags {
     @include flexy();
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 10px auto 0;
     paper-button {
       margin: 4px;
@@ -513,7 +517,30 @@ header {
     }
   }
 }
-
+#code {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20px auto;
+  .snippet {
+    margin: 20px auto;
+    pre {
+      margin: 10px;
+      padding: 10px;
+      background-color: lighten($bg-color, 5%);
+    }
+  }
+  .skill {
+    @include skillcolors;
+    padding: 3px 6px;
+    margin-right: 10px;
+  }
+  p {
+    margin: 10px 0 4px 20px;
+  }
+  pre {
+   white-space: pre-wrap;   
+  }
+}
 
 footer {
   clear: both;
