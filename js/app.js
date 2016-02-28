@@ -24,7 +24,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'Persona 4 Golden Guide',
     img: 'img/projects/persona.png',
     skills: ['AngularJS', 'JavaScript', 'jQuery', 'AJAX', 'Nodejs', 'Expressjs', 'HTML5', 'CSS3'],
-    description: 'A website guide for Persona 4 Golden. I initially built this app using a node.js back end with express and swig, but down the line I realized that it would run much faster as an AngularJS single page application. The fullstack JavaScript version is saved as the \'node\' branch.',
+    description: 'A website guide for Persona 4 Golden. I initially built this app using a node.js back end with express and Swig, but down the line, I realized that it would run much faster as an AngularJS single page application. The full-stack JavaScript version is saved as the \'node\' branch.',
     github: 'https://github.com/LawlietBlack/Persona-4-Golden-Guide',
     link: 'http://persona.lawlietblack.com'
     }, {
@@ -66,7 +66,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'Meteor Strike Map',
     img: 'img/projects/meteors.png',
     skills: ['AngularJS', 'JavaScript', 'd3js', 'AJAX', 'HTML5', 'Sass'],
-    description: 'D3.js map showing meteor impact sites. Size of point corresponds to mass of meteor and color of point represents the meteor class.',
+    description: 'D3.js map showing meteor impact sites. The relative size of the point corresponds to the mass of the meteor and the color of the point represents the meteor class.',
     github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-20',
     link: 'http://codepen.io/LawlietBlack/full/VeRjXG/'
     }, {
@@ -101,14 +101,14 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'Recipe Box',
     img: 'img/projects/recipebox.png',
     skills: ['ReactJS', 'JavaScript', 'Sass', 'Responsive', 'HTML5'],
-    description: 'Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deleting, and editing. Hosted on Codepen.',
+    description: 'Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deletion, and editing. Hosted on Codepen.',
     github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-13',
     link: 'http://codepen.io/LawlietBlack/full/gPgqGR'
     }, {
     title: 'Vote',
     img: 'img/projects/vote.png',
     skills: [ 'AngularJS', 'Nodejs','Expressjs', 'JavaScript', 'MongoDB', 'RESTApi', 'Yeoman', 'oAuth',  'HTML5', 'AJAX', 'CSS3', 'Bootstrap'],
-    description: 'Voting app built using MEAN stack and oAuth that allows users to login, create polls, and share them with others.',
+    description: 'Voting app built using MEAN stack and oAuth that allows users to log in, create polls and share them with others.',
     github: 'https://github.com/LawlietBlack/vote',
     link: 'http://vote-lawlietblack.herokuapp.com'
     }, {
@@ -122,7 +122,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'FreeCodeCamp Leaderboard',
     img: 'img/projects/fccleaders.png',
     skills: ['ReactJS', 'JavaScript', 'AJAX', 'Sass', 'HTML5', 'Responsive'],
-    description: 'Leaderboard for FreeCodeCamp.com created with ReactJS and Sass. Utilizes an api endpoint made by a fellow student. Hosted on Codepen.',
+    description: 'Leaderboard for FreeCodeCamp.com created with ReactJS and Sass. Utilizes an API endpoint made by a fellow student. Hosted on Codepen.',
     github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-12',
     link: 'http://codepen.io/LawlietBlack/full/rxjZEq'
     }, {
@@ -136,7 +136,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'Nightlife Coordinator',
     img: 'img/projects/nightlife.png',
     skills: ['AngularJS', 'Nodejs', 'JavaScript', 'Expressjs', 'MongoDB', 'RESTApi', 'Yeoman', 'oAuth', 'HTML5', 'AJAX', 'CSS3', 'Bootstrap'],
-    description: 'Single Page App that allows the user to search for local bars or restraunts and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.',
+    description: 'Single Page App that allows the user to search for local bars or restaurants and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.',
     github: 'https://github.com/LawlietBlack/nightlife',
     link: 'http://nightlife-lawlietblack.herokuapp.com'
     }, {
@@ -164,14 +164,14 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     title: 'Tic Tac Toe',
     img: 'img/projects/tictactoe.png',
     skills: ['AngularJS', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
-    description: 'Tic Tac Toe, recreated in HTML5 and JavaScript. Player win is impossible. Hosted on Codepen.',
+    description: 'Tic Tac Toe, recreated in HTML5 and JavaScript. Hosted on Codepen.',
     github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-09',
     link: 'http://codepen.io/LawlietBlack/full/pjjLee'
     }, {
     title: 'Simon',
     img: 'img/projects/simon.png',
     skills: ['AngularJS', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap'],
-    description: 'Simon game recreated in HTML and JavaScript. Supports normal and Strict mode, increases tempo at turn 5, 9, and 13. Player win at turn 20. Hosted on Codepen.',
+    description: 'Simon game recreated in HTML and JavaScript. Supports normal and Strict mode and increases tempo at turn 5, 9, and 13. Player win is at turn 20. Hosted on Codepen.',
     github: 'https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-10',
     link: 'http://codepen.io/LawlietBlack/full/RWWzLz'
   }];
