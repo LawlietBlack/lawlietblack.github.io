@@ -1,56 +1,23 @@
-angular.module('PortfolioApp', ['ui.router', 'ngSanitize'])
+angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
 
-.config(['$urlRouterProvider', '$locationProvider', '$stateProvider', function($urlRouterProvider, $locationProvider, $stateProvider) {
-
-  $urlRouterProvider.otherwise('/');
-  
-  $stateProvider.state('portfolio', {
-    url: '/',
-    templateUrl: 'views/portfolio.html',
-    controller: 'MainController'
-  }).state('algorithms', {
-    url: '/algorithms',
-    templateUrl: 'views/code.html',
-    controller: 'MainController'
-  }).state('logs', {
-    url: '/logs',
-    templateUrl: 'views/logs.html',
-    controller: 'LogController'
-  }).state('resume', {
-    url: '/resume',
-    templateUrl: 'views/resume.html',
-    controller: 'MainController'
-  }).state('about', {
-    url: '/about',
-    templateUrl: 'views/about.html',
-    controller: 'MainController'
-  })
-
-
-  $locationProvider.html5Mode(true);
-
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/', {
+    controller: 'MainController',
+    templateUrl: 'views/portfolio.html'
+  }).when('/logs', {
+    controller: 'LogController', 
+    templateUrl: 'views/logs.html'
+  }).when('/resume', {
+    controller: 'MainController', 
+    templateUrl: 'views/resume.html'
+  }).when('/about', {
+    controller: 'MainController',
+    templateUrl: 'views/about.html'
+  }).when('/code', {
+    controller: 'MainController',
+    templateUrl: 'views/code.html'
+  });
 }])
-
-
-
-// .config(['$routeProvider', function($routeProvider) {
-//   $routeProvider.when('/', {
-//     controller: 'MainController',
-//     templateUrl: 'views/portfolio.html'
-//   }).when('/logs', {
-//     controller: 'LogController', 
-//     templateUrl: 'views/logs.html'
-//   }).when('/resume', {
-//     controller: 'MainController', 
-//     templateUrl: 'views/resume.html'
-//   }).when('/about', {
-//     controller: 'MainController',
-//     templateUrl: 'views/about.html'
-//   }).when('/code', {
-//     controller: 'MainController',
-//     templateUrl: 'views/code.html'
-//   });
-// }])
 
 .controller('MainController', ['$scope', function($scope) {
   $scope.portfolio = [{
