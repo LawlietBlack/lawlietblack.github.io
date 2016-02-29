@@ -6,6 +6,7 @@
   <meta name="title" content="Kenneth Black | Front End/Full Stack JavaScript Developer | Portfolio">
   <meta name="description" content="Portland, OR | Kenneth.Black@live.com | @lawlietblack | Skills: MEAN, Angular, React, Node, Mongodb, Python, Django, Flask, Gulp, RESTApis, TDD, Sass.">
   <meta name="author" content="Kenneth Black">
+  <base href="/">
   <script>function cdnizerLoad(u) {document.write('<scr'+'ipt src="'+encodeURIComponent(u)+'"></scr'+'ipt>');}</script><link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet prefetch" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -32,26 +33,26 @@
       </div>
       <paper-tabs selected="0">
         <paper-tab link>
-          <a href="#/" class="horizontal center-center layout">PORTFOLIO</a>
+          <a ui-sref="portfolio" class="horizontal center-center layout">PORTFOLIO</a>
         </paper-tab>
         <paper-tab link>
-          <a href="#/code" class="horizontal center-center layout">ALGORITHMS</a>
+          <a ui-sref="algorithms" class="horizontal center-center layout">ALGORITHMS</a>
         </paper-tab>
         <paper-tab link>
-          <a href="#/logs" class="horizontal center-center layout">LOGS</a>
+          <a ui-sref=".logs" class="horizontal center-center layout">LOGS</a>
         </paper-tab>
         <paper-tab link>
-          <a href="#/resume" class="horizontal center-center layout">RESUME</a>
+          <a ui-sref="resume" class="horizontal center-center layout">RESUME</a>
         </paper-tab>
         <paper-tab link>
-          <a href="#/about" class="horizontal center-center layout">ABOUT</a>
+          <a ui-sref="about" class="horizontal center-center layout">ABOUT</a>
         </paper-tab>
       </paper-tabs>
     </nav>
   </header>
 
   <main>
-    <ng-view></ng-view>
+    <div ui-view></div>
   </main>
 
 
@@ -70,6 +71,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script><script>if(!(window.jQuery)) cdnizerLoad("bower_components/jquery/dist/jquery.js");</script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" type="text/javascript"></script><script>if(!(window.angular)) cdnizerLoad("bower_components/angular/angular.js");</script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js" type="text/javascript"></script>
   <script src="//cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="//pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
