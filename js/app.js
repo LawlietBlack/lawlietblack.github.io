@@ -4,6 +4,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   $routeProvider.when('/', {
     controller: 'MainController',
     templateUrl: 'views/portfolio.html'
+  }).when('/algorithms', {
+    controller: 'MainController',
+    templateUrl: 'views/code.html'
   }).when('/logs', {
     controller: 'LogController', 
     templateUrl: 'views/logs.html'
@@ -13,9 +16,6 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   }).when('/about', {
     controller: 'MainController',
     templateUrl: 'views/about.html'
-  }).when('/code', {
-    controller: 'MainController',
-    templateUrl: 'views/code.html'
   });
 }])
 
