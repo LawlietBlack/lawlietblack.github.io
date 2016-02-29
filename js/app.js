@@ -19,7 +19,12 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   });
 }])
 
-.controller('MainController', ['$scope', function($scope) {
+.controller('MainController', ['$scope', '$location', function($scope, $location) {
+  $('paper-tabs').prop('selected', function() {
+    var pages = ['/', '/algorithms', '/logs', '/resume', '/about'];
+    console.log(pages.indexOf($location.path()))
+    return pages.indexOf($location.path());
+  });
   $scope.portfolio = [{
     title: 'Persona 4 Golden Guide',
     img: 'img/projects/persona.png',
@@ -316,7 +321,12 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   }
 }])
 
-.controller('LogController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+.controller('LogController', ['$scope', '$http', '$sce', '$location', function($scope, $http, $sce, $location) {
+  $('paper-tabs').prop('selected', function() {
+    var pages = ['/', '/algorithms', '/logs', '/resume', '/about'];
+    console.log(pages.indexOf($location.path()))
+    return pages.indexOf($location.path());
+  });
   $scope.SkipValidation = function(value) {
     return $sce.trustAsHtml(value);
   };
