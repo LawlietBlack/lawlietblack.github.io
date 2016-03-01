@@ -258,7 +258,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     description: 'Convert a number into a roman numeral.',
     language: 'JavaScript',
     langCode: 'js',
-    code: 'function convert(num) {\n  var numerals = [["M",1000],["CM",900],["D",500],["CD",400],["C",100],["XC",90],["L",50],["XL",40],["X",10],["IX",9],["V",5],["IV",4],["I",1]];\n  return numerals.map(function(n, i) {\n    var rom = Array(Math.floor(num / n[1])).fill(n[0]).join("");\n    num -= n[1] * Math.floor(num / n[1]);\n    return rom;\n  }).join("");\n}'
+    code: 'function convert(num) {\n  var romanKeys = [["M", 1000], ["CM", 900], ["D", 500], ["CD", 400], ["C", 100], ["XC", 90], ["L", 50], ["XL", 40], ["X", 10], ["IX", 9], ["V", 5], ["IV", 4], ["I", 1]];\n\n  return romanKeys.map(function(key) {\n    var letter = key[0];\n    var count = Math.floor(num / key[1]);\n    var roman = Array(count).fill(letter).join("");\n    num -= key[1] * count;\n    \n    return roman;\n  }).join("");\n}'
     }, {
     name: 'Mutations',
     description: 'Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.',
