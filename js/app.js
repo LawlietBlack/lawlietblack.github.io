@@ -40,6 +40,13 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     github: 'https://github.com/LawlietBlack/magic-deckbuilder',
     link: 'http://magic-lawlietblack.herokuapp.com'
     }, {
+    title: 'DEFINITELY Real Quotes',
+    img: 'img/projects/quotes.png',
+    skills: ['AngularJS', 'Nodejs', 'Expressjs', 'RESTApi', 'oAuth', 'MongoDB', 'Yeoman', 'HTML5', 'Sass', 'Bourbon', 'JavaScript', 'AJAX'],
+    description: 'Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.',
+    github: 'https://github.com/LawlietBlack/real-quotes',
+    link: 'https://definitely-real-quotes.herokuapp.com/'
+    }, {
     title: 'Pokedex',
     img: 'img/projects/pokemon.png',
     skills: ['AngularJS', 'JavaScript', 'AJAX', 'Jasmine', 'TDD', 'Sass', 'Bourbon', 'Responsive', 'HTML5'],

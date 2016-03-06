@@ -1,4 +1,7 @@
 [{  
+  "date": "March 5th, 2016",
+  "log": "I finished my last project for FreeCodeCamp and got my Back End certificate, <a href='http://definitely-real-quotes.herokuapp.com'>DEFINITELY Real Quotes</a>! The project is a reference to John Oliver's sketch and site of the same name <a href='http://definitelyrealquotes.com'>definitelyrealquotes.com</a>. Next, I'm planning on potentially doing some redesigns of my older projects, but more importantly, I'm now eligible to start work for nonprofit organizations!"
+  }, { 
   "date": "February 29th, 2016",
   "log": "I've added an algorithms page with a language filter and my first 7 algorithms. I spent the earlier part of the day refactoring a lot of my FreeCodeCamp algorithms and I figured it would be cool to show them on my portfolio."
   }, {    
