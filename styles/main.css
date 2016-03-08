@@ -263,11 +263,27 @@ header nav paper-tabs {
             width: 46%;
             right: 123px; } }
 
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px; }
+  .download paper-button {
+    padding: 0; }
+  .download a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    padding: 0.7em 0.57em; }
+
 #resume {
   font-family: "Lato", sans-serif;
   background-color: #424b4b;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 20px auto;
   color: #eee; }
   #resume > div {
     padding: 20px 30px;
