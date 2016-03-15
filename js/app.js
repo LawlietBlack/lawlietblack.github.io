@@ -261,11 +261,23 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   };
   $scope.snippetLanguages = ['JavaScript', 'Python'];
   $scope.snippets = [{
+    name: 'Permutations',
+    description: 'Get all unique permutations of a string.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function permutations(data) {\n  var perms = [];\n  if(typeof data === \'string\') data = data.slice().split("");\n  function _permute(item, mem){\n    if(item.length === 0) return perms.push(mem.join(""));\n    for(let i=0;i<item.length;i++) {\n      let x = item.splice(i,1);\n      mem.push(x);\n      _permute(item, mem);\n      mem.pop();\n      item.splice(i,0,x);\n    }\n  }\n  _permute(data, []);\n  return perms.filter((p, i) => perms.indexOf(p) === i).length;\n}'
+    }, {
     name: 'Roman Numeral Converter',
     description: 'Convert a number into a roman numeral.',
     language: 'JavaScript',
     langCode: 'js',
     code: 'function convert(num) {\n  var romanKeys = [["M", 1000], ["CM", 900], ["D", 500], ["CD", 400], ["C", 100], ["XC", 90], ["L", 50], ["XL", 40], ["X", 10], ["IX", 9], ["V", 5], ["IV", 4], ["I", 1]];\n\n  return romanKeys.map(function(key) {\n    var letter = key[0];\n    var count = Math.floor(num / key[1]);\n    var roman = Array(count).fill(letter).join("");\n    num -= key[1] * count;\n    \n    return roman;\n  }).join("");\n}'
+    }, {
+    name: 'Permutation Count',
+    description: 'Get the number of unique permutations of a string.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function factorial(num) {\n  return Array(num + 1).join(0).split("").map((n, i) => i + 1).reduce((a, b) => a * b);\n}\n\nfunction permCount(str) {\n  var dupes = str.slice().split("").sort().reduce((a, b) => a[a.length - 1] === b ? a + b : a + " " + b).split(" ");\n  var dupFactor = dupes.map((l) => factorial(l.length)).reduce((a, b) => a * b);\n  return factorial(str.length)/dupFactor;\n}'
     }, {
     name: 'Mutations',
     description: 'Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.',
