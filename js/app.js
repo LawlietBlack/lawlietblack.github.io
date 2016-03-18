@@ -265,7 +265,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     description: 'Get all unique permutations of a string.',
     language: 'JavaScript',
     langCode: 'js',
-    code: 'function permutations(data) {\n  var perms = [];\n  if(typeof data === \'string\') data = data.slice().split("");\n  function _permute(item, mem){\n    if(item.length === 0) return perms.push(mem.join(""));\n    for(let i=0;i<item.length;i++) {\n      let x = item.splice(i,1);\n      mem.push(x);\n      _permute(item, mem);\n      mem.pop();\n      item.splice(i,0,x);\n    }\n  }\n  _permute(data, []);\n  return perms.filter((p, i) => perms.indexOf(p) === i).length;\n}'
+    code: 'function permutations(data) {\n  var perms = [];\n  if(typeof data === \'string\') data = data.slice().split("");\n  function _permute(item, mem){\n    if(item.length === 0) return perms.push(mem.join(""));\n    for(let i=0;i<item.length;i++) {\n      let x = item.splice(i,1);\n      mem.push(x);\n      _permute(item, mem);\n      mem.pop();\n      item.splice(i,0,x);\n    }\n  }\n  _permute(data, []);\n  return perms.filter((p, i) => perms.indexOf(p) === i);\n}'
     }, {
     name: 'Roman Numeral Converter',
     description: 'Convert a number into a roman numeral.',
@@ -310,10 +310,16 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
     code: 'function palindrome(str) {\n  var s = str.toLowerCase().replace(/[^a-z0-9]/g,"");\n  return s === s.split("").reverse().join("");\n}'
     }, {
     name: 'Check for Palindrome',
-    description: 'Return true if the given string is a palindrome. Otherwise, return false.',
+    description: 'Return True if the given string is a palindrome. Otherwise, return false.',
     language: 'Python',
     langCode: 'py',
     code: "import re\n\n\ndef palindrome(string):\n    lis = re.sub(r'[^a-z0-9]', '', string.lower())\n    return lis == lis[::-1]"
+    }, {
+    name: 'Check if Prime',
+    description: 'Return True if the given number is prime',
+    language: 'Python',
+    langCode: 'py',
+    code: "def is_prime(num):\n    if num < 2:\n        return False\n    for i in range(2, num - 1):\n        if num % i == 0:\n            return False\n    return True"
   }];
   $scope.languages = {};
   $scope.currentLanguage = 'all';
