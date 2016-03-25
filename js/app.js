@@ -261,11 +261,29 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   };
   $scope.snippetLanguages = ['JavaScript', 'Python'];
   $scope.snippets = [{
+    name: 'Advanced Pig Latin',
+    description: 'Pig latin is created by taking all the consonants before the first vowel of a word and moving them to the back of the word followed by the letters "ay". If the first letter of the word is a vowel, the string is left the same and the letters "way" are appended to the end. This problem is different from other variations in that it expects casing to remain the same as well as punctuation.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function translate(sentence) {\n  return sentence.replace(/[A-Za-z]+/gi, function(w) {\n    var cap = /[A-Z]/.test(w);\n    var word = /[aeiou]/i.test(w[0]) ? w + "way" : w.replace(/([^aeiou]+)(\w+)/i, "$2$1" + "ay");\n    return cap ? word[0].toUpperCase() + word.slice(1).toLowerCase() : word.toLowerCase();\n  });\n};'
+    }, {
+    name: 'Word a10n (abbreviation)',
+    description: 'The word i18n is a common abbreviation of internationalization the developer community use instead of typing the whole word and trying to spell it correctly. Similarly, a11y is an abbreviation of accessibility. This is a function that takes a string and turns any and all words within that string of length 4 or greater into an abbreviation following the same rules.',
+    language: 'Python',
+    langCode: 'py',
+    code: "import re\n\n\ndef abbreviate(s):\n    key = re.sub(r'(\\w)(\\w*)(\\w)', r'\\1_\\2_\\3', s).split('_')\n    for part in range(1, len(key), 2):\n        if len(key[part]) > 1:\n            key[part] = str(len(key[part]))\n    return ''.join(key)"
+    }, {
     name: 'Permutations',
     description: 'Get all unique permutations of a string.',
     language: 'JavaScript',
     langCode: 'js',
     code: 'function permutations(data) {\n  var perms = [];\n  if(typeof data === \'string\') data = data.slice().split("");\n  function _permute(item, mem){\n    if(item.length === 0) return perms.push(mem.join(""));\n    for(let i=0;i<item.length;i++) {\n      let x = item.splice(i,1);\n      mem.push(x);\n      _permute(item, mem);\n      mem.pop();\n      item.splice(i,0,x);\n    }\n  }\n  _permute(data, []);\n  return perms.filter((p, i) => perms.indexOf(p) === i);\n}'
+    }, {
+    name: 'Perfect Powers',
+    description: 'Checks wheter a given integer is a perfect power (a positive integer that can be expressed as an integer power of another positive integer). If it is a perfect power, returns a pair m and k with m^k = n as a proof.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'var isPerfectPower = function(n){\n  let factors = [];\n  for(let m=2; m*m<=n; m++) {\n    if(n % m == 0) factors.push(m);\n  }\n  for(let i=2; i<=Math.sqrt(n) + 1; i++) {\n    let result = factors.filter((num) => Math.pow(num, i) === n);\n    if(result.length) return result.concat(i);\n  }\n  return null;\n}'
     }, {
     name: 'Roman Numeral Converter',
     description: 'Convert a number into a roman numeral.',
