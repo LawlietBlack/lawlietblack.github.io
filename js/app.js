@@ -261,6 +261,12 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize'])
   };
   $scope.snippetLanguages = ['JavaScript', 'Python'];
   $scope.snippets = [{
+    name: 'Steamroller',
+    description: 'Flatten a nested array. You must account for varying levels of nesting.',
+    language: 'JavaScript',
+    langCode: 'js',
+    code: 'function steamroller(arr) {\n  var newArr = arr.reduce(function(a, b) {\n    return Array.isArray(a) ? a.concat(b) : [a].concat(b);\n  });\n  return isFlat(arr) ? newArr : steamroller(newArr); \n}\n\nfunction isFlat(arr) {\n  return arr.reduce(function(a, b) {\n    return (a === true || !Array.isArray(a)) && !Array.isArray(b);\n  });\n}'
+    }, {
     name: 'Advanced Pig Latin',
     description: 'Pig latin is created by taking all the consonants before the first vowel of a word and moving them to the back of the word followed by the letters "ay". If the first letter of the word is a vowel, the string is left the same and the letters "way" are appended to the end. This problem is different from other variations in that it expects casing to remain the same as well as punctuation.',
     language: 'JavaScript',

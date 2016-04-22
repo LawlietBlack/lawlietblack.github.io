@@ -15,7 +15,7 @@
       <li class="over-8" ng-show="card.skills.length > 8" ng-click="showMore()"><span class="small">{{card.skills.length - 8}} more</span><i class="fa fa-caret-down"></i></li>
     </ul>
   </div>
-  <img src="#" ng-src="{{card.img}}">
+  <img src="#" ng-src="{{card.img}}" alt="{{card.title}} Thumbnail">
   <div class="card-content card-bottom">
     <p>{{card.description}}</p>
     <paper-button raised ng-click="link(card.github)" elevation="9" class="git-btn">GitHub</paper-button>
