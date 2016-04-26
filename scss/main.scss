@@ -1,5 +1,8 @@
+//Main Fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+// About Page Fonts
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
@@ -64,22 +67,22 @@ ul {
   }
 }
 
-paper-button {
+button.md-button {
   border-radius: 0px;
+  font-size: 16px;
   text-transform: none;
   &.content {
     padding: 0;
   }
-  &[primary][raised] {
+  &.md-raised {
+    color: #fff;
+  }
+  &.md-raised.md-primary {
     background-color: $primary-color;
   }
-  &[secondary][raised] {
+  &.md-raised.md-secondary {
     background-color: $secondary-color;
   }
-}
-#tabsContainer {
-  max-width: 1200px;
-  margin: auto;
 }
 .container {
   padding-right: 15px;
@@ -101,30 +104,6 @@ paper-button {
 }
 .green {
   background-color: #1B5E20;
-}
-.progress {
-  height: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-}
-.progress-bar {
-  float: left;
-  width: 0;
-  height: 100%;
-  font-size: 12px;
-  line-height: 20px;
-  color: #fff;
-  text-align: center;
-  background-color: #337ab7;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-  -webkit-transition: width .6s ease;
-       -o-transition: width .6s ease;
-          transition: width .6s ease;
 }
 %tile {
   display: inline-block;
@@ -151,12 +130,24 @@ header {
         font-weight: normal;
       }
     }
-    paper-tabs {
+    md-tabs {
+      height: 48px;
+      overflow: hidden;
       background-color: $primary-color;
+      .md-tab {
+        padding: 0;
+      }
       a, a:hover {
+        display: block;
+        padding: 12px;
+        width: 100%;
+        height: 100%;
         text-align: center;
-        padding:16px;
         color: #ffffff;
+      }
+      md-ink-bar {
+        color: #ffff8d;
+        background-color: #ffff8d;
       }
     }
   }
@@ -167,18 +158,24 @@ header {
     @include flexy();
     max-width: 1280px;
     margin: 10px auto 0;
-    paper-button {
+    color: #fff;
+    button.md-button {
       margin: 4px;
-      padding: 4px;
+      line-height: 20px;
+      min-height: 20px;
+      height: 28px;
+      min-width: 5em;
+      padding: 0 4px;
       cursor: pointer;
+      position: relative;
       @include skillcolors;
       .skill-num {
         background-color: #777;
         border-radius: 50%;
-        margin-left:4px;
+        display: inline-block;
         height: 20px;
         width: 20px;
-        display: inline-block;
+        line-height: 20px;
         text-align: center;
       }
     }
@@ -192,13 +189,13 @@ header {
 #portfolio {
   padding-top:20px;
   @include flexy();
-  paper-material {
-    overflow: auto;}
-  paper-card {
+  md-card {
     margin: 20px;
     float:left;
     background-color: $card-color;
     width: 426px;
+    border-radius: 0;
+    position: relative;
     img {
       width: 336px;
       height: 192px;
@@ -224,7 +221,7 @@ header {
       p {
         margin: 12px 0 0;
       }
-      paper-button {
+      button {
         position: absolute;
         bottom:5px;
         &.git-btn {
@@ -233,14 +230,16 @@ header {
         }
         &.web-btn {
           background-color: #055081;
-          right: 90px;
+          right: 100px;
         }
       }
     }
     .skills-bar {
       width: 90px;
       height: 232px;
-      float:right;
+      position: absolute;
+      right: 0;
+      top: 0;
       text-align: center;
       background-color: darken($card-color, 10%);
       li {
@@ -280,24 +279,25 @@ header {
         text-align: center;
       }
       .skills-bar {
-        position: absolute;
         right: 0;
-        bottom: 0;
+        top: 232px;
         min-height: 261px;
         .over-8 {
           background-color: darken($card-color, 10%);
         }
       }
       .card-bottom {
-        min-height: 257px;
+        min-height: 261px;
         width: 246px;
-        paper-button.git-btn {
-          width: 46%;
+        button.git-btn {
+          padding: 0;
+          width: 44%;
           right: 0px;
         }
-        paper-button.web-btn {
-          width: 46%;
-          right: 123px;
+        button.web-btn {
+          padding: 0;
+          width: 44%;
+          right: 121px;
         }
       }
     }
@@ -306,7 +306,9 @@ header {
 .download {
   @include flexy();
   margin: 20px;
-  paper-button {
+  button.md-button {
+    height: 36px;
+    width: 140px;
     padding: 0;
   }
   a {
@@ -315,7 +317,6 @@ header {
     width: 100%;
     margin: 0;
     color: #fff;
-    padding: 0.7em 0.57em;
   }
 }
 #resume {

@@ -1,16 +1,14 @@
 <div id="skills-tags">
   <div class="skill-tags">
-    <paper-button class="skill-all" ng-click="snippetFilter('all')">All <span class="skill-num">{{snippets.length}}</span></paper-button>
-    <paper-button
-       ng-repeat="skill in snippetLanguages" 
+    <md-button class="skill-all" ng-click="snippetFilter('all')">All <span class="skill-num">{{snippets.length}}</span></md-button>
+    <md-button
+       ng-repeat="skill in langList" 
        ng-class="'skill-' + skill.toLowerCase()" 
-       ng-click="snippetFilter(skill)">{{skill}}<span class="skill-num">{{languages[skill] > 0 ? languages[skill] : 0}}</span>
-   </paper-button>
+       ng-click="snippetFilter(skill)">{{skill}} <span class="skill-num">{{languages[skill] > 0 ? languages[skill] : 0}}</span>
+   </md-button>
   </div>
 </div>
-<h4 ng-show="currentLanguage !== 'all'" class="current-skill">
-  Current Filter: {{currentLanguage}}
-</h4>
+<h4 ng-show="currentLang !== 'all'" class="current-skill">Current Filter: {{currentLang}}</h4>
 <div id="code">
   <div class="snippet" ng-repeat="snippet in snippets">
     <h3><span ng-class="'skill skill-' + snippet.language.toLowerCase()">{{snippet.language}}</span> {{snippet.name}}</h3>

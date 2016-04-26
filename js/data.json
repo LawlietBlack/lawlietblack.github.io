@@ -1,0 +1,389 @@
+{
+  "portfolio": [{
+    "title": "Persona 4 Golden Guide",
+    "img": "img/projects/persona.png",
+    "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Expressjs", "HTML5", "CSS3"],
+    "description": "A website guide for Persona 4 Golden. I initially built this app using a node.js back end with express and Swig, but down the line, I realized that it would run much faster as an AngularJS single page application. The full-stack JavaScript version is saved as the \"node\" branch.",
+    "github": "https://github.com/LawlietBlack/Persona-4-Golden-Guide",
+    "link": "http://persona.lawlietblack.com"
+    }, {
+    "title": "Magic: the Gathering Deckbuilder",
+    "img": "img/projects/mtg.png",
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "RESTApi", "MongoDB", "Yeoman", "Jasmine", "TDD", "HTML5", "CSS3", "JavaScript", "AJAX"],
+    "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack.",
+    "github": "https://github.com/LawlietBlack/magic-deckbuilder",
+    "link": "http://magic-lawlietblack.herokuapp.com"
+    }, {
+    "title": "DEFINITELY Real Quotes",
+    "img": "img/projects/quotes.png",
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "RESTApi", "oAuth", "MongoDB", "Yeoman", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
+    "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
+    "github": "https://github.com/LawlietBlack/real-quotes",
+    "link": "https://definitely-real-quotes.herokuapp.com/"
+    }, {
+    "title": "Pokedex",
+    "img": "img/projects/pokemon.png",
+    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "TDD", "Sass", "Bourbon", "Responsive", "HTML5"],
+    "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
+    "github": "https://github.com/LawlietBlack/pokedex",
+    "link": "http://pokedex.lawlietblack.com"
+    }, {
+    "title": "Civilization 5 Leaders Guide",
+    "img": "img/projects/civ5.png",
+    "skills": ["AngularJS","jQuery", "JavaScript", "HTML5", "CSS3", "Responsive", "Bootstrap"],
+    "description": "A Reference Page for Civilization V with all of the available leaders in the base game and DLCs that shows each leader\"s unique ability, units, and buildings.",
+    "github": "https://github.com/LawlietBlack/civ-leaders",
+    "link": "http://git.lawlietblack.com/civ/index.html"
+    }, {
+    "title": "Dungeon Game",
+    "img": "img/projects/roguelike.png",
+    "skills": ["ReactJS", "JavaScript", "Gulp", "JSX", "Babel", "Sass", "HTML5"],
+    "description": "Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15",
+    "link": "http://codepen.io/LawlietBlack/full/JGBazL"
+    }, {
+    "title": "Fallout Terminal Game",
+    "img": "img/projects/fallout.png",
+    "skills": ["AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3"],
+    "description": "Recreation of the hacking minigame in Fallout 4. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/fallout-terminal",
+    "link": "http://codepen.io/LawlietBlack/full/eJOZjN"
+    }, {
+    "title": "Meteor Strike Map",
+    "img": "img/projects/meteors.png",
+    "skills": ["AngularJS", "JavaScript", "d3js", "AJAX", "HTML5", "Sass"],
+    "description": "D3.js map showing meteor impact sites. The relative size of the point corresponds to the mass of the meteor and the color of the point represents the meteor class.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-20",
+    "link": "http://codepen.io/LawlietBlack/full/VeRjXG/"
+    }, {
+    "title": "Exoplanet Heat Map",
+    "img": "img/projects/exoplanets.png",
+    "skills": ["AngularJS", "JavaScript", "d3js", "AJAX", "HTML5", "Sass"],
+    "description": "D3.js heat map comparing exoplanet radius, mass, and distance from Earth.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-18",
+    "link": "http://codepen.io/LawlietBlack/full/wMEbBV/"
+    }, {
+    "title": "Conway\"s Game of Life",
+    "img": "img/projects/life.png",
+    "skills": ["ReactJS", "JavaScript", "Sass", "HTML5"],
+    "description": "Conway\"s game of life with grid size, generation speed, pause/play, and randomize functionality. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-14",
+    "link": "http://codepen.io/LawlietBlack/full/oboRwo/"
+    }, {
+    "title": "Camper News Force Map",
+    "img": "img/projects/camperforce.png",
+    "skills": ["AngularJS", "JavaScript", "d3js", "AJAX", "HTML5", "Sass"],
+    "description": "FreeCodeCamp\"s news feed visualized using a d3 force map. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-19",
+    "link": "http://codepen.io/LawlietBlack/full/YwJebb/"
+    }, {
+    "title": "US Gross National Product",
+    "img": "img/projects/usgnp.png",
+    "skills": ["AngularJS", "JavaScript", "d3js", "AJAX", "HTML5", "Sass"],
+    "description": "D3.js chart of the United States Gross National Product from 1947 to present. Hosted on Codepen",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-16",
+    "link": "http://codepen.io/LawlietBlack/full/bExgVR/"
+    }, {
+    "title": "Recipe Box",
+    "img": "img/projects/recipebox.png",
+    "skills": ["ReactJS", "JavaScript", "Sass", "Responsive", "HTML5"],
+    "description": "Recipe box made with ReactJS and Sass. Recipes are saved locally using localStorage. Supports recipe creation, deletion, and editing. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-13",
+    "link": "http://codepen.io/LawlietBlack/full/gPgqGR"
+    }, {
+    "title": "Vote",
+    "img": "img/projects/vote.png",
+    "skills": [ "AngularJS", "Nodejs","Expressjs", "JavaScript", "MongoDB", "RESTApi", "Yeoman", "oAuth",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "description": "Voting app built using MEAN stack and oAuth that allows users to log in, create polls and share them with others.",
+    "github": "https://github.com/LawlietBlack/vote",
+    "link": "http://vote-lawlietblack.herokuapp.com"
+    }, {
+    "title": "Markdown Preview",
+    "img": "img/projects/markdown.png",
+    "skills": ["ReactJS", "JavaScript", "Sass", "HTML5"],
+    "description": "Markdown preview app built with ReactJS and Sass. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-11",
+    "link": "http://codepen.io/LawlietBlack/full/vLgmdm"
+    }, {
+    "title": "FreeCodeCamp Leaderboard",
+    "img": "img/projects/fccleaders.png",
+    "skills": ["ReactJS", "JavaScript", "AJAX", "Sass", "HTML5", "Responsive"],
+    "description": "Leaderboard for FreeCodeCamp.com created with ReactJS and Sass. Utilizes an API endpoint made by a fellow student. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-12",
+    "link": "http://codepen.io/LawlietBlack/full/rxjZEq"
+    }, {
+    "title": "Stocks",
+    "img": "img/projects/stocks.png",
+    "skills": [ "AngularJS", "Nodejs", "d3js", "Expressjs", "MongoDB", "RESTApi", "Socketio", "Yeoman", "HTML5", "AJAX", "CSS3", "Bootstrap", "JavaScript"],
+    "description": "Single Page App that charts the stock market using data from the Markit on demand Market Data API. Chart updates for all users in real time whenever a stock is added or removed.",
+    "github": "https://github.com/LawlietBlack/stocks",
+    "link": "http://stocks-lawlietblack.herokuapp.com"
+    }, {
+    "title": "Nightlife Coordinator",
+    "img": "img/projects/nightlife.png",
+    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "MongoDB", "RESTApi", "Yeoman", "oAuth", "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "description": "Single Page App that allows the user to search for local bars or restaurants and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.",
+    "github": "https://github.com/LawlietBlack/nightlife",
+    "link": "http://nightlife-lawlietblack.herokuapp.com"
+    }, {
+    "title": "Book Trade",
+    "img": "img/projects/booktrade.png",
+    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "MongoDB", "RESTApi", "Yeoman", "oAuth", "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "description": "Prototype Book Trading site for a local club. Uses the Google Books API and a RESTful API to allow users to search, select, and trade books. Upon successful trade, enables contact info trading (limited). ",
+    "github": "https://github.com/LawlietBlack/books",
+    "link": "http://books-lawlietblack.herokuapp.com"
+    }, {
+    "title": "Pomodoro Timer",
+    "img": "img/projects/pomodoro.png",
+    "skills": ["JavaScript", "jQuery", "HTML5", "CSS3", "Bootstrap"],
+    "description": "Pomodoro productivity timer. Alternates between adjustable work and break intervals to maximize productivity and creativity. Background fills as timer progresses. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-04",
+    "link": "http://codepen.io/LawlietBlack/full/QjwLrd"
+    }, {
+    "title": "JavaScript Calculator",
+    "img": "img/projects/calculator.png",
+    "skills": ["JavaScript", "jQuery", "HTML5", "CSS3", "Bootstrap"],
+    "description": "Basic calculator built using JavaScript. Add, Subtract, Divide, Multiply, and Modulo operations supported. Shows current equation string above like a scientific calculator. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-08",
+    "link": "http://codepen.io/LawlietBlack/full/qOOdPV/"
+    }, {
+    "title": "Tic Tac Toe",
+    "img": "img/projects/tictactoe.png",
+    "skills": ["AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3", "Bootstrap"],
+    "description": "Tic Tac Toe, recreated in HTML5 and JavaScript. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-09",
+    "link": "http://codepen.io/LawlietBlack/full/pjjLee"
+    }, {
+    "title": "Simon",
+    "img": "img/projects/simon.png",
+    "skills": ["AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3", "Bootstrap"],
+    "description": "Simon game recreated in HTML and JavaScript. Supports normal and Strict mode and increases tempo at turn 5, 9, and 13. Player win is at turn 20. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-10",
+    "link": "http://codepen.io/LawlietBlack/full/RWWzLz"
+  }], 
+  "logs": [{  
+    "date": "April 26th, 2016",
+    "log": "I'm a few weeks into my nonprofit project now, and it's going great! We decided to use KeystoneJS, a kind of Content Management Framework in JavaScript. Reminds me a lot of Django! I've also switched my material design from Polymer to Angular Material in an attempt to lower load times. I also plan on migrating more of my data in angular to services and to maybe look into webpack."
+    }, {  
+    "date": "March 25th, 2016",
+    "log": "I have my partner for my first non-profit project, and my first meeting is next week. I've also added some more algorithms to my page and started the Java track on Treehouse and the Sass classes on CodeSchool."
+    }, { 
+    "date": "March 5th, 2016",
+    "log": "I finished my last project for FreeCodeCamp and got my Back End certificate, <a href='http://definitely-real-quotes.herokuapp.com'>DEFINITELY Real Quotes</a>! The project is a reference to John Oliver's sketch and site of the same name <a href='http://definitelyrealquotes.com'>definitelyrealquotes.com</a>. Next, I'm planning on potentially doing some redesigns of my older projects, but more importantly, I'm now eligible to start work for nonprofit organizations!"
+    }, { 
+    "date": "February 29th, 2016",
+    "log": "I've added an algorithms page with a language filter and my first 7 algorithms. I spent the earlier part of the day refactoring a lot of my FreeCodeCamp algorithms and I figured it would be cool to show them on my portfolio."
+    }, {    
+    "date": "February 26th, 2016",
+    "log": "As of now, I've finished 4 more projects, covering all of the new material at FreeCodeCamp and only leaving one project to go! The new projects are too small to really go on my portfolio, but they are a <a href='https://header-parser-lawlietblack.herokuapp.com/'>Request Header Parser Microservice</a>, a <a href='http://st-lb.herokuapp.com/'>URL Shortener Microservice</a>, <a href='https://images-lawlietblack.herokuapp.com/'>Image Search Abstraction Layer</a>, and a <a href='https://file-meta-lawlietblack.herokuapp.com/'>File Metadata Microservice</a>. I've also started working on answering basic interview questions on my about page, an idea given to me by the very awesome <a href='http://annewoods.us/portfolio/'>Anne Rainy Woods</a> :)"
+    }, {  
+    "date": "February 17th, 2016",
+    "log": "I've finished the last d3 project, a d3 map of meteor strikes, and added it to the main page. I was a bit annoyed that the original example seemingly used colors at random, so I did a little research and added meaningful colors to the data. I've also completed my first new back-end project, a simple Timestamp service that can be found at <a href=\"http://timestamp-lawlietblack.herokuapp.com\">timestamp-lawlietblack.herokuapp.com</a>. Lastly, I made and added a digital resume to my site."
+    }, {
+    "date": "February 7th, 2016",
+    "log": "This week, I finished 4 of the 5 d3 projects, 3 of which I've added to my portfolio: an Exoplanet Heat Map, which tracks the dimensions and distance of confirmed exoplanets, a US Gross National Product chart covering data from the 40s to present, and a force map depicting the FreeCodeCamp news network. As a bonus, I've also completed my recreation of the Fallout 3/4 hacking minigame, which can also be found on my main page :) ."
+    }, {  
+    "date": "February 2nd, 2016",
+    "log": "I finished the last two React and Sass projects! The first is Conway's Game of Life, a math game that \"simulates\" life (Wikipedia explanation <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">here</a>). You can find my version on <a href=\"http://codepen.io/LawlietBlack/full/oboRwo/\">Codepen</a>. The second is a roguelike dungeon crawler game that can also be found on <a href=\"http://codepen.io/LawlietBlack/full/JGBazL/\">Codepen</a>. As for Python, I have my first Flask app live at <a href=\"http://bearacter-builder.herokuapp.com/\">http://bearacter-builder.herokuapp.com/</a>. I was walked through it, so it's not on my portfolio, but I did enjoy learning flask, and am excited to use it for future projects :)"
+    }, {  
+    "date": "January 17th, 2016",
+    "log": "I've spent the last week diving deep into Python and I hope to have some apps live soon. I've also redesigned my portfolio site, removing the 'apps' tab and moving part of the content there to the main page and retiring the rest."
+    }, {  
+    "date": "January 9th, 2016",
+    "log": "I've finished 2 more apps with React and Sass! The first is a leaderboard for FreeCodeCamp.com. The data is imported from an API a fellow camper made. The app can be found on <a href=\"http://codepen.io/LawlietBlack/full/rxjZEq/\">Codepen</a> and the code is on <a href=\"https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-12\">GitHub</a>. The other is a front-end recipe box that saves data using localStorage. I liked this one and will probably expand it to a full-stack app down the line. The live version can be found on <a href=\"http://codepen.io/LawlietBlack/full/gPgqGR/\">Codepen</a>.</a>"
+    }, {  
+    "date": "January 2nd, 2016",
+    "log": "The new content on FreeCodeCamp requires ReactJS and Sass, so I spent some of the last weeks learning them. My first app with Sass and React is a markdown preview app that can be found on <a href=\"http://codepen.io/LawlietBlack/full/vLgmdm/\">Codepen</a> with code in my ziplines archive on <a href=\"https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-11\">GitHub</a>. In the course of learning React, I also made a children's math game that can be found on <a href=\"http://codepen.io/LawlietBlack/pen/gPgOpd\">Codepen</a>."
+    }, {  
+    "date": "December 19th, 2015",
+    "log": "I've finished making my next MEAN stack app, a prototype of a book trading site. A live version can be found at <a href=\"http://books-lawlietblack.herokuapp.com\">http://books-lawlietblack.herokuapp.com</a> and the code can be found on <a href=\"https://github.com/LawlietBlack/books\">GitHub</a>. While there is one more MEAN app to do on FreeCodeCamp, the site is adding new content and I'll be finishing the new front-end apps first"
+    }, {  
+    "date": "November 29th, 2015",
+    "log": "I've rebuilt my About page to be a bit more reader-friendly and my Magic, the Gathering Deckbuilder is currently undergoing an overhaul, changing from front-end to full stack JavaScript using the MEAN stack, Grunt and Yeoman. I think this will fix the loading issues that I've been having and overall make it a much snappier app. I have only 2 projects left to complete on FreeCodeCamp, and the next one in line is a book trading app."
+    }, {
+    "date": "October 21st, 2015",
+    "log": "Since My last update, I've been working through the FreeCodeCamp curriculum and have completed all but two of their projects, adding a voting app and a nightlife coordination app to my portfolio, as well as a Tic Tac Toe app, a calculator, and a Simon game <a href=\"http://codepen.io/LawlietBlack/full/RWWzLz/\">here</a>. I have also made an app to chart the stock market that I plan on linking to once I'm finished with the final touches :)."
+    }, {
+    "date": "September 9th, 2015",
+    "log": "On August 28th, I started work on a new site, freecodecamp.com. They specialize in full-stack javascript and, if I complete their program, they will connect me to nonprofit organizations with web development work. Since then, I have worked through a large portion of their content much quicker than their estimated completion times and I hope to finish their 800 hours of content soon. I have posted the web development projects I've done there - named ziplines for their camp theme - on my projects page, and they are also on my Codepen account <a href=\"http://codepen.io/LawlietBlack/\">here</a> and in their own repository on <a href=\"https://github.com/LawlietBlack/FCC-Ziplines\">GitHub</a>."
+    }, {  
+    "date": "August 26th, 2015",
+    "log": "Since my last update, I finished both the Front End and Full Stack Javascript tracks on Treehouse! Using <a href=\"http://dev.lawlietblack.com/img/webdev.jpg\">This Chart</a> I got from my Web Development class from Udemy, I've been doing my best to cover all the bases I need and have been keeping a note of my progress (as I see it) <a href=\"http://dev.lawlietblack.com/progress.html\">here.</a> I also finished the AngularJS course on Treehouse, but don't feel that I've quite mastered the subject, so I've gone in search of other materials, starting with a course on CodeScool. In an effort to cut down the time I need to spend designing, I've started learning some external libraries like jQuert UI and Polymer. I've also dipped my toes in Yeoman, but I haven't found a stack that I'm too fond of yet."
+    }, {  
+    "date": "August 13th, 2015",
+    "log": "Started work on Front End Performance Optimization on Treehouse, the final course in the front-end web developer track. I am also, incidentally, only one course shy of completing the Full Stack Javascript Development track. I've also been tinkering with jQuery UI and have restyled these updates as an accordion menu and have also added a carousel effect to my main page using the jQuert plugin, slick."
+    }, {
+    "date": "August 8th, 2015",
+    "log": "Started and completed the new npm class on Treehouse and started the course on SQL databases. I have a working card drawing app for use with my MTG deck builder and have created a card search app with color filtering as well, all using AngularJS with a very rudimentary UI. I continued to work on the AngularJS course at Treehouse, but feel I am not learning it quite well enough, so I have started watching other videos on youtube as well."
+    }, {
+    "date": "July 30th, 2015",
+    "log": "Started work on a Magic: The Gathering deck-building object in javascript using the maser JSON object from mtgjson.com. It will be nice to have the data to begin with this time instead of entering all of it manually like I did with my persona and civ sites."
+    }, {
+    "date": "July 28th, 2015",
+    "log": "I've rebuilt my persona guide from the ground up using express and swig, which I've been learning on my own. I also started work on a Pokedex site that I'm going to be building with Brigette. On Treehouse, I finished Object Oriented Javascript and Jquery Plugins and on Codecademy I've started work on Ruby on Rails."
+    }, {
+    "date": "July 8th, 2015",
+    "log": "Since my last update, I have completed all of the calendar pages, social link pages, and added visual transitions to my Persona site. Despite having some trouble, the node.js server that is running it should be stable now with the use of the program \"forever.\" I have also finished the Ruby course on Codecademy and have made progress on the new Object Oriented Javascript course on Treehouse."
+    }, {
+    "date": "June 26th, 2015",
+    "log": "As of now I have finished git basics and node.js and have been working on a new site/guide about Persona 4 golden using my newly acquired node.js skills. The site can be found <a href=\"http://persona.lawlietblack.com:3000\">here</a> as a work in progress. I'm currently experimenting with texture overlays and transitional visual effects, as well as populating the content of the site while getting practice using git version control. I also added a subdomain, <a href=\"http://dev.lawlietblack.com\">dev.lawlietblack.com</a> where I'm keeping the miscellaneous projects that I've worked on from Treehouse and Codecademy that aren't in my Portfolio"
+    }, {    
+    "date": "June 20th, 2015",
+    "log": "I have been working on getting a solid Unix-based development environment for my windows laptop and ended up using Cygwin and console2, which I'm pretty satisfied with. I also installed OpenSUSE as a second OS for my laptop, but I'm still pretty new to package control, so I haven't quite gotten to the point where I can transition to that OS completely."
+    }, {
+    "date": "June 13th, 2015",
+    "log": "Since the last entry, I have finished AJAX from Treehouse and have also completed the courses on website optimization, accessibility, console foundations and basic node.js. I have started the second node.js course, git basics, and AngularJS on Treehouse. On Codecademy, I finally finished all of the projects on AngularJS and have started to learn Ruby and Python. I have added a drawing app and a Flickr search app to the projects page, adding to the simple to-do list and dice roller that were already there."
+    }, {
+    "date": "May 31st, 2015",
+    "log": "I'm currently working on learning AnularJS from Codecademy and AJAX from Treehouse. I finished a page for Civilization V that can be found in my portfolio and I made a drop-down menu for my projects page using AngularJS. I also made a Treehouse card using AJAX that gets my JSON file from Treehouse servers and placed it on my about page."
+    }, {
+    "date": "May 25th, 2015",
+    "log": "Finished the responsive layouts course on Treehouse and continued work on the AngularJS class on Codecademy. I added some apps to my project page and made a list of my skills for my about page."
+    }, {
+    "date": "May 21st, 2015",
+    "log": "On Treehouse, I've gotten through the HTML Tables, Interactive JavaScript, and HTML Video and Audio courses and learned more about DOM manipulation and also made my first set of video captions. I also started work on the Responsive Layouts course."
+    }, {
+    "date": "May 16th, 2015",
+    "log": "Finished jQuery on Treehouse and made a spoiler revealer, a lightbox, drop-down mobile navigation, a responsive password form, and a simple drawing app which I put on my projects page. I also got through the first section of AngularJS, where I got my first taste of MVC frameworks, which I used to make myself a journal page."
+    }, {
+    "date": "May 11th, 2015",
+    "log": "Finished both of the website courses on Codecademy, learning bootstrap and more jQuery techniques and finished the second JavaScript course on Treehouse, solidifying my foundations on loops, arrays, and functions. Started work on AngularJS on Codecademy and jQuery on Treehouse."
+    }, {
+    "date": "May 7th, 2015",
+    "log": "Completed the CSS, JavaScript, and HTML Forms courses on Treehouse and the PHP course on Codecademy, building a few more simple websites and web apps. Started on Codecademy's course on How to Build a Website to learn bootstrap and also started on the second JavaScript course on Treehouse."
+    }, {
+    "date": "May 1st, 2015",
+    "log": "Finished the first course on the front-end developer track on Treehouse and made a portfolio page in the process! Started the next course on CSS and am excited to get to JavaScript after that! I also completed the jQuery course on Codecademy and started working on PHP."
+    }, {
+    "date": "April 29th, 2015",
+    "log": "Finished the HTML and CSS course on Codecademy and in the process, I made a website resume, a simple social profile, and a gallery page. I started working on jQuery on Codecademy and I joined Treehouse and started their front-end developer course, which I'm now taking concurrently with Codecademy."
+    }, {
+    "date": "April 27th, 2015",
+    "log": "I worked on HTML and CSS in the morning, then reviewed and completed all of the exercises I got from a friend till nearly 3am!. It was mostly review, but I learned some new things!"
+    }, {
+    "date": "April 26th, 2015",
+    "log": "Finished the JavaScript course on Codecademy, making a cash register app, a simple address book, contact list, and a choose your own adventure game. Started the HTML and CSS course on Codecademy"
+    }, {
+    "date": "April 16th, 2015",
+    "log": "First day coding, started on the Javascript course on Codecademy, made a rock-paper-scissors game in the progress"
+  }],
+  "experience": [{
+    "title": "Discovery Expert",
+    "employer": "Stahancyk, Kent & Hook",
+    "duration": "2014-2015",
+    "description": "Compiled, indexed and maintained discovery documentation. Spearheaded the transition to paperless discovery."
+    }, {
+    "title": "Lab Assistant",
+    "employer": "University of Oregon Physics Department",
+    "duration": "2010-2011",
+    "description": "Maintained and analyzed data from the rooftop solar array.Machined parts for a specialized electron microscope."
+    }, {
+    "title": "Student Intern",
+    "employer": "Social Security Administration",
+    "duration": "2010",
+    "description": "Reviewed cases using database programs such as CPMS and PACER. Managed dynamic priorities in a busy office environment."
+    }, {
+    "title": "Resident Assistant",
+    "employer": "University of Oregon",
+    "duration": "2007-2008",
+    "description": "Worked as a leader and mentor for my hall. Administered and enforced housing protocol and dealt with emergency situations."
+  }],
+  "education": [{
+    "program": "Code Oregon",
+    "completed": "Front End Web Development, Full Stack JavaScript, Python Tracks",
+    "school": "Treehouse, Portland OR"
+    }, {
+    "program": "Full Stack Web Development",
+    "completed": "Front End Development, Data Visualization",
+    "school": "FreeCodeCamp, Portland OR"
+    }, {
+    "program": "Bachelor of Science in Applied Physics",
+    "completed": "Graduated",
+    "school": "University of Oregon, Eugene OR"
+  }],
+  "snippets": [{
+    "name": "Steamroller",
+    "description": "Flatten a nested array. You must account for varying levels of nesting.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function steamroller(arr) {\n  var newArr = arr.reduce(function(a, b) {\n    return Array.isArray(a) ? a.concat(b) : [a].concat(b);\n  });\n  return isFlat(arr) ? newArr : steamroller(newArr); \n}\n\nfunction isFlat(arr) {\n  return arr.reduce(function(a, b) {\n    return (a === true || !Array.isArray(a)) && !Array.isArray(b);\n  });\n}"
+    }, {
+    "name": "Advanced Pig Latin",
+    "description": "Pig latin is created by taking all the consonants before the first vowel of a word and moving them to the back of the word followed by the letters 'ay'. If the first letter of the word is a vowel, the string is left the same and the letters 'way' are appended to the end. This problem is different from other variations in that it expects casing to remain the same as well as punctuation.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function translate(sentence) {\n  return sentence.replace(/[A-Za-z]+/gi, function(w) {\n    var cap = /[A-Z]/.test(w);\n    var word = /[aeiou]/i.test(w[0]) ? w + 'way' : w.replace(/([^aeiou]+)(\\w+)/i, '$2$1' + 'ay');\n    return cap ? word[0].toUpperCase() + word.slice(1).toLowerCase() : word.toLowerCase();\n  });\n};"
+    }, {
+    "name": "Word a10n (abbreviation)",
+    "description": "The word i18n is a common abbreviation of internationalization the developer community use instead of typing the whole word and trying to spell it correctly. Similarly, a11y is an abbreviation of accessibility. This is a function that takes a string and turns any and all words within that string of length 4 or greater into an abbreviation following the same rules.",
+    "language": "Python",
+    "langCode": "py",
+    "code": "import re\n\n\ndef abbreviate(s):\n    key = re.sub(r'(\\w)(\\w*)(\\w)', r'\\1_\\2_\\3', s).split('_')\n    for part in range(1, len(key), 2):\n        if len(key[part]) > 1:\n            key[part] = str(len(key[part]))\n    return '.join(key)'"
+    }, {
+    "name": "Permutations",
+    "description": "Get all unique permutations of a string.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function permutations(data) {\n  var perms = [];\n  if(typeof data === 'string') data = data.slice().split('');\n  function _permute(item, mem){\n    if(item.length === 0) return perms.push(mem.join(''));\n    for(let i=0;i<item.length;i++) {\n      let x = item.splice(i,1);\n      mem.push(x);\n      _permute(item, mem);\n      mem.pop();\n      item.splice(i,0,x);\n    }\n  }\n  _permute(data, []);\n  return perms.filter((p, i) => perms.indexOf(p) === i);\n}"
+    }, {
+    "name": "Perfect Powers",
+    "description": "Checks wheter a given integer is a perfect power (a positive integer that can be expressed as an integer power of another positive integer). If it is a perfect power, returns a pair m and k with m^k = n as a proof.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "var isPerfectPower = function(n){\n  let factors = [];\n  for(let m=2; m*m<=n; m++) {\n    if(n % m == 0) factors.push(m);\n  }\n  for(let i=2; i<=Math.sqrt(n) + 1; i++) {\n    let result = factors.filter((num) => Math.pow(num, i) === n);\n    if(result.length) return result.concat(i);\n  }\n  return null;\n}"
+    }, {
+    "name": "Roman Numeral Converter",
+    "description": "Convert a number into a roman numeral.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function convert(num) {\n  var romanKeys = [['M', 1000], ['CM', 900], ['D', 500], ['CD', 400], ['C', 100], ['XC', 90], ['L', 50], ['XL', 40], ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]];\n\n  return romanKeys.map(function(key) {\n    var letter = key[0];\n    var count = Math.floor(num / key[1]);\n    var roman = Array(count).fill(letter).join('');\n    num -= key[1] * count;\n    \n    return roman;\n  }).join('');\n}"
+    }, {
+    "name": "Permutation Count",
+    "description": "Get the number of unique permutations of a string.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function factorial(num) {\n  return Array(num + 1).join(0).split('').map((n, i) => i + 1).reduce((a, b) => a * b);\n}\n\nfunction permCount(str) {\n  var dupes = str.slice().split('').sort().reduce((a, b) => a[a.length - 1] === b ? a + b : a + ' ' + b).split(' ');\n  var dupFactor = dupes.map((l) => factorial(l.length)).reduce((a, b) => a * b);\n  return factorial(str.length)/dupFactor;\n}"
+    }, {
+    "name": "Mutations",
+    "description": "Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function mutation(arr) {\n  var str = arr[0].toLowerCase();\n  return arr[1].toLowerCase().split('').reduce(function(a, b) {\n    return (a === true || str.indexOf(a) >= 0) && str.indexOf(b) >= 0;\n  });\n}"
+    }, {
+    "name": "Chunky Monkey",
+    "description": "Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a multidimensional array.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function chunk(arr, size) {\n  return arr.filter(function(c, i) {\n    return i % size === 0;\n  }).map(function(c, i) {\n    return arr.slice(i * size, (i * size) + size);\n  });\n}"
+    }, {
+    "name": "Repeat a String",
+    "description": "Repeat a given string (first argument) n times (second argument). Return an empty string if n is a negative number.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function repeat(str, num) {\n  return num < 0 ? '' : Array(num + 1).join(str);\n}"
+    }, {
+    "name": "Largest of Four",
+    "description": "Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function largestOfFour(arr) {\n  return arr.map(function(ar) {\n    return ar.reduce(function(a, b) {\n      return a > b ? a : b;\n    });\n  });\n}"
+    }, {
+    "name": "Check for Palindrome",
+    "description": "Return true if the given string is a palindrome. Otherwise, return false.",
+    "language": "JavaScript",
+    "langCode": "js",
+    "code": "function palindrome(str) {\n  var s = str.toLowerCase().replace(/[^a-z0-9]/g,'');\n  return s === s.split('').reverse().join('');\n}"
+    }, {
+    "name": "Check for Palindrome",
+    "description": "Return True if the given string is a palindrome. Otherwise, return false.",
+    "language": "Python",
+    "langCode": "py",
+    "code": "def palindrome(string):\n    lis = re.sub(r'[^a-z0-9]', '', string.lower())\n    return lis == lis[::-1]"
+    }, {
+    "name": "Check if Prime",
+    "description": "Return True if the given number is prime",
+    "language": "Python",
+    "langCode": "py",
+    "code": "def is_prime(num):\n    if num < 2:\n        return False\n    for i in range(2, num - 1):\n        if num % i == 0:\n            return False\n    return True"
+  }]
+}

@@ -1,39 +1,16 @@
 <div id="skills-tags">
   <div class="skill-tags">
-    <paper-button class="skill-all" ng-click="filterSkills('all')">All <span class="skill-num">{{portfolio.length}}</span></paper-button>
-    <paper-button
+    <md-button class="skill-all md-raised" ng-click="skillFilter('all')">All <span class="skill-num">{{portfolio.length}}</span></md-button>
+    <md-button
        ng-repeat="skill in skillList" 
-       ng-class="'skill-' + skill.toLowerCase()" 
-       ng-click="filterSkills(skill)">{{skill}}<span class="skill-num">{{skills[skill] > 0 ? skills[skill] : 0}}</span>
-   </paper-button>
+       ng-class="'md-raised skill-' + skill.toLowerCase()" 
+       ng-click="skillFilter(skill)">{{skill}} <span class="skill-num">{{skills[skill] > 0 ? skills[skill] : 0}}</span>
+   </md-button>
   </div>
 </div>
 <h4 ng-show="currentSkill !== 'all'" class="current-skill">
   Current Filter: {{currentSkill}}
 </h4>
 <div class="portfolio clearfix" id="portfolio"> 
-  <!--Polymer and ng-repeat don't play nice, else this would be ng-repeat-ed -->
-  <portfolio-card card="portfolio[0]"></portfolio-card>
-  <portfolio-card card="portfolio[1]"></portfolio-card>
-  <portfolio-card card="portfolio[2]"></portfolio-card>
-  <portfolio-card card="portfolio[3]"></portfolio-card>
-  <portfolio-card card="portfolio[4]"></portfolio-card>
-  <portfolio-card card="portfolio[5]"></portfolio-card>
-  <portfolio-card card="portfolio[6]"></portfolio-card>
-  <portfolio-card card="portfolio[7]"></portfolio-card>
-  <portfolio-card card="portfolio[8]"></portfolio-card>
-  <portfolio-card card="portfolio[9]"></portfolio-card>
-  <portfolio-card card="portfolio[10]"></portfolio-card>
-  <portfolio-card card="portfolio[11]"></portfolio-card>
-  <portfolio-card card="portfolio[12]"></portfolio-card>
-  <portfolio-card card="portfolio[13]"></portfolio-card>
-  <portfolio-card card="portfolio[14]"></portfolio-card>
-  <portfolio-card card="portfolio[15]"></portfolio-card>
-  <portfolio-card card="portfolio[16]"></portfolio-card>
-  <portfolio-card card="portfolio[17]"></portfolio-card>
-  <portfolio-card card="portfolio[18]"></portfolio-card>
-  <portfolio-card card="portfolio[19]"></portfolio-card>
-  <portfolio-card card="portfolio[20]"></portfolio-card>
-  <portfolio-card card="portfolio[21]"></portfolio-card>
-  <portfolio-card card="portfolio[22]"></portfolio-card>
+  <portfolio-card ng-repeat="card in portfolio" card="card"></portfolio-card>
 </div>
