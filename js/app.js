@@ -40,7 +40,19 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
   if($.isEmptyObject($scope.languages)) $profile.loadLanguageData();
 
   // Skills Data
-  $scope.skillList = ['AngularJS', 'JavaScript', 'jQuery', 'Nodejs', 'Expressjs', 'ReactJS', 'd3js', 'AJAX', 'Gulp', 'JSX', 'MongoDB', 'Yeoman', 'oAuth', 'Jasmine', 'TDD', 'RESTApi', 'Babel', 'HTML5', 'CSS3', 'Bootstrap', 'Sass', 'Responsive', 'Bourbon', 'Python'];
+  $scope.skillList = [
+    // JavaScript Skills
+    'AngularJS', 'JavaScript', 'jQuery', 'Nodejs', 'Expressjs', 'ReactJS', 'd3js', 'AJAX', 'Gulp', 'Yeoman', 'Jasmine', 'Babel',
+    // Python Skills
+    'Python',
+    // Java Skills
+    'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
+    // Database Skills
+    'MongoDB', 'H2', 'PostGreSQL', 'SQL',
+    // Development Skills
+    'oAuth', 'Socketio', 'RESTApi',
+    // Design Skills
+    'HTML5', 'CSS3', 'Bootstrap', 'Sass', 'Responsive', 'Bourbon', 'Materialize'];
   $scope.currentSkill = 'all';
   
   // Snippet Data

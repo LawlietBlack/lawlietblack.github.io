@@ -1,5 +1,5 @@
 # Bower
-bower_components
+#bower_components
 
 # Windows Thumbnail Files
 img/Thumbs.db
@@ -10,3 +10,6 @@ node_modules
 
 .sass-cache
 **/.sass-cache
+
+# Webstorm Files
+.idea

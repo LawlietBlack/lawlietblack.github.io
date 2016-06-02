@@ -6,17 +6,32 @@
   &.skill-all {
     background: linear-gradient(darken(#1b5e20, 10%), lighten(#1b5e20, 10%)), #1b5e20;
   }
-	&.skill-angularjs, &.skill-jquery, &.skill-javascript, &.skill-nodejs, &.skill-expressjs, &.skill-d3js, &.skill-reactjs, &.skill-ajax, &.skill-gulp, &.skill-jsx {
+  // JavaScript Skills
+  &.skill-javascript, &.skill-angularjs, &.skill-jquery, &.skill-nodejs, &.skill-expressjs, &.skill-d3js,
+  &.skill-reactjs, &.skill-ajax, &.skill-gulp, &.skill-jasmine, &.skill-yeoman, &.skill-babel {
     background: linear-gradient(darken(#4E9353, 20%), #4E9353), #4E9353;
   }
-  &.skill-mongodb, &.skill-yeoman, &.skill-tdd, &.skill-oauth, &.skill-jasmine, &.skill-babel, &.skill-socketio, &.skill-restapi {
-    background: linear-gradient(darken(#465C7B, 20%), #465C7B), #465C7B;
-  }
-  &.skill-html5, &.skill-photoshop, &.skill-css3, &.skill-bootstrap, &.skill-sass, &.skill-responsive, &.skill-bourbon {
-    background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
-  }
+  // Python Skills
   &.skill-python {
     background: linear-gradient(darken(#BE6C97, 20%), #BE6C97), #BE6C97;
+  }
+  // Java Skills
+  &.skill-java, &.skill-spring, &.skill-jersey, &.skill-hibernate, &.skill-maven, &.skill-gradle, &.skill-tomcat,
+  &.skill-thymeleaf {
+    background: linear-gradient(darken(#009688, 20%), #009688), #009688;
+  }
+  // Database Skills
+  &.skill-database, &.skill-mongodb, &.skill-postgresql, &.skill-sql, &.skill-h2 {
+    background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
+  }
+  // Development Skills
+  &.skill-development, &.skill-oauth, &.skill-socketio, &.skill-restapi, &.skill-html5 {
+    background: linear-gradient(darken(#4A577E, 20%), #4A577E), #4A577E;
+  }
+  // Design Skills
+  &.skill-design, &.skill-photoshop, &.skill-css3, &.skill-bootstrap, &.skill-sass, &.skill-responsive, &.skill-bourbon,
+  &.skill-materialize {
+    background: linear-gradient(darken(#3C6F71 , 20%), #3C6F71 ), #3C6F71 ;
   }
 }
 

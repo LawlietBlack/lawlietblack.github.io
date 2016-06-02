@@ -1,5 +1,19 @@
 {
   "portfolio": [{
+    "title": "Home Automation REST API",
+    "img": "img/projects/force.png",
+    "skills": ["Java", "Jersey", "Hibernate", "Tomcat", "Maven", "SQL", "H2", "PostGreSQL"],
+    "description": "Rest API made with Jersey JAX-RS and Hibernate.",
+    "github": "https://github.com/LawlietBlack/the-force",
+    "link": "https://the-force.herokuapp.com"
+    }, {
+    "title": "Spring Trees",
+    "img": "img/projects/trees.png",
+    "skills": ["Java", "Spring", "Hibernate", "Tomcat", "Gradle", "Thymeleaf", "SQL", "H2", "Materialize"],
+    "description": "Family Tree Builder build with Spring Boot and Hibernate.",
+    "github": "https://github.com/LawlietBlack/spring-trees",
+    "link": "https://spring-trees.herokuapp.com"
+  }, {
     "title": "Persona 4 Golden Guide",
     "img": "img/projects/persona.png",
     "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Expressjs", "HTML5", "CSS3"],
@@ -9,21 +23,21 @@
     }, {
     "title": "Magic: the Gathering Deckbuilder",
     "img": "img/projects/mtg.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "RESTApi", "MongoDB", "Yeoman", "Jasmine", "TDD", "HTML5", "CSS3", "JavaScript", "AJAX"],
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "Jasmine", "RESTApi", "MongoDB", "HTML5", "CSS3", "JavaScript", "AJAX"],
     "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack.",
     "github": "https://github.com/LawlietBlack/magic-deckbuilder",
     "link": "http://magic-lawlietblack.herokuapp.com"
     }, {
     "title": "DEFINITELY Real Quotes",
     "img": "img/projects/quotes.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "RESTApi", "oAuth", "MongoDB", "Yeoman", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
     "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
     "github": "https://github.com/LawlietBlack/real-quotes",
     "link": "https://definitely-real-quotes.herokuapp.com/"
     }, {
     "title": "Pokedex",
     "img": "img/projects/pokemon.png",
-    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "TDD", "Sass", "Bourbon", "Responsive", "HTML5"],
+    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
     "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
     "github": "https://github.com/LawlietBlack/pokedex",
     "link": "http://pokedex.lawlietblack.com"
@@ -37,7 +51,7 @@
     }, {
     "title": "Dungeon Game",
     "img": "img/projects/roguelike.png",
-    "skills": ["ReactJS", "JavaScript", "Gulp", "JSX", "Babel", "Sass", "HTML5"],
+    "skills": ["ReactJS", "JavaScript", "Gulp", "Babel", "Sass", "HTML5"],
     "description": "Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.",
     "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15",
     "link": "http://codepen.io/LawlietBlack/full/JGBazL"
@@ -93,7 +107,7 @@
     }, {
     "title": "Vote",
     "img": "img/projects/vote.png",
-    "skills": [ "AngularJS", "Nodejs","Expressjs", "JavaScript", "MongoDB", "RESTApi", "Yeoman", "oAuth",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "skills": [ "AngularJS", "Nodejs","Expressjs", "JavaScript", "Yeoman", "RESTApi", "oAuth", "MongoDB",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Voting app built using MEAN stack and oAuth that allows users to log in, create polls and share them with others.",
     "github": "https://github.com/LawlietBlack/vote",
     "link": "http://vote-lawlietblack.herokuapp.com"
@@ -114,21 +128,21 @@
     }, {
     "title": "Stocks",
     "img": "img/projects/stocks.png",
-    "skills": [ "AngularJS", "Nodejs", "d3js", "Expressjs", "MongoDB", "RESTApi", "Socketio", "Yeoman", "HTML5", "AJAX", "CSS3", "Bootstrap", "JavaScript"],
+    "skills": [ "AngularJS", "Nodejs", "d3js", "Expressjs", "Yeoman", "MongoDB", "RESTApi", "Socketio", "HTML5", "AJAX", "CSS3", "Bootstrap", "JavaScript"],
     "description": "Single Page App that charts the stock market using data from the Markit on demand Market Data API. Chart updates for all users in real time whenever a stock is added or removed.",
     "github": "https://github.com/LawlietBlack/stocks",
     "link": "http://stocks-lawlietblack.herokuapp.com"
     }, {
     "title": "Nightlife Coordinator",
     "img": "img/projects/nightlife.png",
-    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "MongoDB", "RESTApi", "Yeoman", "oAuth", "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Single Page App that allows the user to search for local bars or restaurants and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.",
     "github": "https://github.com/LawlietBlack/nightlife",
     "link": "http://nightlife-lawlietblack.herokuapp.com"
     }, {
     "title": "Book Trade",
     "img": "img/projects/booktrade.png",
-    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "MongoDB", "RESTApi", "Yeoman", "oAuth", "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Prototype Book Trading site for a local club. Uses the Google Books API and a RESTful API to allow users to search, select, and trade books. Upon successful trade, enables contact info trading (limited). ",
     "github": "https://github.com/LawlietBlack/books",
     "link": "http://books-lawlietblack.herokuapp.com"

@@ -1,3 +1,38 @@
+<div id="skills-color-key">
+  <div class="skill title">
+    <div class="name">Key</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-javascript"></div>
+    <div class="name">JavaScript</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-python"></div>
+    <div class="name">Python</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-java"></div>
+    <div class="name">Java</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-database"></div>
+    <div class="name">Databases</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-development"></div>
+    <div class="name">Development</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-design"></div>
+    <div class="name">Design</div>
+  </div>
+  <div class="skill title" ng-show="currentSkill !== 'all'">
+    <div class="name"> Filter</div>
+  </div>
+  <div class="skill" ng-show="currentSkill !== 'all'">
+    <div class="name">{{currentSkill}}</div>
+  </div>
+</div>
 <div id="skills-tags">
   <div class="skill-tags">
     <md-button class="skill-all md-raised" ng-click="skillFilter('all')">All <span class="skill-num">{{portfolio.length}}</span></md-button>
@@ -8,9 +43,9 @@
    </md-button>
   </div>
 </div>
-<h4 ng-show="currentSkill !== 'all'" class="current-skill">
-  Current Filter: {{currentSkill}}
+
+
 </h4>
-<div class="portfolio clearfix" id="portfolio"> 
+<div class="portfolio clearfix" id="portfolio">
   <portfolio-card ng-repeat="card in portfolio" card="card"></portfolio-card>
 </div>

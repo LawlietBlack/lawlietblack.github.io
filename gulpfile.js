@@ -7,14 +7,17 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   maps = require('gulp-sourcemaps'),
   del = require('del'),
-  cdnizer = require('gulp-cdnizer');
+  cdnizer = require('gulp-cdnizer'),
+  plumber = require('gulp-plumber');
 
 
 gulp.task('scripts', function() {
   gulp.src(['js/app.js'])
     .pipe(maps.init())
+    .pipe(plumber())
     .pipe(concat('app.js'))
     .pipe(uglify())
+    .pipe(plumber.stop())
     .pipe(rename('app.min.js'))
     .pipe(maps.write('./'))
     .pipe(gulp.dest('./dist/js'))
@@ -22,18 +25,20 @@ gulp.task('scripts', function() {
 
 gulp.task('sass', function() {
   gulp.src('scss/main.scss')
+    .pipe(plumber())
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write('./'))
+    .pipe(plumber.stop())
     .pipe(rename('main.css'))
     .pipe(gulp.dest('styles/'))
-})
+});
 
-gulp.task('default', ['scripts', 'sass'])
+gulp.task('default', ['scripts', 'sass']);
 
 gulp.task('stream', ['sass'], () => {
   // gulp.watch('./main.html', ['cdnizer']);
-  gulp.watch('scss/main.scss', ['sass']);
+  gulp.watch('scss/*.scss', ['sass']);
 });
 
 
