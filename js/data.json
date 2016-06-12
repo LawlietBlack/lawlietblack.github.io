@@ -47,7 +47,7 @@
     "skills": ["AngularJS","jQuery", "JavaScript", "HTML5", "CSS3", "Responsive", "Bootstrap"],
     "description": "A Reference Page for Civilization V with all of the available leaders in the base game and DLCs that shows each leader\"s unique ability, units, and buildings.",
     "github": "https://github.com/LawlietBlack/civ-leaders",
-    "link": "http://git.lawlietblack.com/civ/index.html"
+    "link": "http://civ.lawlietblack.com"
     }, {
     "title": "Dungeon Game",
     "img": "img/projects/roguelike.png",
@@ -175,7 +175,10 @@
     "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-10",
     "link": "http://codepen.io/LawlietBlack/full/RWWzLz"
   }], 
-  "logs": [{  
+  "logs": [{
+    "date": "June 12th, 2016",
+    "log": "I've migrated my site from shared hosting to my own DigitalOcean servers and learned a lot about nginx in the process. I've learned a lot of Java and made some projects that are on my portfolio and also made the colors more meaningful. My nonprofit project is going well, and I hope to add that to my portfolio soon, too! I've also gotten really fond of the jetbrains IDEs, and am wondering how I got along without them. My next step is to get some python projects up in flask and django."
+  }, {
     "date": "April 26th, 2016",
     "log": "I'm a few weeks into my nonprofit project now, and it's going great! We decided to use KeystoneJS, a kind of Content Management Framework in JavaScript. Reminds me a lot of Django! I've also switched my material design from Polymer to Angular Material in an attempt to lower load times. I also plan on migrating more of my data in angular to services and to maybe look into webpack."
     }, {  
