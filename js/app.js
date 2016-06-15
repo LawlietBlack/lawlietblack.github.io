@@ -44,13 +44,13 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     // JavaScript Skills
     'AngularJS', 'JavaScript', 'jQuery', 'Nodejs', 'Expressjs', 'ReactJS', 'd3js', 'AJAX', 'Gulp', 'Yeoman', 'Jasmine', 'Babel',
     // Python Skills
-    'Python',
+    'Python', 'Django',
     // Java Skills
     'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
     // Database Skills
     'MongoDB', 'H2', 'PostGreSQL', 'SQL',
     // Development Skills
-    'oAuth', 'Socketio', 'RESTApi',
+    'oAuth', 'Socketio', 'RESTApi', 'CMS',
     // Design Skills
     'HTML5', 'CSS3', 'Bootstrap', 'Sass', 'Responsive', 'Bourbon', 'Materialize'];
   $scope.currentSkill = 'all';

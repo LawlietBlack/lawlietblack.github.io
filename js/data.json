@@ -1,5 +1,12 @@
 {
   "portfolio": [{
+    "title": "Code Journal",
+    "img": "img/projects/journal.png",
+    "skills": ["Python", "Django", "PostGreSQL", "SQL", "CMS", "HTML5", "CSS3"],
+    "description": "Learning Journal made with Django.",
+    "github": "https://github.com/LawlietBlack/code-journal",
+    "link": "https://journal-lawlietblack.herokuapp.com"
+  }, {
     "title": "Home Automation REST API",
     "img": "img/projects/force.png",
     "skills": ["Java", "Jersey", "Hibernate", "Tomcat", "Maven", "SQL", "H2", "PostGreSQL"],

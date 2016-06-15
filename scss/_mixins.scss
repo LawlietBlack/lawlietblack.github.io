@@ -12,7 +12,7 @@
     background: linear-gradient(darken(#4E9353, 20%), #4E9353), #4E9353;
   }
   // Python Skills
-  &.skill-python {
+  &.skill-python, &.skill-django {
     background: linear-gradient(darken(#BE6C97, 20%), #BE6C97), #BE6C97;
   }
   // Java Skills
@@ -25,7 +25,7 @@
     background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
   }
   // Development Skills
-  &.skill-development, &.skill-oauth, &.skill-socketio, &.skill-restapi, &.skill-html5 {
+  &.skill-development, &.skill-oauth, &.skill-socketio, &.skill-restapi, &.skill-cms, &.skill-html5 {
     background: linear-gradient(darken(#4A577E, 20%), #4A577E), #4A577E;
   }
   // Design Skills
