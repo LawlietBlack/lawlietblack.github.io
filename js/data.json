@@ -1,12 +1,19 @@
 {
   "portfolio": [{
+    "title": "Magic: the Gathering Deckbuilder",
+    "img": "img/projects/magic.png",
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "Jasmine", "RESTApi", "MongoDB", "HTML5", "CSS3", "JavaScript", "AJAX"],
+    "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack. Deck building and saving requires login with account creation or twitter. Alternatively, to try out the builder without saving, use '/testbuild' route",
+    "github": "https://github.com/LawlietBlack/magic-deckbuilder",
+    "link": "http://magic-lawlietblack.herokuapp.com"
+    }, {
     "title": "Code Journal",
     "img": "img/projects/journal.png",
     "skills": ["Python", "Django", "PostGreSQL", "SQL", "CMS", "HTML5", "CSS3"],
     "description": "Learning Journal made with Django.",
     "github": "https://github.com/LawlietBlack/code-journal",
     "link": "https://journal-lawlietblack.herokuapp.com"
-  }, {
+    }, {
     "title": "Home Automation REST API",
     "img": "img/projects/force.png",
     "skills": ["Java", "Jersey", "Hibernate", "Tomcat", "Maven", "SQL", "H2", "PostGreSQL"],
@@ -21,6 +28,13 @@
     "github": "https://github.com/LawlietBlack/spring-trees",
     "link": "https://spring-trees.herokuapp.com"
   }, {
+    "title": "Pokedex",
+    "img": "img/projects/pokemon2.png",
+    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
+    "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
+    "github": "https://github.com/LawlietBlack/pokedex",
+    "link": "http://pokedex.lawlietblack.com"
+  }, {
     "title": "Persona 4 Golden Guide",
     "img": "img/projects/persona.png",
     "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Expressjs", "HTML5", "CSS3"],
@@ -28,26 +42,12 @@
     "github": "https://github.com/LawlietBlack/Persona-4-Golden-Guide",
     "link": "http://persona.lawlietblack.com"
     }, {
-    "title": "Magic: the Gathering Deckbuilder",
-    "img": "img/projects/mtg.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "Jasmine", "RESTApi", "MongoDB", "HTML5", "CSS3", "JavaScript", "AJAX"],
-    "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack.",
-    "github": "https://github.com/LawlietBlack/magic-deckbuilder",
-    "link": "http://magic-lawlietblack.herokuapp.com"
-    }, {
     "title": "DEFINITELY Real Quotes",
     "img": "img/projects/quotes.png",
     "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
     "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
     "github": "https://github.com/LawlietBlack/real-quotes",
     "link": "https://definitely-real-quotes.herokuapp.com/"
-    }, {
-    "title": "Pokedex",
-    "img": "img/projects/pokemon.png",
-    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
-    "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
-    "github": "https://github.com/LawlietBlack/pokedex",
-    "link": "http://pokedex.lawlietblack.com"
     }, {
     "title": "Civilization 5 Leaders Guide",
     "img": "img/projects/civ5.png",
@@ -113,7 +113,7 @@
     "link": "http://codepen.io/LawlietBlack/full/gPgqGR"
     }, {
     "title": "Vote",
-    "img": "img/projects/vote.png",
+    "img": "img/projects/vote2.png",
     "skills": [ "AngularJS", "Nodejs","Expressjs", "JavaScript", "Yeoman", "RESTApi", "oAuth", "MongoDB",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Voting app built using MEAN stack and oAuth that allows users to log in, create polls and share them with others.",
     "github": "https://github.com/LawlietBlack/vote",
@@ -132,20 +132,6 @@
     "description": "Leaderboard for FreeCodeCamp.com created with ReactJS and Sass. Utilizes an API endpoint made by a fellow student. Hosted on Codepen.",
     "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-12",
     "link": "http://codepen.io/LawlietBlack/full/rxjZEq"
-    }, {
-    "title": "Stocks",
-    "img": "img/projects/stocks.png",
-    "skills": [ "AngularJS", "Nodejs", "d3js", "Expressjs", "Yeoman", "MongoDB", "RESTApi", "Socketio", "HTML5", "AJAX", "CSS3", "Bootstrap", "JavaScript"],
-    "description": "Single Page App that charts the stock market using data from the Markit on demand Market Data API. Chart updates for all users in real time whenever a stock is added or removed.",
-    "github": "https://github.com/LawlietBlack/stocks",
-    "link": "http://stocks-lawlietblack.herokuapp.com"
-    }, {
-    "title": "Nightlife Coordinator",
-    "img": "img/projects/nightlife.png",
-    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "AJAX", "CSS3", "Bootstrap"],
-    "description": "Single Page App that allows the user to search for local bars or restaurants and shows locations and ratings using the Yelp API. Users can then mark where they are going that night so they can coordinate with their friends.",
-    "github": "https://github.com/LawlietBlack/nightlife",
-    "link": "http://nightlife-lawlietblack.herokuapp.com"
     }, {
     "title": "Book Trade",
     "img": "img/projects/booktrade.png",
@@ -183,6 +169,9 @@
     "link": "http://codepen.io/LawlietBlack/full/RWWzLz"
   }], 
   "logs": [{
+    "date": "June 14th, 2016",
+    "log": "I've replaced a lot of my project placeholder images with actual images from my projects, and have added a new project, a coding journal and CMS built with Django. I've removed my stock tracking app and my nightlife coordination app for now, since the page is becoming crowded. My intention is to potentially replace these static logs and potentially my portfolio with a CMS-driven back end. I've also started some trello boards for some new projects I'm planning for down the line :)"
+  }, {
     "date": "June 12th, 2016",
     "log": "I've migrated my site from shared hosting to my own DigitalOcean servers and learned a lot about nginx in the process. I've learned a lot of Java and made some projects that are on my portfolio and also made the colors more meaningful. My nonprofit project is going well, and I hope to add that to my portfolio soon, too! I've also gotten really fond of the jetbrains IDEs, and am wondering how I got along without them. My next step is to get some python projects up in flask and django."
   }, {
