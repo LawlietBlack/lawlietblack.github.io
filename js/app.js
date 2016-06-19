@@ -139,6 +139,11 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
 
 .service('$profile', ['$http', '$sce', function($http, $sce) {
   profile = this;
+  profile.portfolio = [];
+  profile.experience = [];
+  profile.education = [];
+  profile.snippets = [];
+  profile.logs = [];
   profile.skills = {};
   profile.languages = {};
 
@@ -152,8 +157,8 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
       profile.experience = data.experience;
       profile.education = data.education;
       profile.snippets = data.snippets;
-    });;
-  }
+    });
+  };
 
   this.loadSkillData = function() {
     var skillsData = profile.portfolio.reduce(function(a, b) {
@@ -166,7 +171,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
         profile.skills[skillsData[i]] += 1;
       }
     }
-  }
+  };
 
   this.loadLanguageData = function() {
     profile.snippets.map(function(snip) {
@@ -178,5 +183,5 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
       return snip;
     });
   }
-}])
+}]);
 
