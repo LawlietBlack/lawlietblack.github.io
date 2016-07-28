@@ -52,7 +52,8 @@ gulp.task('sass', function() {
 
 gulp.task('default', ['scripts', 'sass']);
 
-gulp.task('stream', ['sass'], () => {
+gulp.task('stream', ['sass', 'scripts'], () => {
+  gulp.watch('js/*.js', ['scripts']);
   gulp.watch('scss/*.scss', ['sass']);
 });
 

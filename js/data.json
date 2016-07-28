@@ -7,6 +7,27 @@
     "github": "https://github.com/LawlietBlack/magic-deckbuilder",
     "link": "http://magic-lawlietblack.herokuapp.com"
     }, {
+    "title": "DEFINITELY Real Quotes",
+    "img": "img/projects/quotes.png",
+    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
+    "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
+    "github": "https://github.com/LawlietBlack/real-quotes",
+    "link": "https://definitely-real-quotes.herokuapp.com/"
+    }, {
+    "title": "Dungeon Game",
+    "img": "img/projects/roguelike.png",
+    "skills": ["ReactJS", "JavaScript", "Gulp", "Babel", "Sass", "HTML5"],
+    "description": "Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15",
+    "link": "http://codepen.io/LawlietBlack/full/JGBazL"
+  }, {
+    "title": "Pokedex",
+    "img": "img/projects/pokemon2.png",
+    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
+    "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
+    "github": "https://github.com/LawlietBlack/pokedex",
+    "link": "http://pokedex.lawlietblack.com"
+    }, {
     "title": "Code Journal",
     "img": "img/projects/journal.png",
     "skills": ["Python", "Django", "PostGreSQL", "SQL", "CMS", "HTML5", "CSS3"],
@@ -20,6 +41,13 @@
     "description": "Rest API made with Jersey JAX-RS and Hibernate.",
     "github": "https://github.com/LawlietBlack/the-force",
     "link": "https://the-force.herokuapp.com"
+  }, {
+    "title": "Conway\"s Game of Life",
+    "img": "img/projects/life.png",
+    "skills": ["ReactJS", "JavaScript", "Sass", "HTML5"],
+    "description": "Conway\"s game of life with grid size, generation speed, pause/play, and randomize functionality. Hosted on Codepen.",
+    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-14",
+    "link": "http://codepen.io/LawlietBlack/full/oboRwo/"
     }, {
     "title": "Spring Trees",
     "img": "img/projects/trees.png",
@@ -28,13 +56,6 @@
     "github": "https://github.com/LawlietBlack/spring-trees",
     "link": "https://spring-trees.herokuapp.com"
   }, {
-    "title": "Pokedex",
-    "img": "img/projects/pokemon2.png",
-    "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
-    "description": "Pokedex site with a working IV calculator. Built using AngularJS, Sass, Bourbon, and PokeApi.",
-    "github": "https://github.com/LawlietBlack/pokedex",
-    "link": "http://pokedex.lawlietblack.com"
-  }, {
     "title": "Persona 4 Golden Guide",
     "img": "img/projects/persona.png",
     "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Expressjs", "HTML5", "CSS3"],
@@ -42,26 +63,12 @@
     "github": "https://github.com/LawlietBlack/Persona-4-Golden-Guide",
     "link": "http://persona.lawlietblack.com"
     }, {
-    "title": "DEFINITELY Real Quotes",
-    "img": "img/projects/quotes.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
-    "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
-    "github": "https://github.com/LawlietBlack/real-quotes",
-    "link": "https://definitely-real-quotes.herokuapp.com/"
-    }, {
     "title": "Civilization 5 Leaders Guide",
     "img": "img/projects/civ5.png",
     "skills": ["AngularJS","jQuery", "JavaScript", "HTML5", "CSS3", "Responsive", "Bootstrap"],
     "description": "A Reference Page for Civilization V with all of the available leaders in the base game and DLCs that shows each leader\"s unique ability, units, and buildings.",
     "github": "https://github.com/LawlietBlack/civ-leaders",
     "link": "http://civ.lawlietblack.com"
-    }, {
-    "title": "Dungeon Game",
-    "img": "img/projects/roguelike.png",
-    "skills": ["ReactJS", "JavaScript", "Gulp", "Babel", "Sass", "HTML5"],
-    "description": "Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.",
-    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15",
-    "link": "http://codepen.io/LawlietBlack/full/JGBazL"
     }, {
     "title": "Fallout Terminal Game",
     "img": "img/projects/fallout.png",
@@ -83,13 +90,6 @@
     "description": "D3.js heat map comparing exoplanet radius, mass, and distance from Earth.",
     "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-18",
     "link": "http://codepen.io/LawlietBlack/full/wMEbBV/"
-    }, {
-    "title": "Conway\"s Game of Life",
-    "img": "img/projects/life.png",
-    "skills": ["ReactJS", "JavaScript", "Sass", "HTML5"],
-    "description": "Conway\"s game of life with grid size, generation speed, pause/play, and randomize functionality. Hosted on Codepen.",
-    "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-14",
-    "link": "http://codepen.io/LawlietBlack/full/oboRwo/"
     }, {
     "title": "Camper News Force Map",
     "img": "img/projects/camperforce.png",
