@@ -1,8 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 html, body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #191919;
@@ -20,8 +15,8 @@ html, body {
   clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -38,7 +33,7 @@ ul {
     list-style: none; }
 
 button.md-button {
-  border-radius: 0px;
+  border-radius: 0;
   font-size: 16px;
   text-transform: none; }
   button.md-button.content {
@@ -304,7 +299,7 @@ header nav md-tabs {
           #portfolio md-card .card-bottom button.git-btn {
             padding: 0;
             width: 44%;
-            right: 0px; }
+            right: 0; }
           #portfolio md-card .card-bottom button.web-btn {
             padding: 0;
             width: 44%;
