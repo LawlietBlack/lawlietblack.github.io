@@ -7,24 +7,40 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   maps = require('gulp-sourcemaps'),
   del = require('del'),
-  cdnizer = require('gulp-cdnizer'),
   plumber = require('gulp-plumber');
 
 
+var source = {
+  scripts: [
+    'bower_components/jquery/dist/jquery.js',
+    'bower_components/angular/angular.js',
+    'bower_components/angular-sanitize/angular-sanitize.js',
+    'bower_components/angular-route/angular-route.js',
+    'bower_components/angular-animate/angular-animate.js',
+    'bower_components/angular-aria/angular-aria.js',
+    'bower_components/angular-sanitize/angular-sanitize.js',
+    'bower_components/angular-messages/angular-messages.js',
+    'bower_components/angular-material/angular-material.js',
+    'bower_components/bootstrap/dist/js/bootstrap.js',
+    'js/app.js'
+  ]
+};
+
 gulp.task('scripts', function() {
-  gulp.src(['js/app.js'])
-    .pipe(maps.init())
+  return gulp.src(source.scripts)
     .pipe(plumber())
-    .pipe(concat('app.js'))
+    .pipe(maps.init())
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('./js'))
+    .pipe(rename('bundle.min.js'))
     .pipe(uglify())
-    .pipe(plumber.stop())
-    .pipe(rename('app.min.js'))
     .pipe(maps.write('./'))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(plumber.stop())
+    .pipe(gulp.dest('./js'));
 });
 
 gulp.task('sass', function() {
-  gulp.src('scss/main.scss')
+  return gulp.src('scss/main.scss')
     .pipe(plumber())
     .pipe(maps.init())
     .pipe(sass())
@@ -37,24 +53,6 @@ gulp.task('sass', function() {
 gulp.task('default', ['scripts', 'sass']);
 
 gulp.task('stream', ['sass'], () => {
-  // gulp.watch('./main.html', ['cdnizer']);
   gulp.watch('scss/*.scss', ['sass']);
 });
 
-
-gulp.task('cdnizer', function() {
-  gulp.src('./main.html')
-    .pipe(cdnizer([
-      'cdnjs:jquery',
-      'google:angular',
-      'google:angular-route',
-      'cdnjs:angular-animate',
-      'cdnjs:angular-aria',
-      'cdnjs:angular-messages',
-      'cdnjs:angular-material',
-      'cdnjs:font-awesome',
-      'jsdelivr:bootstrap'
-      ]))
-    .pipe(rename('index.html'))
-    .pipe(gulp.dest('./'))
-});
