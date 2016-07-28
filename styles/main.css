@@ -205,59 +205,9 @@ header nav md-tabs {
     width: 426px;
     border-radius: 0;
     position: relative; }
-    #portfolio md-card .portfolio-image {
-      background: url(../img/projects/sprites.png) no-repeat;
-      background-size: 1344px 1152px;
+    #portfolio md-card img {
       width: 336px;
       height: 192px; }
-      #portfolio md-card .portfolio-image.magic {
-        background-position: 0px 0px; }
-      #portfolio md-card .portfolio-image.quotes {
-        background-position: -336px 0px; }
-      #portfolio md-card .portfolio-image.roguelike {
-        background-position: -672px 0px; }
-      #portfolio md-card .portfolio-image.pokemon {
-        background-position: -1008px 0px; }
-      #portfolio md-card .portfolio-image.journal {
-        background-position: 0px -192px; }
-      #portfolio md-card .portfolio-image.force {
-        background-position: -336px -192px; }
-      #portfolio md-card .portfolio-image.life {
-        background-position: -672px -192px; }
-      #portfolio md-card .portfolio-image.trees {
-        background-position: -1008px -192px; }
-      #portfolio md-card .portfolio-image.persona {
-        background-position: 0px -384px; }
-      #portfolio md-card .portfolio-image.civ5 {
-        background-position: -336px -384px; }
-      #portfolio md-card .portfolio-image.fallout {
-        background-position: -672px -384px; }
-      #portfolio md-card .portfolio-image.meteors {
-        background-position: -1008px -384px; }
-      #portfolio md-card .portfolio-image.exoplanets {
-        background-position: 0px -576px; }
-      #portfolio md-card .portfolio-image.camperforce {
-        background-position: -336px -576px; }
-      #portfolio md-card .portfolio-image.usgnp {
-        background-position: -672px -576px; }
-      #portfolio md-card .portfolio-image.recipebox {
-        background-position: -1008px -576px; }
-      #portfolio md-card .portfolio-image.vote {
-        background-position: 0px -768px; }
-      #portfolio md-card .portfolio-image.markdown {
-        background-position: -336px -768px; }
-      #portfolio md-card .portfolio-image.fccleaders {
-        background-position: -672px -768px; }
-      #portfolio md-card .portfolio-image.booktrade {
-        background-position: -1008px -768px; }
-      #portfolio md-card .portfolio-image.pomodoro {
-        background-position: 0px -960px; }
-      #portfolio md-card .portfolio-image.calculator {
-        background-position: -336px -960px; }
-      #portfolio md-card .portfolio-image.tictactoe {
-        background-position: -672px -960px; }
-      #portfolio md-card .portfolio-image.simon {
-        background-position: -1008px -960px; }
     #portfolio md-card .card-content {
       padding: 0;
       float: left; }
