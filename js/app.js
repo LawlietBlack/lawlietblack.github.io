@@ -16,6 +16,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
   }).when('/about', {
     controller: 'MainController',
     templateUrl: 'views/about.html'
+  }).when('/career-link', {
+    controller: 'MainController',
+    templateUrl: 'views/career.html'
   });
 }])
 
