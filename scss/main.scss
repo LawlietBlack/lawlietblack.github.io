@@ -619,3 +619,31 @@ footer {
     }
   }
 }
+
+#career-link {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto;
+  .card {
+    margin: 40px auto 80px;
+    background-color: #333;
+    padding: 10px 40px 20px;
+  }
+  p, li {
+    font-size: 2em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 3em;
+    color: #1B5E20;
+    margin: 20px 0 20px;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}

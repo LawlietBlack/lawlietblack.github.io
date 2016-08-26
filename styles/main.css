@@ -549,4 +549,26 @@ footer {
     footer .social-icon.fcc {
       background-position: -160px 0; }
 
+#career-link {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto; }
+  #career-link .card {
+    margin: 40px auto 80px;
+    background-color: #333;
+    padding: 10px 40px 20px; }
+  #career-link p, #career-link li {
+    font-size: 2em; }
+  #career-link h1 {
+    text-align: center;
+    font-size: 4em; }
+  #career-link h3 {
+    font-size: 3em;
+    color: #1B5E20;
+    margin: 20px 0 20px;
+    text-align: center; }
+  #career-link h4 {
+    text-align: center;
+    font-size: 3.5em; }
+
 /*# sourceMappingURL=main.css.map */
