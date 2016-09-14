@@ -50,6 +50,8 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     'Python', 'Django',
     // Java Skills
     'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
+    // Ruby Skills
+    'Ruby',
     // Database Skills
     'MongoDB', 'H2', 'PostGreSQL', 'SQL',
     // Development Skills
@@ -59,7 +61,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
   $scope.currentSkill = 'all';
   
   // Snippet Data
-  $scope.langList = ['JavaScript', 'Python'];
+  $scope.langList = ['JavaScript', 'Python', 'Ruby'];
   $scope.currentLang = 'all';
 
   // Portfolio Filter Buttons

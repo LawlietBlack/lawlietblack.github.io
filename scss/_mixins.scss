@@ -15,6 +15,11 @@
   &.skill-python, &.skill-django {
     background: linear-gradient(darken(#BE6C97, 20%), #BE6C97), #BE6C97;
   }
+  // Ruby Skills
+
+  &.skill-ruby {
+    background: linear-gradient(darken(#D4211C, 20%), #D4211C), #D4211C;
+  }
   // Java Skills
   &.skill-java, &.skill-spring, &.skill-jersey, &.skill-hibernate, &.skill-maven, &.skill-gradle, &.skill-tomcat,
   &.skill-thymeleaf {

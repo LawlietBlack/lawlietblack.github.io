@@ -126,6 +126,8 @@ header nav md-tabs {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-tags .skill-tags button.md-button.skill-python, #skills-tags .skill-tags button.md-button.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #skills-tags .skill-tags button.md-button.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
     #skills-tags .skill-tags button.md-button.skill-java, #skills-tags .skill-tags button.md-button.skill-spring, #skills-tags .skill-tags button.md-button.skill-jersey, #skills-tags .skill-tags button.md-button.skill-hibernate, #skills-tags .skill-tags button.md-button.skill-maven, #skills-tags .skill-tags button.md-button.skill-gradle, #skills-tags .skill-tags button.md-button.skill-tomcat, #skills-tags .skill-tags button.md-button.skill-thymeleaf {
       background: linear-gradient(#00302c, #009688), #009688; }
     #skills-tags .skill-tags button.md-button.skill-database, #skills-tags .skill-tags button.md-button.skill-mongodb, #skills-tags .skill-tags button.md-button.skill-postgresql, #skills-tags .skill-tags button.md-button.skill-sql, #skills-tags .skill-tags button.md-button.skill-h2 {
@@ -179,6 +181,8 @@ header nav md-tabs {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-color-key .dot.skill-python, #skills-color-key .dot.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #skills-color-key .dot.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
     #skills-color-key .dot.skill-java, #skills-color-key .dot.skill-spring, #skills-color-key .dot.skill-jersey, #skills-color-key .dot.skill-hibernate, #skills-color-key .dot.skill-maven, #skills-color-key .dot.skill-gradle, #skills-color-key .dot.skill-tomcat, #skills-color-key .dot.skill-thymeleaf {
       background: linear-gradient(#00302c, #009688), #009688; }
     #skills-color-key .dot.skill-database, #skills-color-key .dot.skill-mongodb, #skills-color-key .dot.skill-postgresql, #skills-color-key .dot.skill-sql, #skills-color-key .dot.skill-h2 {
@@ -252,6 +256,8 @@ header nav md-tabs {
           background: linear-gradient(#2b502d, #4E9353), #4E9353; }
         #portfolio md-card .skills-bar li.skill-python, #portfolio md-card .skills-bar li.skill-django {
           background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+        #portfolio md-card .skills-bar li.skill-ruby {
+          background: linear-gradient(#7a1310, #D4211C), #D4211C; }
         #portfolio md-card .skills-bar li.skill-java, #portfolio md-card .skills-bar li.skill-spring, #portfolio md-card .skills-bar li.skill-jersey, #portfolio md-card .skills-bar li.skill-hibernate, #portfolio md-card .skills-bar li.skill-maven, #portfolio md-card .skills-bar li.skill-gradle, #portfolio md-card .skills-bar li.skill-tomcat, #portfolio md-card .skills-bar li.skill-thymeleaf {
           background: linear-gradient(#00302c, #009688), #009688; }
         #portfolio md-card .skills-bar li.skill-database, #portfolio md-card .skills-bar li.skill-mongodb, #portfolio md-card .skills-bar li.skill-postgresql, #portfolio md-card .skills-bar li.skill-sql, #portfolio md-card .skills-bar li.skill-h2 {
@@ -512,6 +518,8 @@ header nav md-tabs {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #code .skill.skill-python, #code .skill.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #code .skill.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
     #code .skill.skill-java, #code .skill.skill-spring, #code .skill.skill-jersey, #code .skill.skill-hibernate, #code .skill.skill-maven, #code .skill.skill-gradle, #code .skill.skill-tomcat, #code .skill.skill-thymeleaf {
       background: linear-gradient(#00302c, #009688), #009688; }
     #code .skill.skill-database, #code .skill.skill-mongodb, #code .skill.skill-postgresql, #code .skill.skill-sql, #code .skill.skill-h2 {
