@@ -75008,11 +75008,11 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     // Java Skills
     'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
     // Ruby Skills
-    'Ruby',
+    // 'Ruby',
     // Database Skills
     'MongoDB', 'H2', 'PostGreSQL', 'SQL',
     // Development Skills
-    'oAuth', 'Socketio', 'RESTApi', 'CMS',
+    'oAuth', 'RESTApi', 'CMS',
     // Design Skills
     'HTML5', 'CSS3', 'Bootstrap', 'Sass', 'Responsive', 'Bourbon', 'Materialize'];
   $scope.currentSkill = 'all';
@@ -75049,7 +75049,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
       }
       return true;
     });
-  }
+  };
 
   // Listen for filter from Profile cards
   $scope.$on('skillfilter', function(event, skill) {
@@ -75070,7 +75070,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     scope: {
       card: '='
     },
-    link: function($scope, $element, $attrs) {
+    link: function($scope, $element) {
       $scope.link = function(linkurl) {
         window.open(linkurl);
       };
@@ -75090,7 +75090,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     template:'<pre><code ng-transclude></code></pre>',
     replace:true,
     transclude:true,
-    link:function(scope, elm, attrs){             
+    link:function(scope, elm){
       var tmp =  $interpolate(elm.find('code').text())(scope);
       $timeout(function() {                
         elm.find('code').html(hljs.highlightAuto(tmp).value);
@@ -75100,7 +75100,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
 }])
 
 .service('$profile', ['$http', '$sce', function($http, $sce) {
-  profile = this;
+  var profile = this;
   profile.portfolio = [];
   profile.experience = [];
   profile.education = [];

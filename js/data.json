@@ -419,5 +419,23 @@
     "language": "Ruby",
     "langCode": "rb",
     "code": "def calculate_years(principal, interest, tax, desired)\n  current = principal\n  years = 0\n  while current < desired do\n    current += current * interest * (1 - tax)\n    years += 1\n  end\n  return years\nend"
+  }, {
+    "name": "Growth of a Population",
+    "description": "In a small town the population is (p0) at the beginning of a year. The population regularly increases by (percent) per year and moreover (aug) new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to (p) inhabitants?",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "def nb_year(p0, percent, aug, p)\n    pop = p0\n    count = 0\n    while pop < p do\n      pop += pop * percent / 100 + aug\n      count += 1\n    end\n    return count\nend"
+  }, {
+    "name": "Descending Order",
+    "description": "Your task is to make a function that can take any non-negative integer as a argument and return it with it's digits in descending order. ",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "def descending_order(n)\n    Integer(n.to_s.split('').sort{ |x, y| y <=> x }.join(''))\nend"
+  }, {
+    "name": "Sums of a lot of numbers",
+    "description": "Sum values from 1 to n of an arbitrarily large n. Accepts only positive integers.",
+    "language": "Python",
+    "langCode": "py",
+    "code": "def f(n):\n    if not isinstance(n, int) or n <= 0:\n        return None\n    return n/2 * (n + 1)"
   }]
 }
