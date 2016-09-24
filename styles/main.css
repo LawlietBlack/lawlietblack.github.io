@@ -122,7 +122,7 @@ header nav md-tabs {
     position: relative; }
     #skills-tags .skill-tags button.md-button.skill-all {
       background: linear-gradient(#103613, #26862d), #1b5e20; }
-    #skills-tags .skill-tags button.md-button.skill-javascript, #skills-tags .skill-tags button.md-button.skill-angularjs, #skills-tags .skill-tags button.md-button.skill-jquery, #skills-tags .skill-tags button.md-button.skill-nodejs, #skills-tags .skill-tags button.md-button.skill-expressjs, #skills-tags .skill-tags button.md-button.skill-d3js, #skills-tags .skill-tags button.md-button.skill-reactjs, #skills-tags .skill-tags button.md-button.skill-ajax, #skills-tags .skill-tags button.md-button.skill-gulp, #skills-tags .skill-tags button.md-button.skill-jasmine, #skills-tags .skill-tags button.md-button.skill-yeoman, #skills-tags .skill-tags button.md-button.skill-babel {
+    #skills-tags .skill-tags button.md-button.skill-javascript, #skills-tags .skill-tags button.md-button.skill-angularjs, #skills-tags .skill-tags button.md-button.skill-jquery, #skills-tags .skill-tags button.md-button.skill-nodejs, #skills-tags .skill-tags button.md-button.skill-express, #skills-tags .skill-tags button.md-button.skill-d3js, #skills-tags .skill-tags button.md-button.skill-reactjs, #skills-tags .skill-tags button.md-button.skill-ajax, #skills-tags .skill-tags button.md-button.skill-gulp, #skills-tags .skill-tags button.md-button.skill-jasmine, #skills-tags .skill-tags button.md-button.skill-keystone {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-tags .skill-tags button.md-button.skill-python, #skills-tags .skill-tags button.md-button.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
@@ -177,7 +177,7 @@ header nav md-tabs {
     border-radius: 50%; }
     #skills-color-key .dot.skill-all {
       background: linear-gradient(#103613, #26862d), #1b5e20; }
-    #skills-color-key .dot.skill-javascript, #skills-color-key .dot.skill-angularjs, #skills-color-key .dot.skill-jquery, #skills-color-key .dot.skill-nodejs, #skills-color-key .dot.skill-expressjs, #skills-color-key .dot.skill-d3js, #skills-color-key .dot.skill-reactjs, #skills-color-key .dot.skill-ajax, #skills-color-key .dot.skill-gulp, #skills-color-key .dot.skill-jasmine, #skills-color-key .dot.skill-yeoman, #skills-color-key .dot.skill-babel {
+    #skills-color-key .dot.skill-javascript, #skills-color-key .dot.skill-angularjs, #skills-color-key .dot.skill-jquery, #skills-color-key .dot.skill-nodejs, #skills-color-key .dot.skill-express, #skills-color-key .dot.skill-d3js, #skills-color-key .dot.skill-reactjs, #skills-color-key .dot.skill-ajax, #skills-color-key .dot.skill-gulp, #skills-color-key .dot.skill-jasmine, #skills-color-key .dot.skill-keystone {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #skills-color-key .dot.skill-python, #skills-color-key .dot.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
@@ -252,7 +252,7 @@ header nav md-tabs {
         cursor: pointer; }
         #portfolio md-card .skills-bar li.skill-all {
           background: linear-gradient(#103613, #26862d), #1b5e20; }
-        #portfolio md-card .skills-bar li.skill-javascript, #portfolio md-card .skills-bar li.skill-angularjs, #portfolio md-card .skills-bar li.skill-jquery, #portfolio md-card .skills-bar li.skill-nodejs, #portfolio md-card .skills-bar li.skill-expressjs, #portfolio md-card .skills-bar li.skill-d3js, #portfolio md-card .skills-bar li.skill-reactjs, #portfolio md-card .skills-bar li.skill-ajax, #portfolio md-card .skills-bar li.skill-gulp, #portfolio md-card .skills-bar li.skill-jasmine, #portfolio md-card .skills-bar li.skill-yeoman, #portfolio md-card .skills-bar li.skill-babel {
+        #portfolio md-card .skills-bar li.skill-javascript, #portfolio md-card .skills-bar li.skill-angularjs, #portfolio md-card .skills-bar li.skill-jquery, #portfolio md-card .skills-bar li.skill-nodejs, #portfolio md-card .skills-bar li.skill-express, #portfolio md-card .skills-bar li.skill-d3js, #portfolio md-card .skills-bar li.skill-reactjs, #portfolio md-card .skills-bar li.skill-ajax, #portfolio md-card .skills-bar li.skill-gulp, #portfolio md-card .skills-bar li.skill-jasmine, #portfolio md-card .skills-bar li.skill-keystone {
           background: linear-gradient(#2b502d, #4E9353), #4E9353; }
         #portfolio md-card .skills-bar li.skill-python, #portfolio md-card .skills-bar li.skill-django {
           background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
@@ -514,7 +514,7 @@ header nav md-tabs {
     margin-right: 10px; }
     #code .skill.skill-all {
       background: linear-gradient(#103613, #26862d), #1b5e20; }
-    #code .skill.skill-javascript, #code .skill.skill-angularjs, #code .skill.skill-jquery, #code .skill.skill-nodejs, #code .skill.skill-expressjs, #code .skill.skill-d3js, #code .skill.skill-reactjs, #code .skill.skill-ajax, #code .skill.skill-gulp, #code .skill.skill-jasmine, #code .skill.skill-yeoman, #code .skill.skill-babel {
+    #code .skill.skill-javascript, #code .skill.skill-angularjs, #code .skill.skill-jquery, #code .skill.skill-nodejs, #code .skill.skill-express, #code .skill.skill-d3js, #code .skill.skill-reactjs, #code .skill.skill-ajax, #code .skill.skill-gulp, #code .skill.skill-jasmine, #code .skill.skill-keystone {
       background: linear-gradient(#2b502d, #4E9353), #4E9353; }
     #code .skill.skill-python, #code .skill.skill-django {
       background: linear-gradient(#883c64, #BE6C97), #BE6C97; }

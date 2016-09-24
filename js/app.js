@@ -45,7 +45,7 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
   // Skills Data
   $scope.skillList = [
     // JavaScript Skills
-    'AngularJS', 'JavaScript', 'jQuery', 'Nodejs', 'Expressjs', 'ReactJS', 'd3js', 'AJAX', 'Gulp', 'Yeoman', 'Jasmine', 'Babel',
+    'JavaScript', 'AngularJS', 'ReactJS', 'd3js', 'jQuery', 'Nodejs', 'Express', 'AJAX', 'Gulp', 'Keystone', 'Jasmine',
     // Python Skills
     'Python', 'Django',
     // Java Skills

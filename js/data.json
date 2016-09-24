@@ -1,25 +1,32 @@
 {
   "portfolio": [{
-    "title": "Magic: the Gathering Deckbuilder",
-    "img": "img/projects/magic.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "Jasmine", "RESTApi", "MongoDB", "HTML5", "CSS3", "JavaScript", "AJAX"],
-    "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack. Deck building and saving requires login with account creation or twitter. Alternatively, to try out the builder without saving, use '/testbuild' route",
-    "github": "https://github.com/LawlietBlack/magic-deckbuilder",
-    "link": "http://magic-lawlietblack.herokuapp.com"
-    }, {
-    "title": "DEFINITELY Real Quotes",
-    "img": "img/projects/quotes.png",
-    "skills": ["AngularJS", "Nodejs", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
-    "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
-    "github": "https://github.com/LawlietBlack/real-quotes",
-    "link": "https://definitely-real-quotes.herokuapp.com/"
-    }, {
+    "title": "Quinta Esencia Taller",
+    "img": "img/projects/qet.png",
+    "skills": ["Nodejs", "Express", "Keystone", "JavaScript",  "MongoDB", "CMS", "HTML5", "Sass"],
+    "description": "Public site for Quinta Esencia Taller, an environmental education nonprofit organization based in Columbia. The website is a multilingual (English, Spanish) content management system featuring photo galleries that accepts donations. Built using KeystoneJS",
+    "github": "https://github.com/LawlietBlack/qet-america",
+    "link": "http://qet-america.herokuapp.com"
+  }, {
     "title": "Dungeon Game",
     "img": "img/projects/roguelike.png",
-    "skills": ["ReactJS", "JavaScript", "Gulp", "Babel", "Sass", "HTML5"],
+    "skills": ["ReactJS", "JavaScript", "Gulp", "Sass", "HTML5"],
     "description": "Roguelike dungeon game. Players can explore the dungeon, find gear, fight monsters, gain experience, and level up. Defeat the boss to win. Hosted on CodePen.",
     "github": "https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-15",
     "link": "http://codepen.io/LawlietBlack/full/JGBazL"
+  }, {
+    "title": "DEFINITELY Real Quotes",
+    "img": "img/projects/quotes.png",
+    "skills": ["AngularJS", "Nodejs", "Express", "RESTApi", "oAuth", "MongoDB", "HTML5", "Sass", "Bourbon", "JavaScript", "AJAX"],
+    "description": "Fake quote sharing site inspired by John Oliver’s segment on misappropriated quotes.",
+    "github": "https://github.com/LawlietBlack/real-quotes",
+    "link": "https://definitely-real-quotes.herokuapp.com/"
+  }, {
+    "title": "Magic: the Gathering Deckbuilder",
+    "img": "img/projects/magic.png",
+    "skills": ["AngularJS", "Nodejs", "Express", "Jasmine", "RESTApi", "MongoDB", "HTML5", "CSS3", "JavaScript", "AJAX"],
+    "description": "Magic: the Gathering Deckbuilder that I built using MEAN stack. Deck building and saving requires login with account creation or twitter. Alternatively, to try out the builder without saving, use '/testbuild' route",
+    "github": "https://github.com/LawlietBlack/magic-deckbuilder",
+    "link": "http://magic-lawlietblack.herokuapp.com"
   }, {
     "title": "Pokedex",
     "img": "img/projects/pokemon2.png",
@@ -58,7 +65,7 @@
   }, {
     "title": "Persona 4 Golden Guide",
     "img": "img/projects/persona.png",
-    "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Expressjs", "HTML5", "CSS3"],
+    "skills": ["AngularJS", "JavaScript", "jQuery", "AJAX", "Nodejs", "Express", "HTML5", "CSS3"],
     "description": "A website guide for Persona 4 Golden. I initially built this app using a node.js back end with express and Swig, but down the line, I realized that it would run much faster as an AngularJS single page application. The full-stack JavaScript version is saved as the \"node\" branch.",
     "github": "https://github.com/LawlietBlack/Persona-4-Golden-Guide",
     "link": "http://persona.lawlietblack.com"
@@ -114,7 +121,7 @@
     }, {
     "title": "Vote",
     "img": "img/projects/vote2.png",
-    "skills": [ "AngularJS", "Nodejs","Expressjs", "JavaScript", "Yeoman", "RESTApi", "oAuth", "MongoDB",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "skills": [ "AngularJS", "Nodejs","Express", "JavaScript", "RESTApi", "oAuth", "MongoDB",  "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Voting app built using MEAN stack and oAuth that allows users to log in, create polls and share them with others.",
     "github": "https://github.com/LawlietBlack/vote",
     "link": "http://vote-lawlietblack.herokuapp.com"
@@ -135,7 +142,7 @@
     }, {
     "title": "Book Trade",
     "img": "img/projects/booktrade.png",
-    "skills": ["AngularJS", "Nodejs", "JavaScript", "Expressjs", "Yeoman", "RESTApi", "oAuth", "MongoDB", "HTML5", "AJAX", "CSS3", "Bootstrap"],
+    "skills": ["AngularJS", "Nodejs", "JavaScript", "Express", "RESTApi", "oAuth", "MongoDB", "HTML5", "AJAX", "CSS3", "Bootstrap"],
     "description": "Prototype Book Trading site for a local club. Uses the Google Books API and a RESTful API to allow users to search, select, and trade books. Upon successful trade, enables contact info trading (limited). ",
     "github": "https://github.com/LawlietBlack/books",
     "link": "http://books-lawlietblack.herokuapp.com"
@@ -169,6 +176,9 @@
     "link": "http://codepen.io/LawlietBlack/full/RWWzLz"
   }], 
   "logs": [{
+    "date": "September 23rd, 2016",
+    "log": "I added my first FreeCodeCamp nonprofit project to my portfolio. Over 100 hours and 12 weeks of work went into it, and not only did I learn a new framework and content management system, but I learned how to work on a remote team on an agile project. I hope to add more projects like this in the future."
+  }, {
     "date": "September 19th, 2016",
     "log": "I rewrote some of the About section and added some behavioral interview questions. I also added a few more Ruby algorithms. I've been working on the Ruby track at treehouse and have been making good progress."
   }, {
@@ -452,5 +462,11 @@
     "language": "Ruby",
     "langCode": "rb",
     "code": "def is_square(x)\n  Math.sqrt(x) % 1 == 0 rescue false\nend"
+  }, {
+    "name": "Highest and Lowest",
+    "description": "Given a string of space separated numbers, and have to return the highest and lowest number.",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "def high_and_low(numbers)\n  numbers.split.map(&:to_i).sort.minmax.reverse.join(' ')\nend"
   }]
 }
