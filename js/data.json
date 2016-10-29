@@ -468,5 +468,23 @@
     "language": "Ruby",
     "langCode": "rb",
     "code": "def high_and_low(numbers)\n  numbers.split.map(&:to_i).sort.minmax.reverse.join(' ')\nend"
+  }, {
+    "name": "Earthquakes",
+    "description": "Write a function that tests whether or not a building is strong enough to withstand a simulated earthquake. A building will fall if the magnitude of the earthquake is greater than the strength of the building. An earthquake takes the form of a 2D-Array. Each element within the Outer-Array represents a shockwave, and each element within the Inner-Arrays represents a tremor. The magnitude of the earthquake is determined by the product of the values of its shockwaves. A shockwave is equal to the sum of the values of its tremors.",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "def strong_enough( earthquake, age )\n  magnitude = earthquake.map{|q| q.reduce(:+)}.reduce(:*)\n  strength = 1000 * 2.71828 ** (-0.01 * age)\n  if strength > magnitude\n    return 'Safe!'\n  else \n    return 'Needs Reinforcement!'\n  end\nend"
+  }, {
+    "name": "Array Helpers",
+    "description": "Extend the built-in Array class with the following methods: square(), cube(), average(), sum(), even() and odd(). square() must return a copy of the array, containing all values squared, the original array must not be changed. cube() must return a copy of the array, containing all values cubed, the original array must not be changed. average() must return the average of all array values, average() on an empty array must return NaN. sum() must return the sum of all array values. even() must return an array of all even numbers, the original array must not be changed. odd() must return an array of all odd numbers, the original array must not be changed",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "class Array\n  def square\n    map {|n| n ** 2 }\n  end\n  def cube\n    map {|n| n ** 3 }\n  end\n  def average\n    reduce(:+) / length rescue 'NaN'\n  end\n  def sum\n    reduce(:+)\n  end\n  def even\n    select{ |num| num % 2 == 0 }\n  end\n  def odd\n    select{ |num| num % 2 == 1 }\n  end\nend"
+  }, {
+    "name": "Bouncing Balls",
+    "description": "A child plays with a ball on the nth floor of a big building the height(h) meters of which is known. He lets out the ball. The ball rebounds a percentage of its height(bounce). His mother looks out of a window that is (window) meters from the ground. How many times will the mother see the ball either falling or bouncing in front of the window? The ball can only be seen if the height of the rebouncing ball is stricty greater than the window parameter. Return -1 for invalid entries.",
+    "language": "Ruby",
+    "langCode": "rb",
+    "code": "def bouncingBall(h, bounce, window)\n  return -1 if h <= window || bounce >= 1 || bounce < 0\n  count = 1\n  while true do\n    h *= bounce\n    if h > window\n      count += 2\n    else\n      return count\n    end\n  end\nend"
   }]
 }
