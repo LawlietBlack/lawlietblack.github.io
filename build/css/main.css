@@ -71,7 +71,7 @@ button.md-button {
   margin: 20px; }
 
 header nav .title-block {
-  background: linear-gradient(transparent, #1b5e20), #191919 url("../img/code.jpg") no-repeat fixed center;
+  background: linear-gradient(transparent, #1b5e20), #191919 url("./../img/code.jpg") no-repeat fixed center;
   background-size: cover;
   height: 140px; }
   header nav .title-block h1 {
@@ -544,7 +544,7 @@ footer {
     border-radius: 50%;
     margin-right: 10px;
     display: inline-block;
-    background: url(../img/icons/sprites.png) no-repeat;
+    background: url(./../img/sprites.png) no-repeat;
     background-size: 200px 40px; }
     footer .social-icon.git {
       background-position: 0 0; }

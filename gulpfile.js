@@ -7,8 +7,25 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   maps = require('gulp-sourcemaps'),
   del = require('del'),
-  plumber = require('gulp-plumber');
+  plumber = require('gulp-plumber'),
+  jshint = require('gulp-jshint'),
+  utilities = require('gulp-util'),
+  browserSync = require('browser-sync').create(),
+  lib = require('bower-files')({
+    "overrides": {
+      "angular-material": {
+        "main": [
+          'angular-material.css',
+          'angular-material.js'
+        ]
+      },
+      "font-awesome": {
+        "main": ['css/font-awesome.css']
+      }
+    }
+  });
 
+var inProd = utilities.env.production;
 
 var source = {
   scripts: [
@@ -26,34 +43,108 @@ var source = {
   ]
 };
 
-gulp.task('scripts', function() {
-  return gulp.src(source.scripts)
+gulp.task('concatScripts', function() {
+  return gulp.src('./js/app.js')
+  .pipe(plumber())
+  .pipe(maps.init())
+  .pipe(concat('app.js'))
+  .pipe(maps.write('./'))
+  .pipe(plumber.stop())
+  .pipe(gulp.dest('./build/js'))
+});
+
+gulp.task('minifyScripts', function() {
+  return gulp.src('./js/app.js')
     .pipe(plumber())
     .pipe(maps.init())
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('./js'))
-    .pipe(rename('bundle.min.js'))
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('./build/js'))
+    .pipe(rename('app.js'))
     .pipe(uglify())
     .pipe(maps.write('./'))
     .pipe(plumber.stop())
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./build/js'));
 });
 
-gulp.task('sass', function() {
+gulp.task('sassImages', function() {
+  gulp.src(['./img/sprites.png', './img/code.jpg'])
+    .pipe(gulp.dest('./build/img'))
+});
+
+gulp.task('sass', ['sassImages'], function() {
   return gulp.src('scss/main.scss')
-    .pipe(plumber())
-    .pipe(maps.init())
-    .pipe(sass())
-    .pipe(maps.write('./'))
-    .pipe(plumber.stop())
-    .pipe(rename('main.css'))
-    .pipe(gulp.dest('styles/'))
+  .pipe(plumber())
+  .pipe(maps.init())
+  .pipe(sass())
+  .pipe(maps.write('./'))
+  .pipe(plumber.stop())
+  .pipe(rename('main.css'))
+  .pipe(gulp.dest('./build/css/'))
 });
 
-gulp.task('default', ['scripts', 'sass']);
-
-gulp.task('stream', ['sass', 'scripts'], () => {
-  gulp.watch('js/*.js', ['scripts']);
-  gulp.watch('scss/*.scss', ['sass']);
+gulp.task('jshint', function() {
+  return gulp.src(['js/*.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
 
+gulp.task('clean', function() {
+  return del(['build']);
+});
+
+gulp.task('bowerJS', function() {
+  return gulp.src(lib.ext('js').files)
+    .pipe(concat('vendor.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('bowerFonts', function() {
+  gulp.src(['bower_components/devicon/fonts/*'])
+  .pipe(gulp.dest('./build/css/fonts/'));
+  return gulp.src(['bower_components/font-awesome/fonts/*'])
+  .pipe(gulp.dest('./build/fonts/'));
+
+});
+
+gulp.task('bowerCSS', ['bowerFonts'], function() {
+  return gulp.src(lib.ext('css').files)
+  .pipe(concat('vendor.css'))
+  .pipe(gulp.dest('./build/css'));
+});
+
+gulp.task('bower', ['bowerJS', 'bowerCSS']);
+
+gulp.task('build', ['clean'], function() {
+  if(inProd) {
+    gulp.start('minifyScripts');
+  } else {
+    gulp.start('concatScripts');
+  }
+  gulp.start('bower');
+  gulp.start('sass');
+});
+
+gulp.task('reloadSass', ['sass'], function() {
+  browserSync.reload();
+});
+gulp.task('reloadBower', ['concatScripts'], function() {
+  browserSync.reload();
+});
+gulp.task('reloadJS', ['sass'], function() {
+  browserSync.reload();
+});
+
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: './',
+      index: 'index.html'
+    }
+  });
+  gulp.watch(['js/app.js'], ['reloadJS']);
+  gulp.watch(['bower.json'], ['reloadBower']);
+  gulp.watch(['scss/*.scss'], ['reloadSass']);
+});
+
+gulp.task('default', ['serve']);
