@@ -194,3 +194,5 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
   };
 }]);
 
+
+//# sourceMappingURL=app.js.map

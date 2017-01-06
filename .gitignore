@@ -1,5 +1,5 @@
 # Bower
-#bower_components
+bower_components
 
 # Windows Thumbnail Files
 img/Thumbs.db
@@ -13,3 +13,5 @@ node_modules
 
 # Webstorm Files
 .idea
+
+yarn.lock
