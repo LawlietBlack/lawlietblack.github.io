@@ -1,0 +1,582 @@
+html, body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #191919;
+  color: #fff;
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " "; }
+
+.clearfix:after {
+  clear: both; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  text-decoration: none;
+  color: #593; }
+  a:hover {
+    text-decoration: none;
+    color: #262; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+button.md-button {
+  border-radius: 0;
+  font-size: 16px;
+  text-transform: none; }
+  button.md-button.content {
+    padding: 0; }
+  button.md-button.md-raised {
+    color: #fff; }
+  button.md-button.md-raised.md-primary {
+    background-color: #1b5e20; }
+  button.md-button.md-raised.md-secondary {
+    background-color: #465C7B; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.text-center {
+  text-align: center; }
+
+.green {
+  background-color: #1B5E20; }
+
+#about #education ul li, #about #enjoys ul li {
+  display: inline-block;
+  margin: 20px; }
+
+header nav .title-block {
+  background: linear-gradient(transparent, #1b5e20), #191919 url("../img/code.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 140px; }
+  header nav .title-block h1 {
+    text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.6);
+    padding: 30px 0 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.6); }
+  header nav .title-block h2 {
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.6);
+    margin: 0 10px 20px;
+    font-size: 1.25em;
+    font-weight: normal; }
+
+header nav md-tabs {
+  height: 48px;
+  overflow: hidden;
+  background-color: #1b5e20; }
+  header nav md-tabs .md-tab {
+    padding: 0; }
+  header nav md-tabs a, header nav md-tabs a:hover {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff; }
+  header nav md-tabs md-ink-bar {
+    color: #ffff8d;
+    background-color: #ffff8d; }
+
+#skills-tags .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 10px auto 0;
+  color: #fff; }
+  #skills-tags .skill-tags button.md-button {
+    margin: 4px;
+    line-height: 20px;
+    min-height: 20px;
+    height: 28px;
+    min-width: 5em;
+    padding: 0 4px;
+    cursor: pointer;
+    position: relative; }
+    #skills-tags .skill-tags button.md-button.skill-all {
+      background: linear-gradient(#103613, #26862d), #1b5e20; }
+    #skills-tags .skill-tags button.md-button.skill-javascript, #skills-tags .skill-tags button.md-button.skill-angularjs, #skills-tags .skill-tags button.md-button.skill-jquery, #skills-tags .skill-tags button.md-button.skill-nodejs, #skills-tags .skill-tags button.md-button.skill-express, #skills-tags .skill-tags button.md-button.skill-d3js, #skills-tags .skill-tags button.md-button.skill-reactjs, #skills-tags .skill-tags button.md-button.skill-ajax, #skills-tags .skill-tags button.md-button.skill-gulp, #skills-tags .skill-tags button.md-button.skill-jasmine, #skills-tags .skill-tags button.md-button.skill-keystone {
+      background: linear-gradient(#2b502d, #4E9353), #4E9353; }
+    #skills-tags .skill-tags button.md-button.skill-python, #skills-tags .skill-tags button.md-button.skill-django {
+      background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #skills-tags .skill-tags button.md-button.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
+    #skills-tags .skill-tags button.md-button.skill-java, #skills-tags .skill-tags button.md-button.skill-spring, #skills-tags .skill-tags button.md-button.skill-jersey, #skills-tags .skill-tags button.md-button.skill-hibernate, #skills-tags .skill-tags button.md-button.skill-maven, #skills-tags .skill-tags button.md-button.skill-gradle, #skills-tags .skill-tags button.md-button.skill-tomcat, #skills-tags .skill-tags button.md-button.skill-thymeleaf {
+      background: linear-gradient(#00302c, #009688), #009688; }
+    #skills-tags .skill-tags button.md-button.skill-database, #skills-tags .skill-tags button.md-button.skill-mongodb, #skills-tags .skill-tags button.md-button.skill-postgresql, #skills-tags .skill-tags button.md-button.skill-sql, #skills-tags .skill-tags button.md-button.skill-h2 {
+      background: linear-gradient(#2f233d, #61487E), #61487E; }
+    #skills-tags .skill-tags button.md-button.skill-development, #skills-tags .skill-tags button.md-button.skill-oauth, #skills-tags .skill-tags button.md-button.skill-socketio, #skills-tags .skill-tags button.md-button.skill-restapi, #skills-tags .skill-tags button.md-button.skill-cms, #skills-tags .skill-tags button.md-button.skill-html5 {
+      background: linear-gradient(#242b3e, #4A577E), #4A577E; }
+    #skills-tags .skill-tags button.md-button.skill-design, #skills-tags .skill-tags button.md-button.skill-photoshop, #skills-tags .skill-tags button.md-button.skill-css3, #skills-tags .skill-tags button.md-button.skill-bootstrap, #skills-tags .skill-tags button.md-button.skill-sass, #skills-tags .skill-tags button.md-button.skill-responsive, #skills-tags .skill-tags button.md-button.skill-bourbon, #skills-tags .skill-tags button.md-button.skill-materialize {
+      background: linear-gradient(#192e2e, #3C6F71), #3C6F71; }
+    #skills-tags .skill-tags button.md-button .skill-num {
+      background-color: #777;
+      border-radius: 50%;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center; }
+
+#skills-color-key {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(#2a3030, #5a6666), #424b4b;
+  max-width: 1260px;
+  margin: 10px auto; }
+  @media screen and (max-width: 1260px) {
+    #skills-color-key {
+      max-width: 800px; }
+      #skills-color-key .title {
+        width: 100%;
+        text-align: center; }
+        #skills-color-key .title .name {
+          float: none; } }
+  @media screen and (max-width: 800px) {
+    #skills-color-key {
+      margin-top: 0; } }
+  #skills-color-key .title {
+    color: #4E9353;
+    font-weight: bold; }
+  #skills-color-key .skill {
+    margin: 0 8px; }
+  #skills-color-key .dot {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border-radius: 50%; }
+    #skills-color-key .dot.skill-all {
+      background: linear-gradient(#103613, #26862d), #1b5e20; }
+    #skills-color-key .dot.skill-javascript, #skills-color-key .dot.skill-angularjs, #skills-color-key .dot.skill-jquery, #skills-color-key .dot.skill-nodejs, #skills-color-key .dot.skill-express, #skills-color-key .dot.skill-d3js, #skills-color-key .dot.skill-reactjs, #skills-color-key .dot.skill-ajax, #skills-color-key .dot.skill-gulp, #skills-color-key .dot.skill-jasmine, #skills-color-key .dot.skill-keystone {
+      background: linear-gradient(#2b502d, #4E9353), #4E9353; }
+    #skills-color-key .dot.skill-python, #skills-color-key .dot.skill-django {
+      background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #skills-color-key .dot.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
+    #skills-color-key .dot.skill-java, #skills-color-key .dot.skill-spring, #skills-color-key .dot.skill-jersey, #skills-color-key .dot.skill-hibernate, #skills-color-key .dot.skill-maven, #skills-color-key .dot.skill-gradle, #skills-color-key .dot.skill-tomcat, #skills-color-key .dot.skill-thymeleaf {
+      background: linear-gradient(#00302c, #009688), #009688; }
+    #skills-color-key .dot.skill-database, #skills-color-key .dot.skill-mongodb, #skills-color-key .dot.skill-postgresql, #skills-color-key .dot.skill-sql, #skills-color-key .dot.skill-h2 {
+      background: linear-gradient(#2f233d, #61487E), #61487E; }
+    #skills-color-key .dot.skill-development, #skills-color-key .dot.skill-oauth, #skills-color-key .dot.skill-socketio, #skills-color-key .dot.skill-restapi, #skills-color-key .dot.skill-cms, #skills-color-key .dot.skill-html5 {
+      background: linear-gradient(#242b3e, #4A577E), #4A577E; }
+    #skills-color-key .dot.skill-design, #skills-color-key .dot.skill-photoshop, #skills-color-key .dot.skill-css3, #skills-color-key .dot.skill-bootstrap, #skills-color-key .dot.skill-sass, #skills-color-key .dot.skill-responsive, #skills-color-key .dot.skill-bourbon, #skills-color-key .dot.skill-materialize {
+      background: linear-gradient(#192e2e, #3C6F71), #3C6F71; }
+  #skills-color-key .name {
+    float: left;
+    font-size: 16px;
+    margin: 3px; }
+
+#portfolio {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+  #portfolio md-card {
+    margin: 20px;
+    float: left;
+    background-color: #424b4b;
+    width: 426px;
+    border-radius: 0;
+    position: relative; }
+    #portfolio md-card img {
+      width: 336px;
+      height: 192px; }
+    #portfolio md-card .card-content {
+      padding: 0;
+      float: left; }
+      #portfolio md-card .card-content .title {
+        padding: 7px 0 7px 7px;
+        height: 40px;
+        width: 336px; }
+        #portfolio md-card .card-content .title h2 {
+          font-size: 1.35em; }
+    #portfolio md-card .card-bottom {
+      position: relative;
+      min-height: 170px;
+      width: 426px;
+      padding: 10px;
+      z-index: 50; }
+      #portfolio md-card .card-bottom p {
+        margin: 12px 0 0; }
+      #portfolio md-card .card-bottom button {
+        position: absolute;
+        bottom: 5px; }
+        #portfolio md-card .card-bottom button.git-btn {
+          background-color: #242424;
+          right: 0; }
+        #portfolio md-card .card-bottom button.web-btn {
+          background-color: #055081;
+          right: 100px; }
+    #portfolio md-card .skills-bar {
+      width: 90px;
+      height: 232px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      background-color: #2a3030; }
+      #portfolio md-card .skills-bar li {
+        padding: 5px 0;
+        height: 29px;
+        cursor: pointer; }
+        #portfolio md-card .skills-bar li.skill-all {
+          background: linear-gradient(#103613, #26862d), #1b5e20; }
+        #portfolio md-card .skills-bar li.skill-javascript, #portfolio md-card .skills-bar li.skill-angularjs, #portfolio md-card .skills-bar li.skill-jquery, #portfolio md-card .skills-bar li.skill-nodejs, #portfolio md-card .skills-bar li.skill-express, #portfolio md-card .skills-bar li.skill-d3js, #portfolio md-card .skills-bar li.skill-reactjs, #portfolio md-card .skills-bar li.skill-ajax, #portfolio md-card .skills-bar li.skill-gulp, #portfolio md-card .skills-bar li.skill-jasmine, #portfolio md-card .skills-bar li.skill-keystone {
+          background: linear-gradient(#2b502d, #4E9353), #4E9353; }
+        #portfolio md-card .skills-bar li.skill-python, #portfolio md-card .skills-bar li.skill-django {
+          background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+        #portfolio md-card .skills-bar li.skill-ruby {
+          background: linear-gradient(#7a1310, #D4211C), #D4211C; }
+        #portfolio md-card .skills-bar li.skill-java, #portfolio md-card .skills-bar li.skill-spring, #portfolio md-card .skills-bar li.skill-jersey, #portfolio md-card .skills-bar li.skill-hibernate, #portfolio md-card .skills-bar li.skill-maven, #portfolio md-card .skills-bar li.skill-gradle, #portfolio md-card .skills-bar li.skill-tomcat, #portfolio md-card .skills-bar li.skill-thymeleaf {
+          background: linear-gradient(#00302c, #009688), #009688; }
+        #portfolio md-card .skills-bar li.skill-database, #portfolio md-card .skills-bar li.skill-mongodb, #portfolio md-card .skills-bar li.skill-postgresql, #portfolio md-card .skills-bar li.skill-sql, #portfolio md-card .skills-bar li.skill-h2 {
+          background: linear-gradient(#2f233d, #61487E), #61487E; }
+        #portfolio md-card .skills-bar li.skill-development, #portfolio md-card .skills-bar li.skill-oauth, #portfolio md-card .skills-bar li.skill-socketio, #portfolio md-card .skills-bar li.skill-restapi, #portfolio md-card .skills-bar li.skill-cms, #portfolio md-card .skills-bar li.skill-html5 {
+          background: linear-gradient(#242b3e, #4A577E), #4A577E; }
+        #portfolio md-card .skills-bar li.skill-design, #portfolio md-card .skills-bar li.skill-photoshop, #portfolio md-card .skills-bar li.skill-css3, #portfolio md-card .skills-bar li.skill-bootstrap, #portfolio md-card .skills-bar li.skill-sass, #portfolio md-card .skills-bar li.skill-responsive, #portfolio md-card .skills-bar li.skill-bourbon, #portfolio md-card .skills-bar li.skill-materialize {
+          background: linear-gradient(#192e2e, #3C6F71), #3C6F71; }
+      #portfolio md-card .skills-bar .over-8 {
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        background-color: #2a3030;
+        border-radius: 0 0 50% 50%;
+        height: 26px; }
+        #portfolio md-card .skills-bar .over-8 span {
+          font-size: 12px;
+          height: 12px;
+          display: block; }
+        #portfolio md-card .skills-bar .over-8 i {
+          display: block; }
+    #portfolio md-card .extras {
+      position: relative;
+      z-index: 100;
+      display: none; }
+    @media screen and (max-width: 1420px) {
+      #portfolio md-card {
+        margin: 10px; } }
+    @media screen and (max-width: 450px) {
+      #portfolio md-card {
+        width: 336px; }
+        #portfolio md-card .card-content h2 {
+          text-align: center; }
+        #portfolio md-card .skills-bar {
+          right: 0;
+          top: 232px;
+          min-height: 261px; }
+          #portfolio md-card .skills-bar .over-8 {
+            background-color: #2a3030; }
+        #portfolio md-card .card-bottom {
+          min-height: 261px;
+          width: 246px; }
+          #portfolio md-card .card-bottom button.git-btn {
+            padding: 0;
+            width: 44%;
+            right: 0; }
+          #portfolio md-card .card-bottom button.web-btn {
+            padding: 0;
+            width: 44%;
+            right: 121px; } }
+
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px; }
+  .download button.md-button {
+    height: 36px;
+    width: 140px;
+    padding: 0; }
+  .download a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #fff; }
+
+#resume {
+  font-family: "Lato", sans-serif;
+  background-color: #424b4b;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #eee; }
+  #resume > div {
+    padding: 20px 30px;
+    overflow: auto;
+    border-bottom: 1px solid #121515; }
+  #resume a {
+    color: #eee; }
+    #resume a:hover {
+      color: #15d345; }
+  #resume p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0; }
+  #resume .resume-head {
+    border-bottom: 2px solid #15d345; }
+    #resume .resume-head .title-box {
+      max-width: 600px;
+      float: left; }
+    #resume .resume-head .contact {
+      max-width: 120px;
+      padding: 6px 0;
+      float: right; }
+  #resume .section-title {
+    float: left;
+    width: 30%;
+    color: #15d345;
+    font-style: italic; }
+  #resume .section-content {
+    float: right;
+    width: 70%; }
+    #resume .section-content li {
+      margin-bottom: 20px; }
+    #resume .section-content h4 {
+      font-weight: normal;
+      font-style: italic; }
+    #resume .section-content li p {
+      margin: 6px 0 0;
+      color: #ddd;
+      padding-left: 10px; }
+  #resume .skill-list li {
+    margin: 0;
+    width: 33%;
+    float: left; }
+  @media screen and (max-width: 700px) {
+    #resume .resume-head {
+      text-align: center;
+      padding-bottom: 4px; }
+      #resume .resume-head .contact {
+        clear: both;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin: 0; }
+        #resume .resume-head .contact p {
+          width: 33%;
+          float: left; }
+    #resume .section-title, #resume .section-content, #resume .title-box {
+      width: 100%;
+      float: none;
+      margin: 0 auto 10px; } }
+  @media screen and (max-width: 500px) {
+    #resume .resume-head .contact p {
+      width: 100%;
+      float: none; } }
+
+#logs {
+  margin: 20px auto;
+  width: 95%;
+  max-width: 600px; }
+  #logs .title {
+    text-align: center; }
+  #logs .log {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: table;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    width: 100%; }
+    #logs .log .log-content {
+      width: 100%; }
+      #logs .log .log-content h1 {
+        font-size: 1em;
+        margin: 0 0 0.5em 0; }
+      #logs .log .log-content p {
+        line-height: 1.5em;
+        margin-bottom: 0.5em; }
+      #logs .log .log-content p.log-detail {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9em;
+        font-style: italic; }
+
+#about {
+  margin: 40px auto 0; }
+  #about section {
+    min-height: 240px;
+    padding: 40px 0; }
+    #about section h1 {
+      color: #ccc; }
+  #about #profile {
+    color: #ccc;
+    margin: 40px auto 0;
+    max-width: 800px;
+    text-align: center; }
+    #about #profile .profile-photo {
+      border-radius: 50%;
+      height: 140px;
+      width: 140px; }
+    #about #profile h1 {
+      font-size: 2em;
+      color: #34ad3c; }
+    #about #profile p {
+      font-size: 1.2em; }
+  #about #education ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: #ddd;
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em; }
+    #about #education ul li {
+      width: 260px; }
+      #about #education ul li h2 {
+        font-size: 1.3em; }
+      #about #education ul li p {
+        margin: 0; }
+  #about #questions {
+    width: 95%;
+    margin: 20px auto;
+    max-width: 1200px; }
+    #about #questions h1 {
+      text-align: center;
+      margin: 20px; }
+    #about #questions h2 {
+      font-size: 1.4em;
+      font-family: 'Lusitana', serif; }
+    #about #questions h4 {
+      color: #ddd;
+      margin: 20px 0 0;
+      font-family: 'Merriweather', serif; }
+    #about #questions p {
+      font-family: "Questrial", sans-serif;
+      color: #ccc;
+      margin: 0 0 14px 24px;
+      line-height: 1.4em; }
+    #about #questions .half {
+      width: 46%;
+      margin: 0 2%; }
+      #about #questions .half.left {
+        float: left; }
+      #about #questions .half.right {
+        float: right; }
+      @media screen and (max-width: 768px) {
+        #about #questions .half {
+          width: inherit;
+          margin: 20px; }
+          #about #questions .half.left, #about #questions .half.right {
+            float: none; } }
+  #about #enjoys ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: #ddd; }
+
+#code {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20px auto; }
+  #code .snippet {
+    margin: 20px auto; }
+    #code .snippet pre {
+      margin: 10px;
+      padding: 10px;
+      background-color: #262626; }
+  #code .skill {
+    padding: 3px 6px;
+    margin-right: 10px; }
+    #code .skill.skill-all {
+      background: linear-gradient(#103613, #26862d), #1b5e20; }
+    #code .skill.skill-javascript, #code .skill.skill-angularjs, #code .skill.skill-jquery, #code .skill.skill-nodejs, #code .skill.skill-express, #code .skill.skill-d3js, #code .skill.skill-reactjs, #code .skill.skill-ajax, #code .skill.skill-gulp, #code .skill.skill-jasmine, #code .skill.skill-keystone {
+      background: linear-gradient(#2b502d, #4E9353), #4E9353; }
+    #code .skill.skill-python, #code .skill.skill-django {
+      background: linear-gradient(#883c64, #BE6C97), #BE6C97; }
+    #code .skill.skill-ruby {
+      background: linear-gradient(#7a1310, #D4211C), #D4211C; }
+    #code .skill.skill-java, #code .skill.skill-spring, #code .skill.skill-jersey, #code .skill.skill-hibernate, #code .skill.skill-maven, #code .skill.skill-gradle, #code .skill.skill-tomcat, #code .skill.skill-thymeleaf {
+      background: linear-gradient(#00302c, #009688), #009688; }
+    #code .skill.skill-database, #code .skill.skill-mongodb, #code .skill.skill-postgresql, #code .skill.skill-sql, #code .skill.skill-h2 {
+      background: linear-gradient(#2f233d, #61487E), #61487E; }
+    #code .skill.skill-development, #code .skill.skill-oauth, #code .skill.skill-socketio, #code .skill.skill-restapi, #code .skill.skill-cms, #code .skill.skill-html5 {
+      background: linear-gradient(#242b3e, #4A577E), #4A577E; }
+    #code .skill.skill-design, #code .skill.skill-photoshop, #code .skill.skill-css3, #code .skill.skill-bootstrap, #code .skill.skill-sass, #code .skill.skill-responsive, #code .skill.skill-bourbon, #code .skill.skill-materialize {
+      background: linear-gradient(#192e2e, #3C6F71), #3C6F71; }
+  #code p {
+    margin: 10px 0 4px 20px; }
+  #code pre {
+    white-space: pre-wrap; }
+
+footer {
+  clear: both;
+  font-size: 0.75em;
+  padding-top: 50px;
+  text-align: center; }
+  footer .social-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    background: url(../img/icons/sprites.png) no-repeat;
+    background-size: 200px 40px; }
+    footer .social-icon.git {
+      background-position: 0 0; }
+    footer .social-icon.twitter {
+      background-position: -40px 0; }
+    footer .social-icon.treehouse {
+      background-position: -80px 0; }
+    footer .social-icon.linkedin {
+      background-position: -120px 0; }
+    footer .social-icon.fcc {
+      background-position: -160px 0; }
+
+#career-link {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto; }
+  #career-link .card {
+    margin: 40px auto 80px;
+    background-color: #333;
+    padding: 10px 40px 20px; }
+  #career-link p, #career-link li {
+    font-size: 2em; }
+  #career-link h1 {
+    text-align: center;
+    font-size: 4em; }
+  #career-link h3 {
+    font-size: 3em;
+    color: #1B5E20;
+    margin: 20px 0 20px;
+    text-align: center; }
+  #career-link h4 {
+    text-align: center;
+    font-size: 3.5em; }
+
+/*# sourceMappingURL=main.css.map */
