@@ -102,7 +102,7 @@ gulp.task('bowerJS', function() {
 gulp.task('bowerFonts', function() {
   gulp.src(['bower_components/devicon/fonts/*'])
   .pipe(gulp.dest('./build/css/fonts/'));
-  return gulp.src(['bower_components/font-awesome/fonts/*'])
+  gulp.src(['bower_components/font-awesome/fonts/*'])
   .pipe(gulp.dest('./build/fonts/'));
 
 });

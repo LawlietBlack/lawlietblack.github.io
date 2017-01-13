@@ -28,6 +28,13 @@
     "github": "https://github.com/LawlietBlack/magic-deckbuilder",
     "link": "http://magic-lawlietblack.herokuapp.com"
   }, {
+    "title": "Learning Playlist",
+    "img": "img/projects/learning.png",
+    "skills": ["Ruby", "Sinatra", "JavaScript", "SQL", "Postgres", "HTML5", "CSS3"],
+    "description": "Learning Management System designed to allow users to make lessons and playlists. Public lessons are shared, so users can have access to many resources to make their playlists. Enables the sharing of learning resources. ",
+    "github": "https://github.com/LawlietBlack/qet-america",
+    "link": "http://qet-america.herokuapp.com"
+  }, {
     "title": "Pokedex",
     "img": "img/projects/pokemon2.png",
     "skills": ["AngularJS", "JavaScript", "AJAX", "Jasmine", "Sass", "Bourbon", "Responsive", "HTML5"],
@@ -37,19 +44,19 @@
     }, {
     "title": "Code Journal",
     "img": "img/projects/journal.png",
-    "skills": ["Python", "Django", "PostGreSQL", "SQL", "CMS", "HTML5", "CSS3"],
+    "skills": ["Python", "Django", "Postgres", "SQL", "CMS", "HTML5", "CSS3"],
     "description": "Learning Journal made with Django.",
     "github": "https://github.com/LawlietBlack/code-journal",
     "link": "https://journal-lawlietblack.herokuapp.com"
     }, {
     "title": "Home Automation REST API",
     "img": "img/projects/force.png",
-    "skills": ["Java", "Jersey", "Hibernate", "Tomcat", "Maven", "SQL", "H2", "PostGreSQL"],
+    "skills": ["Java", "Jersey", "Hibernate", "Tomcat", "Maven", "SQL", "H2", "Postgres"],
     "description": "Rest API made with Jersey JAX-RS and Hibernate.",
     "github": "https://github.com/LawlietBlack/the-force",
     "link": "https://the-force.herokuapp.com"
   }, {
-    "title": "Conway\"s Game of Life",
+    "title": "Conway's Game of Life",
     "img": "img/projects/life.png",
     "skills": ["ReactJS", "JavaScript", "Sass", "HTML5"],
     "description": "Conway\"s game of life with grid size, generation speed, pause/play, and randomize functionality. Hosted on Codepen.",

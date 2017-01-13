@@ -56,9 +56,9 @@ angular.module('PortfolioApp', ['ngRoute', 'ngSanitize', 'ngMaterial'])
     // Java Skills
     'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
     // Ruby Skills
-    // 'Ruby',
+    'Ruby', 'Sinatra',
     // Database Skills
-    'MongoDB', 'H2', 'PostGreSQL', 'SQL',
+    'MongoDB', 'H2', 'Postgres', 'SQL',
     // Development Skills
     'oAuth', 'RESTApi', 'CMS',
     // Design Skills

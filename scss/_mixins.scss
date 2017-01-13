@@ -17,7 +17,7 @@
   }
   // Ruby Skills
 
-  &.skill-ruby {
+  &.skill-ruby, &.skill-sinatra, &.skill-activerecord {
     background: linear-gradient(darken(#D4211C, 20%), #D4211C), #D4211C;
   }
   // Java Skills
@@ -26,7 +26,7 @@
     background: linear-gradient(darken(#009688, 20%), #009688), #009688;
   }
   // Database Skills
-  &.skill-database, &.skill-mongodb, &.skill-postgresql, &.skill-sql, &.skill-h2 {
+  &.skill-database, &.skill-mongodb, &.skill-postgres, &.skill-sql, &.skill-h2 {
     background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
   }
   // Development Skills
