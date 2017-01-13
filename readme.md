@@ -42,3 +42,6 @@ Applied Physics Graduate, Tenacious Problem Solver, Self-taught Web Developer. S
 
 [***Conway's Game of Life***](https://github.com/LawlietBlack/FCC-Ziplines/tree/master/Zipline-14) | Conway\"s game of life with grid size, generation speed, pause/play, and randomize functions.
 
+#### Known Bugs
+
+first time loading page loads 0 projects sometimes
