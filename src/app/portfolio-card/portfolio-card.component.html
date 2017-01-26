@@ -1,0 +1,22 @@
+
+<md-card class="fancy x-scope" aria-label="" md-whiteframe="8">
+  <div class="card-content title-bar">
+    <div class="title">
+      <h2>{{project.title}}</h2>
+    </div>
+  </div>
+  <div class="card-content skills-bar">
+    <ul class="skills">
+      <li *ngFor="let skill of project.skills"
+          (click)="skillFilter(skill)"
+          class="skill-{{skill.toLowerCase()}}">{{skill}}</li>
+      <li class="over-8" *ngIf="project.skills.length > 8" (click)="showMore()"><span class="small">{{project.skills.length - 8}} more</span><i class="fa fa-caret-down"></i></li>
+    </ul>
+  </div>
+  <img [attr.src]="project.img" alt="{{project.title}} Thumbnail">
+  <div class="card-content card-bottom">
+    <p>{{project.description}}</p>
+    <button md-button class="git-btn md-raised" (click)="link(project.github)" md-whiteframe="9">GitHub</button>
+    <button md-button class="web-btn md-raised" (click)="link(project.link)" md-whiteframe="9">Website</button>
+  </div>
+</md-card>

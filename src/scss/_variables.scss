@@ -1,0 +1,17 @@
+$bg-color: #191919;
+$card-color: #424b4b;
+$light-card-color: lighten($card-color, 10%);
+$dark-card-color: darken(#424b4b, 10%);
+$primary-color: #1b5e20;
+$secondary-color: #465C7B;
+$base-font-color: #fff;
+$primary-font: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$paragraph-font: 'Questrial', sans-serif;
+$light-primary-font: #15d345;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+$icon-size: 40px;
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
