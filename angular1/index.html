@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="PortfolioApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Kenneth Black | Portfolio | Front End/Full Stack JavaScript Developer</title>
+    <meta name="title" content="Kenneth Black | Front End/Full Stack JavaScript Developer | Portfolio">
+    <meta name="description" content="Portland, OR | Kenneth.Black@live.com | @lawlietblack | Skills: MEAN, Angular, React, Node, Mongodb, Python, Django, Flask, Gulp, RESTAPI, TDD, Sass">
+    <meta name="author" content="Kenneth Black">
+    <link rel="icon" href="angular1/img/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lusitana|Merriweather|Questrial|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/main.css">
+</head>
+<body>
+
+<!--Navbar-->
+<header>
+    <nav>
+        <div class="title-block">
+            <div class="container">
+                <h1>Kenneth Black</h1>
+                <h2>Full Stack Web Developer</h2>
+            </div>
+        </div>
+        <md-tabs md-stretch-tabs="always" md-selected="selectedNav" ng-cloak>
+            <md-tab><a href="#/">PORTFOLIO</a></md-tab>
+            <md-tab><a href="#/algorithms">ALGORITHMS</a></md-tab>
+            <md-tab><a href="#/logs">LOGS</a></md-tab>
+            <md-tab><a href="#/resume">RESUME</a></md-tab>
+            <md-tab><a href="#/about">ABOUT</a></md-tab>
+        </md-tabs>
+    </nav>
+</header>
+
+<!--Main-->
+<main>
+    <ng-view></ng-view>
+</main>
+
+<!--Footer-->
+<footer class="clearfix">
+    <a href="https://github.com/LawlietBlack" target="_blank"><div class="social-icon git"></div></a>
+    <a href="https://twitter.com/LawlietBlack" target="_blank"><div class="social-icon twitter"></div></a>
+    <a href="https://teamtreehouse.com/kennethblack" target="_blank"><div class="social-icon treehouse"></div></a>
+    <a href="https://www.linkedin.com/in/kennethrblack" target="_blank"><div class="social-icon linkedin"></div></a>
+    <a href="http://freecodecamp.com/lawlietblack" target="_blank"><div class="social-icon fcc"></div></a>
+    <p>&copy; 2015 Kenneth Black.</p>
+</footer>
+
+<!--Scripts-->
+<script src="build/js/vendor.min.js"></script>
+<script src="build/js/app.js"></script>
+
+
+</body>
+</html>
