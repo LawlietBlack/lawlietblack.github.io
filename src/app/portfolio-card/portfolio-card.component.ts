@@ -15,4 +15,8 @@ export class PortfolioCardComponent implements OnInit {
 
   }
 
+  link(linkurl) {
+    window.open(linkurl);
+  }
+
 }
