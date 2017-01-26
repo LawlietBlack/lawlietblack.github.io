@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "author": "Kenneth Black",
   "description": "Portfolio for Kenneth Black",
-  "main": "gulpfile.js",,
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
