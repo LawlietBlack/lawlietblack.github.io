@@ -1,0 +1,71 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+#skills-tags {
+  .skill-tags {
+    @include flexy();
+    max-width: 1280px;
+    margin: 10px auto 0;
+    color: #fff;
+    button[md-button] {
+      margin: 4px;
+      line-height: 20px;
+      min-height: 20px;
+      height: 28px;
+      min-width: 5em;
+      padding: 0 4px;
+      cursor: pointer;
+      position: relative;
+      @include skillcolors;
+      .skill-num {
+        background-color: #777;
+        border-radius: 50%;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+#skills-color-key {
+  @include flexy();
+  background: linear-gradient($dark-card-color, $light-card-color), #424b4b;
+  max-width: 1260px;
+  margin: 10px auto;
+  @media screen and (max-width: 1260px) {
+    max-width: 800px;
+    .title{
+      width: 100%;
+      text-align: center;
+      .name {
+        float: none;
+      }
+    }
+
+  }
+  @media screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+  .title {
+    color: #4E9353;
+    font-weight: bold;
+  }
+  .skill {
+    margin: 0 8px;
+  }
+  .dot {
+    @include skillcolors;
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border-radius: 50%;
+  }
+  .name {
+    float: left;
+    font-size: 16px;
+    margin: 3px;
+  }
+}

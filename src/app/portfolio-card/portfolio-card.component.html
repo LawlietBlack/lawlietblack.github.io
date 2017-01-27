@@ -1,5 +1,5 @@
 
-<md-card class="fancy x-scope" aria-label="" md-whiteframe="8">
+<md-card class="portfolio-card" aria-label="" md-whiteframe="8">
   <div class="card-content title-bar">
     <div class="title">
       <h2>{{project.title}}</h2>
@@ -7,7 +7,7 @@
   </div>
   <div class="card-content skills-bar">
     <ul class="skills">
-      <li *ngFor="let skill of project.skills"
+      <li *ngFor="let skill of project.skills | limit:limitNum"
           (click)="skillFilter(skill)"
           class="skill-{{skill.toLowerCase()}}">{{skill}}</li>
       <li class="over-8" *ngIf="project.skills.length > 8" (click)="showMore()"><span class="small">{{project.skills.length - 8}} more</span><i class="fa fa-caret-down"></i></li>

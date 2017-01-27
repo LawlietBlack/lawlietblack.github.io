@@ -15,9 +15,11 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "",
+      "prefix": "app",
       "mobile": false,
       "styles": [
+        "../bower_components/devicon/devicon.css",
+        "../bower_components/font-awesome/css/font-awesome.css",
         "styles.scss"
       ],
       "scripts": [],

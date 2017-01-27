@@ -1,0 +1,49 @@
+<div id="skills-color-key">
+  <div class="skill title">
+    <div class="name">Key</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-javascript"></div>
+    <div class="name">JavaScript</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-python"></div>
+    <div class="name">Python</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-java"></div>
+    <div class="name">Java</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-ruby"></div>
+    <div class="name">Ruby</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-database"></div>
+    <div class="name">Databases</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-development"></div>
+    <div class="name">Development</div>
+  </div>
+  <div class="skill">
+    <div class="dot skill-design"></div>
+    <div class="name">Design</div>
+  </div>
+  <div class="skill title" *ngIf="currentSkill !== 'all'">
+    <div class="name"> Filter</div>
+  </div>
+  <div class="skill" *ngIf="currentSkill !== 'all'">
+    <div class="name">{{currentSkill}}</div>
+  </div>
+</div>
+<div id="skills-tags">
+  <div class="skill-tags">
+    <button md-button class="skill-all md-raised" (click)="skillFilter('all')">All <span class="skill-num">{{projects.length}}</span></button>
+    <button md-button
+            *ngFor="let skill of skillList"
+            [class]="'md-raised skill-' + skill.toLowerCase()"
+            (click)="skillFilter(skill)">{{skill}} <span class="skill-num">0</span>
+    </button>
+  </div>
+</div>

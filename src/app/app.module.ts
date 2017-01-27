@@ -11,6 +11,15 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioCardComponent } from './portfolio-card/portfolio-card.component';
 import { MaterialModule } from "@angular/material";
 import 'hammerjs';
+import { LimitPipe } from './pipes/limit.pipe';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
+import { AboutComponent } from './about/about.component';
+import { AlgorithmsComponent } from './algorithms/algorithms.component';
+import { LogsComponent } from './logs/logs.component';
+import { ResumeComponent } from './resume/resume.component';
+import { SkillsFilterPipe } from './pipes/skills-filter.pipe';
+import { SkillsBarComponent } from './skills-bar/skills-bar.component';
 
 
 export const firebaseConfig = {
@@ -25,7 +34,16 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     PortfolioComponent,
-    PortfolioCardComponent
+    PortfolioCardComponent,
+    LimitPipe,
+    NavBarComponent,
+    SocialLinksComponent,
+    AboutComponent,
+    AlgorithmsComponent,
+    LogsComponent,
+    ResumeComponent,
+    SkillsFilterPipe,
+    SkillsBarComponent
   ],
   imports: [
     BrowserModule,

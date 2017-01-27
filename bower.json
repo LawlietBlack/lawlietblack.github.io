@@ -1,0 +1,22 @@
+{
+  "name": "lawlietblack",
+  "description": "Portfolio for Kenneth Black",
+  "main": "",
+  "authors": [
+    "Kenneth Black"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/LawlietBlack/lawlietblack.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "devicon": "*",
+    "font-awesome": "^4.7.0"
+  }
+}

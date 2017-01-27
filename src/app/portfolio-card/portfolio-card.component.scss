@@ -1,0 +1,121 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+md-card.portfolio-card {
+  padding: 0;
+  color: #fff;
+  margin: 20px;
+  float: left;
+  background-color: $card-color;
+  width: 426px;
+  border-radius: 0;
+  position: relative;
+  img {
+    width: 336px;
+    height: 192px;
+  }
+  .card-content {
+    padding: 0;
+    float: left;
+    .title {
+      h2 {
+        font-size: 1.35em;
+      }
+      padding: 7px 0 7px 7px;
+      height: 40px;
+      width: 336px;
+    }
+  }
+  .card-bottom {
+    position: relative;
+    min-height: 170px;
+    width: 426px;
+    padding: 10px;
+    z-index: 50;
+    p {
+      margin: 12px 0 0;
+    }
+    button {
+      position: absolute;
+      bottom: 5px;
+      &.git-btn {
+        background-color: #242424;
+        right: 0;
+      }
+      &.web-btn {
+        background-color: #055081;
+        right: 100px;
+      }
+    }
+  }
+  .skills-bar {
+    width: 90px;
+    height: 232px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: darken($card-color, 10%);
+    li {
+      @include skillcolors;
+      padding: 5px 0;
+      height: 29px;
+      cursor: pointer;
+    }
+    .over-8 {
+      position: relative;
+      z-index: 100;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      background-color: #2a3030;
+      border-radius: 0 0 50% 50%;
+      height: 26px;
+      span {
+        font-size: 12px;
+        height: 12px;
+        display: block;
+      }
+      i {
+        display: block;
+      }
+    }
+  }
+  .extras {
+    position: relative;
+    z-index: 100;
+    display: none;
+  }
+  @media screen and (max-width: 1420px) {
+    margin: 10px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 336px;
+    .card-content h2 {
+      text-align: center;
+    }
+    .skills-bar {
+      right: 0;
+      top: 232px;
+      min-height: 261px;
+      .over-8 {
+        background-color: darken($card-color, 10%);
+      }
+    }
+    .card-bottom {
+      min-height: 261px;
+      width: 246px;
+      bottom: 10px;
+      button.git-btn {
+        padding: 0;
+        width: 44%;
+        right: 20px;
+      }
+      button.web-btn {
+        padding: 0;
+        width: 44%;
+        right: 131px;
+      }
+    }
+  }
+}

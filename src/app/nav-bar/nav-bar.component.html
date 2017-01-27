@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <div class="title-block">
+      <div class="container">
+        <h1>Kenneth Black</h1>
+        <h2>Full Stack Web Developer</h2>
+      </div>
+    </div>
+    <md-tab-group md-stretch-tabs="always" (focusChange)="navigate($event)" [selectedIndex]="getRoute()">
+      <md-tab label="PORTFOLIO"></md-tab>
+      <md-tab label="ALGORITHMS"></md-tab>
+      <md-tab label="LOGS"></md-tab>
+      <md-tab label="RESUME"></md-tab>
+      <md-tab label="ABOUT"></md-tab>
+    </md-tab-group>
+  </nav>
+</header>
