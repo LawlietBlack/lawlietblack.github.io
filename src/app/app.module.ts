@@ -10,17 +10,20 @@ import { AngularFireModule } from "angularfire2";
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioCardComponent } from './portfolio-card/portfolio-card.component';
 import { MaterialModule } from "@angular/material";
+import { HighlightJsModule, HighlightJsService } from "angular2-highlight-js";
 import 'hammerjs';
-import { LimitPipe } from './pipes/limit.pipe';
+
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { AboutComponent } from './about/about.component';
 import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { LogsComponent } from './logs/logs.component';
 import { ResumeComponent } from './resume/resume.component';
-import { SkillsFilterPipe } from './pipes/skills-filter.pipe';
 import { SkillsBarComponent } from './skills-bar/skills-bar.component';
 
+import { LimitPipe } from './pipes/limit.pipe';
+import { SkillsFilterPipe } from './pipes/skills-filter.pipe';
+import { SkillCountPipe } from './pipes/skill-count.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -43,7 +46,8 @@ export const firebaseConfig = {
     LogsComponent,
     ResumeComponent,
     SkillsFilterPipe,
-    SkillsBarComponent
+    SkillsBarComponent,
+    SkillCountPipe
   ],
   imports: [
     BrowserModule,
@@ -51,9 +55,10 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    HighlightJsModule
   ],
-  providers: [],
+  providers: [HighlightJsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SkillsFilterPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(projects: any, filter?: string): any {
+    if(filter === 'all') return projects;
+    return projects.filter(project => project.skills.indexOf(filter) >= 0);
   }
 
 }

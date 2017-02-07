@@ -4,27 +4,19 @@ import { FirebaseListObservable, AngularFire } from "angularfire2";
 @Injectable()
 export class PortfolioService {
   projects: FirebaseListObservable<any[]>;
-  skills: any;
-  skillList: string[] = [
-  // JavaScript Skills
-  'JavaScript', 'AngularJS', 'ReactJS', 'd3js', 'jQuery', 'Nodejs', 'Express', 'AJAX', 'Gulp', 'Keystone', 'Jasmine',
-  // Python Skills
-  'Python', 'Django',
-  // Java Skills
-  'Java', 'Jersey', 'Spring', 'Hibernate', 'Tomcat', 'Maven', 'Gradle', 'Thymeleaf',
-  // Ruby Skills
-  'Ruby', 'Sinatra',
-  // Database Skills
-  'MongoDB', 'H2', 'Postgres', 'SQL',
-  // Development Skills
-  'oAuth', 'RESTApi', 'CMS',
-  // Design Skills
-  'HTML5', 'CSS3', 'Bootstrap', 'Sass', 'Responsive', 'Bourbon', 'Materialize'];
+  experience: FirebaseListObservable<any[]>;
+  education: FirebaseListObservable<any[]>;
+  skills: FirebaseListObservable<any[]>;
+  logs: FirebaseListObservable<any[]>;
+  snippets: FirebaseListObservable<any[]>;
 
   constructor(private angularFire: AngularFire) {
     this.projects = angularFire.database.list('projects');
-
-    this.projects.subscribe( projects => this.skills = this.loadSkills(projects));
+    this.skills = angularFire.database.list('skills');
+    this.experience = angularFire.database.list('experience');
+    this.education = angularFire.database.list('education');
+    this.logs = angularFire.database.list('logs');
+    this.snippets = angularFire.database.list('snippets');
   }
 
   getProjects() {
@@ -35,14 +27,19 @@ export class PortfolioService {
     return this.skills;
   }
 
-  loadSkills(projects) {
-    let skills = {};
-    let skillsData = projects.reduce( (a, b) => {
-      return a.concat(b.skills);
-    }, []).forEach(skill => skills[skill] = skills[skill] ? skills[skill] + 1 : 1);
-    return skills;
-
+  getExperience() {
+    return this.experience;
   }
 
+  getEducation() {
+    return this.education;
+  }
 
+  getLogs() {
+    return this.logs;
+  }
+
+  getSnippets() {
+    return this.snippets;
+  }
 }

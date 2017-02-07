@@ -1,5 +1,6 @@
-<skills-bar></skills-bar>
+<skills-bar (skillFilterEvent)="filterSkills($event)" [currentSkill]="projectFilter"></skills-bar>
 
 <div class="portfolio clearfix" id="portfolio">
-  <portfolio-card *ngFor="let project of projects | async" [project]="project"></portfolio-card>
+  <portfolio-card [project]="project" (skillFilterEvent)="filterSkills($event)"
+                  *ngFor="let project of (projects | async) | skillsFilter:projectFilter"></portfolio-card>
 </div>

@@ -1,3 +1,10 @@
-<p>
-  logs works!
-</p>
+<div id="logs">
+  <h1 class="title">Logs</h1>
+  <div class="log" *ngFor="let log of logs | async">
+    <div class="log-content">
+      <h1>{{log.date}}</h1>
+      <p [innerHTML]="log.log">{{log.log}}</p>
+      <p class="log-detail">by Kenneth Black</p>
+    </div>
+  </div>
+</div>

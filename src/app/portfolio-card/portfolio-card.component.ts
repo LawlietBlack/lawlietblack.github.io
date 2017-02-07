@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Project } from "../models/project.model";
 
 @Component({
@@ -8,6 +8,7 @@ import { Project } from "../models/project.model";
 })
 export class PortfolioCardComponent implements OnInit {
   @Input() project: Project;
+  @Output() skillFilterEvent = new EventEmitter();
   limitNum: number = 8;
 
   constructor() { }
@@ -22,6 +23,10 @@ export class PortfolioCardComponent implements OnInit {
 
   showMore() {
     this.limitNum = this.limitNum === 8 ? 20 : 8;
+  }
+
+  skillFilter(skill) {
+    this.skillFilterEvent.emit(skill);
   }
 
 }

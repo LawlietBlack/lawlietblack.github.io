@@ -9,12 +9,17 @@ import { PortfolioService } from "../services/portfolio.service";
   providers: [PortfolioService]
 })
 export class PortfolioComponent implements OnInit {
+  projectFilter: string = 'all';
   projects: FirebaseListObservable<any[]>;
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
     this.projects = this.portfolioService.getProjects();
+  }
+
+  filterSkills(skill) {
+    this.projectFilter = skill;
   }
 
 }

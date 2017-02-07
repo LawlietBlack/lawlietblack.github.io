@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { FirebaseListObservable } from "angularfire2";
 import { PortfolioService } from "../services/portfolio.service";
 
@@ -8,17 +8,21 @@ import { PortfolioService } from "../services/portfolio.service";
   styleUrls: ['skills-bar.component.scss']
 })
 export class SkillsBarComponent implements OnInit {
-  currentSkill: string = 'all';
+  @Input() currentSkill: string;
+  @Output() skillFilterEvent = new EventEmitter();
+
   projects: FirebaseListObservable<any[]>;
   skills: FirebaseListObservable<any[]>;
-  skillList: string[];
+
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
     this.projects = this.portfolioService.getProjects();
     this.skills = this.portfolioService.getSkills();
-    this.skillList = this.portfolioService.skillList;
-    console.log(this.skills)
+  }
+
+  skillFilter(skill) {
+    this.skillFilterEvent.emit(skill);
   }
 
 }

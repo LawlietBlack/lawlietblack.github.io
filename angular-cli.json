@@ -27,7 +27,10 @@
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
+      },
+      "packages": [
+        "node_modules/angular2-highlight-js/lib"
+      ]
     }
   ],
   "e2e": {

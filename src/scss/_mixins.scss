@@ -8,7 +8,7 @@
   }
   // JavaScript Skills
   &.skill-javascript, &.skill-angularjs, &.skill-jquery, &.skill-nodejs, &.skill-express, &.skill-d3js,
-  &.skill-reactjs, &.skill-ajax, &.skill-gulp, &.skill-jasmine, &.skill-keystone {
+  &.skill-reactjs, &.skill-ajax, &.skill-gulp, &.skill-jasmine, &.skill-keystone, &.skill-angular2 {
     background: linear-gradient(darken(#4E9353, 20%), #4E9353), #4E9353;
   }
   // Python Skills
@@ -26,7 +26,7 @@
     background: linear-gradient(darken(#009688, 20%), #009688), #009688;
   }
   // Database Skills
-  &.skill-database, &.skill-mongodb, &.skill-postgres, &.skill-sql, &.skill-h2 {
+  &.skill-database, &.skill-mongodb, &.skill-postgres, &.skill-sql, &.skill-h2, &.skill-firebase {
     background: linear-gradient(darken(#61487E, 20%), #61487E), #61487E;
   }
   // Development Skills

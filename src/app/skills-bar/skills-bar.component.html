@@ -39,11 +39,13 @@
 </div>
 <div id="skills-tags">
   <div class="skill-tags">
-    <button md-button class="skill-all md-raised" (click)="skillFilter('all')">All <span class="skill-num">{{projects.length}}</span></button>
+    <button md-button class="skill-all md-raised" (click)="skillFilter('all')">
+      All <span class="skill-num">{{(projects | async)?.length}}</span>
+    </button>
     <button md-button
-            *ngFor="let skill of skillList"
-            [class]="'md-raised skill-' + skill.toLowerCase()"
-            (click)="skillFilter(skill)">{{skill}} <span class="skill-num">0</span>
+            *ngFor="let skill of skills | async"
+            [class]="'md-raised skill-' + skill.title.toLowerCase()"
+            (click)="skillFilter(skill.title)">{{skill.title}} <span class="skill-num">{{skill.count}}</span>
     </button>
   </div>
 </div>

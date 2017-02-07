@@ -1,3 +1,69 @@
-<p>
-  resume works!
-</p>
+<div class="download">
+  <button md-button class="md-primary md-raised"><a href="http://lawlietblack.com/docs/KennethBlackResume.pdf">Download PDF</a></button>
+  <button md-button class="md-secondary md-raised"><a href="http://lawlietblack.com/docs/KennethBlackResume.docx">Download DOCX</a></button>
+</div>
+
+<div id="resume">
+  <div class="resume-head">
+    <div class="title-box">
+      <h1>Kenneth Black</h1>
+      <h2>Web Developer</h2>
+    </div>
+    <div class="contact">
+      <p><a href="http://twitter.com/lawlietblack"><i class="fa fa-twitter"></i> @lawlietblack</a></p>
+      <p><a href="http://linkedin.com/in/kennethrblack"><i class="fa fa-linkedin"></i> kennethrblack</a></p>
+      <p><a href="http://github.com/lawlietblack"><i class="fa fa-github"></i> lawlietblack</a></p>
+    </div>
+  </div>
+  <div class="profile content">
+    <h1 class="section-title">Profile</h1>
+    <div class="section-content">
+      <p>
+        Applied Physics Graduate, Tenacious Problem Solver, Self-taught Web Developer. Since last April, I have devoted over 2,300 hours to learning the ins and outs of web development, from simple front end applications to full stack MEAN apps. Web development has become a passion of mine, combining my love of problem solving with the satisfaction I get from building things to become something I truly enjoy.
+      </p>
+    </div>
+  </div>
+  <div class="skills content">
+    <h1 class="section-title">Skills</h1>
+    <div class="section-content">
+      <ul class="skill-list">
+        <li *ngFor="let skill of skills | async"> {{skill.title}} </li>
+      </ul>
+    </div>
+  </div>
+  <div class="projects content">
+    <h1 class="section-title">Projects</h1>
+    <div class="section-content">
+      <ul class="project-list">
+        <li *ngFor="let project of projects | async">
+          <h2><a href="{{project.link}}">{{project.title}}</a></h2>
+          <p>{{project.description}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="experience content">
+    <h1 class="section-title">Experience</h1>
+    <div class="section-content">
+      <ul class="experience-list">
+        <li *ngFor="let job of experience | async">
+          <h2>{{job.title}}</h2>
+          <h4>{{job.employer}} - <span class="job-duration">{{job.duration}}</span></h4>
+          <p>{{job.description}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="education content">
+    <h1 class="section-title">Education</h1>
+    <div class="section-content">
+      <ul class="education-list">
+        <li *ngFor="let edu of education | async">
+          <h2>{{edu.program}}</h2>
+          <h4>{{edu.completed}}</h4>
+          <p>{{edu.school}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

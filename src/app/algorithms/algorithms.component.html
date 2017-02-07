@@ -1,3 +1,7 @@
-<p>
-  algorithms works!
-</p>
+<div id="code">
+  <div class="snippet" *ngFor="let snippet of snippets | async">
+    <h3><span [class]="'skill skill-' + snippet.language.toLowerCase()">{{snippet.language}}</span> {{snippet.name}}</h3>
+    <p>{{snippet.description}}</p>
+    <pre #code><code [innerHTML]="snippet.code" class="highlight" highlight-js-content=".highlight"></code></pre>
+  </div>
+</div>
