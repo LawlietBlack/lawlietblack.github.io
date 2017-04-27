@@ -21,7 +21,9 @@ export class ResumeComponent implements OnInit {
     this.experience = this.portfolioService.getExperience();
     this.education = this.portfolioService.getEducation();
     console.log(this.skills);
-
   }
 
+  openLinkById(id) {
+    document.getElementById(id).click();
+  }
 }

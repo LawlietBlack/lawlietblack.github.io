@@ -1,6 +1,10 @@
 <div class="download">
-  <button md-button class="md-primary md-raised"><a href="http://lawlietblack.com/docs/KennethBlackResume.pdf">Download PDF</a></button>
-  <button md-button class="md-secondary md-raised"><a href="http://lawlietblack.com/docs/KennethBlackResume.docx">Download DOCX</a></button>
+  <button md-button class="md-primary md-raised" (click)="openLinkById('resume-download-pdf')">
+    <a id="resume-download-pdf" href="http://lawlietblack.com/docs/KennethBlackResume.pdf">Download PDF</a>
+  </button>
+  <button md-button class="md-secondary md-raised" (click)="openLinkById('resume-download-docx')">
+    <a id="resume-download-docx" href="http://lawlietblack.com/docs/KennethBlackResume.docx">Download DOCX</a>
+  </button>
 </div>
 
 <div id="resume">
